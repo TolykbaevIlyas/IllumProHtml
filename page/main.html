@@ -7,10 +7,19 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
     <title>illumpro</title>
     <!-- Подключаем Tailwind через CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../css/info.css" />
+    <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
   </head>
   <body>
     <header class="text-[#2E2C30] max-w-[1400px] mx-auto p-4 z-20">
@@ -415,7 +424,7 @@
     <!-- ============================================Direction======================================================== -->
 
     <div
-      class="xl:max-w-[1200px] mx-auto px-[24px] md:px-0 2xl:max-w-[1353px]  mt-[42px] min-[1280px]:mt-[110px] max-[1280px]:px-[24px]"
+      class="xl:max-w-[1200px] mx-auto px-[24px] md:px-0 2xl:max-w-[1353px] mt-[42px] min-[1280px]:mt-[110px] max-[1280px]:px-[24px]"
     >
       <h2
         class="max-[390px]:text-[24px] max-[1920px]:text-[34px] font-bold mb-[42px] text-[42px]"
@@ -445,7 +454,7 @@
       </div>
       <button
         variant="primary"
-        class=" bg-[#EF3824] mb-[40px] md:mb-[70px] mx-auto md:mx-0 text-white rounded-[8.53px] py-[11px] cursor-pointer block float-none md:float-right mt-[42px] text-[18px] font-semibold max-w-[240px] w-full"
+        class="bg-[#EF3824] mb-[40px] md:mb-[70px] mx-auto md:mx-0 text-white rounded-[8.53px] py-[11px] cursor-pointer block float-none md:float-right mt-[42px] text-[18px] font-semibold max-w-[240px] w-full"
       >
         Показать больше
       </button>
@@ -573,10 +582,10 @@
             placeholder="Email"
             class="w-full h-[48px] xl:h-[56px] px-3 rounded-[8px] bg-[#1E1F23] border border-[#2B2C31] text-[14px] placeholder:text-[#6B7280] focus:outline-none"
           />
-         <textarea
-  placeholder="Текст обращения"
-  class="w-full h-[130px] xl:h-[150px] px-3 py-2 border border-[#C4C4C4] rounded-[7px] bg-[#1E1F23] text-[14px] placeholder:text-[#6B7280] focus:outline-none resize-none"
-></textarea>
+          <textarea
+            placeholder="Текст обращения"
+            class="w-full h-[130px] xl:h-[150px] px-3 py-2 border border-[#C4C4C4] rounded-[7px] bg-[#1E1F23] text-[14px] placeholder:text-[#6B7280] focus:outline-none resize-none"
+          ></textarea>
 
           <button
             type="submit"
@@ -588,6 +597,71 @@
       </div>
     </div>
 
+    <!-- ===============================================OutProd================================================================== -->
+    <div
+      class="xl:max-w-[1200px] 2xl:max-w-[1456px] mx-auto w-full mb-[40px] mt-[40px] xl:mb-[167px] px-[24px] md:px-0"
+    >
+      <h2
+        class="mb-[26px] md:mb-[80px] uppercase text-[#2E2C30] font-bold text-[24px] xl:text-[34px]  2xl:text-[42px] max-w-[221px] md:max-w-full"
+      >
+        Наше производство
+      </h2>
+      <div class="flex gap-[27px] items-center w-full">
+        <div class="max-w-[781] w-full hidden md:block">
+          <img src="../assets/OurProd.jpg" alt="Наше производство" />
+        </div>
+
+        <div class="xl:max-w-[494px] 2xl:max-w-[613px] flex flex-col gap-[26px]">
+          <span
+            class="text-[#2E2C30] text-[14px] xl:text-[16px] 2xl:text-[20px] leading-[114%]"
+          >
+            Наш завод расположен в Тульской области. Это современная
+            производственная площадка с оборудованием, соответствующим уровню
+            ведущих европейских предприятий. Мы стремимся к максимальной
+            независимости от внешних поставщиков — все ключевые этапы
+            локализованы внутри завода.
+          </span>
+
+          <div class="max-w-[781] w-full block md:hidden">
+            <img src="../assets/OurProd.jpg" alt="Наше производство" />
+          </div>
+
+          <div
+            class="grid gap-2 grid-cols-2  md:grid-cols-3 text-[12px] 2xl:text-[14px]"
+          >
+            <div
+              class="bg-[#F8F8F8]  rounded-[9px] col-span-2 pb-[30px] 2xl:pb-[37px] pl-[10px] pt-[70px] 2xl:pt-[89px]"
+            >
+              <span class="max-w-[200px] md:max-w-full block">Производство светодиодов, блоков питания, оптики</span>
+            </div>
+
+            <div
+              class="bg-[#F8F8F8] rounded-[9px] pb-[30px] 2xl:pb-[37px] pl-[10px] pt-[70px] 2xl:pt-[89px]"
+            >
+              <span>Литьё алюминия и пластика под давлением</span>
+            </div>
+
+            <div
+              class="bg-[#F8F8F8] rounded-[9px] pb-[30px] 2xl:pb-[37px] pl-[10px] pt-[54px] 2xl:pt-[67px]"
+            >
+              <span>CNC-гибка и резка стекла, металла и прутка</span>
+            </div>
+
+            <div
+              class="bg-[#F8F8F8] rounded-[9px] pb-[30px] 2xl:pb-[37px] pl-[10px] pt-[54px] 2xl:pt-[67px]"
+            >
+              <span>Токарные и фрезерные работы</span>
+            </div>
+
+            <div
+              class="bg-[#F8F8F8] rounded-[9px] pb-[30px] 2xl:pb-[37px] pl-[10px] pt-[54px] 2xl:pt-[67px]"
+            >
+              <span>Обработка алюминиевого профиля, лазерная резка</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- ==================================================================================================== -->
     <footer class="bg-[#1A171B] text-white px-4 md:px-10 lg:px-20 py-10">
       <div class="max-w-[1400px] mx-auto flex flex-col">
