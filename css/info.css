@@ -1,0 +1,87 @@
+.stats-list {
+  display: flex;
+  width: 100%;
+  color: #2e2c30;
+  gap: 15px;
+  margin-top: 40px;
+  max-width: 1353px; /* 2xl */
+}
+
+.stats-item {
+  border-left: 2px solid #ef3824;
+  padding-left: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.stats-title {
+  font-size: 34px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.stats-text {
+  font-size: 18px;
+}
+
+.stats-item--center {
+  justify-content: center;
+  padding-bottom: 16px;
+}
+
+.stats-item--end {
+  justify-content: flex-end;
+  padding-bottom: 16px;
+}
+
+/* Адаптив как в Tailwind */
+@media (max-width: 1280px) {
+  .stats-list {
+    flex-direction: column;
+    max-width: 1140px;
+    padding: 0 24px;
+    height: 491px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .stats-list {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-list {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 1920px) {
+  .stats-list {
+    max-width: 1206px;
+    height: 93px;
+  }
+
+  .stats-text {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .stats-list {
+    align-items: center;
+    margin-top: 91px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .stats-list {
+    max-width: 1351px;
+    height: 124px;
+  }
+
+  .stats-title {
+    font-size: 42px;
+  }
+}
