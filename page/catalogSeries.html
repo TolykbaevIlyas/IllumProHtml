@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Каталог Tornado</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-black max-w-[1400px] mx-auto p-4">
+
+  <!-- Хлебные крошки -->
+  <div class="flex gap-[9px] items-center text-[#A9A9A9] mt-[51px] text-[14px]">
+    <p>Главная</p>
+    <svg width="7" height="6" viewBox="0 0 7 6" fill="none">
+      <path d="M0.9 3H6.4M6.4 3L4.1 1M6.4 3L4.1 5" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <div class="max-w-[43px] w-full h-[27px] flex items-center justify-center bg-[#F8F8F8] font-[700]">...</div>
+    <svg width="7" height="6" viewBox="0 0 7 6" fill="none">
+      <path d="M0.9 3H6.4M6.4 3L4.1 1M6.4 3L4.1 5" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <p>TORNADO</p>
+  </div>
+
+  <!-- Заголовок -->
+  <div class="flex justify-between max-lg:flex-col gap-4">
+    <h3 class="text-[42px] leading-[100%] font-[700] uppercase mt-[40px]">КАТАЛОГ СЕРИИ TORNADO</h3>
+    <div class="flex gap-[17px] cursor-pointer text-[#F44336] hover:text-[#d9362c] transition">
+      Скачать каталог (PDF)
+      <img src="../assets/catalog/all/donwload.svg" alt="" class="w-[17px] h-[21px]"/>
+    </div>
+  </div>
+
+  <!-- Описание -->
+  <p class="mt-[47px] max-w-[1339px] w-full text-[18px] leading-[150%]">
+    Для щитовых решений любого уровня сложности. Токовые характеристики от 6 до 63 А, типы кривых B, C, D, установка на DIN-рейку.
+    Соответствие ГОСТ, стабильность срабатывания и надёжность в эксплуатации.
+  </p>
+
+  <!-- Основная часть -->
+  <div class="flex gap-[20px] mt-[57px] max-lg:flex-col">
+
+    <!-- Фильтры -->
+    <div class="lg:max-w-[451px] w-full">
+
+      <div id="filter-toggle" class="rounded-[7px] mt-[31px] max-w-[202px] text-center flex items-center justify-center h-[48px] bg-[#EF3824] text-white cursor-pointer lg:hidden ml-auto">
+            Фильтр
+        </div>
+
+      <!-- Мобильные фильтры -->
+      <div id="filter-mobile" class="hidden bg-[#F8F8F8] mt-[20px] max-w-[451px] w-full rounded-t-[8px] lg:hidden ml-auto"></div>
+
+      <!-- Десктоп фильтры -->
+      <div class="bg-[#F8F8F8] max-w-[451px] w-full rounded-t-[8px] max-lg:hidden" id="filter-desktop"></div>
+
+      <div class="rounded-[7px] mt-[31px] max-w-[202px] text-center flex items-center justify-center w-full h-[48px] bg-[#EF3824] text-white max-sm:max-w-full max-sm:mt-[20px] max-lg:hidden cursor-pointer">
+        Сбросить фильтры
+      </div>
+    </div>
+
+    <!-- Таблица -->
+    <div class="max-w-[883px] w-full bg-white rounded-lg overflow-hidden shadow-sm">
+      <!-- Заголовки -->
+      <div class="grid grid-cols-3 bg-[#EF3824] text-white font-medium text-sm max-lg:hidden">
+        <p class="px-4 py-3">Фото</p>
+        <p class="px-4 py-3">Наименование</p>
+        <p class="px-4 py-3">Технические характеристики</p>
+      </div>
+      <!-- Строки -->
+      <div id="product-list"></div>
+    </div>
+  </div>
+
+  <script>
+    // Данные
+    const products = [
+      { id: 3803, name: "Tornado 4000K S 66IP led", img: "../assets/catalog/catalogInner/image 184.png", power: 800, voltage: 230, luminousFlux: 94680 },
+      { id: 3806, name: "Tornado 3000K S 66IP led", img: "../assets/catalog/catalogInner/image 184.png", power: 1400, voltage: 230, luminousFlux: 161518 },
+      { id: 3809, name: "Tornado 4000K S 66IP led", img: "../assets/catalog/catalogInner/image 184.png", power: 1400, voltage: 230, luminousFlux: 165690 },
+    ];
+
+    // Рендер товаров
+    const list = document.getElementById("product-list");
+    products.forEach((p, i) => {
+      list.innerHTML += `
+        <a href="./product.html" class="grid grid-cols-3 text-sm ${i % 2 === 1 ? "bg-[#F8F8F8]" : "bg-white"}">
+          <div class="p-4 flex items-center">
+            <img src="${p.img}" alt="${p.name}" class="h-16 w-auto mx-auto" />
+          </div>
+          <div class="p-4 flex flex-col justify-center">
+            <p class="font-medium">${p.name}</p>
+            <p class="text-gray-500 text-sm">Артикул: ${p.id}</p>
+          </div>
+          <div class="p-4 space-y-1">
+            <p><span class="font-medium">Мощность:</span> ${p.power} Вт</p>
+            <p><span class="font-medium">Напряжение:</span> ${p.voltage} В</p>
+            <p><span class="font-medium">Световой поток:</span> ${p.luminousFlux.toLocaleString("ru-RU")} Лм</p>
+          </div>
+        </a>
+      `;
+    });
+
+    // Фильтры (одноразовый шаблон)
+    const filterHTML = `
+      <div class="bg-[#EF3824] max-lg:hidden h-[46px] text-[18px] font-[600] text-white flex justify-between p-[14px] rounded-t-[8px]">
+        <p>Фильтр</p>
+        <p class="cursor-pointer" id="reset-filters">Сбросить X</p>
+      </div>
+      <div class="p-4 space-y-6 text-sm bg-white rounded-xl shadow">
+  <!-- Мощность + Напряжение -->
+  <div class="grid grid-cols-2 gap-6">
+    <div>
+      <p class="font-medium mb-3">Мощность</p>
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="checkbox" class="w-4 h-4 border-2 border-red-500 rounded-sm" />
+        <span>800 Вт</span>
+      </label>
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="checkbox" class="w-4 h-4 border-2 border-red-500 rounded-sm" />
+        <span>1400 Вт</span>
+      </label>
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="checkbox" class="w-4 h-4 border-2 border-red-500 rounded-sm" />
+        <span>800 Вт</span>
+      </label>
+    </div>
+    <div>
+      <p class="font-medium mb-3">Напряжение</p>
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="checkbox" class="w-4 h-4 border-2 border-red-500 rounded-sm" />
+        <span>800 Вт</span>
+      </label>
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="checkbox" class="w-4 h-4 border-2 border-red-500 rounded-sm" />
+        <span>1400 Вт</span>
+      </label>
+    </div>
+  </div>
+
+  <hr class="border-gray-200" />
+
+  <!-- Размеры + Световой поток -->
+  <div class="grid grid-cols-2 gap-6">
+    <div>
+      <p class="font-medium mb-3">Размеры</p>
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="checkbox" class="w-4 h-4 border-2 border-red-500 rounded-sm" />
+        <span>800 Вт</span>
+      </label>
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="checkbox" class="w-4 h-4 border-2 border-red-500 rounded-sm" />
+        <span>1400 Вт</span>
+      </label>
+    </div>
+    <div>
+      <p class="font-medium mb-3">Световой поток</p>
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="checkbox" class="w-4 h-4 border-2 border-red-500 rounded-sm" />
+        <span>800 Вт</span>
+      </label>
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="checkbox" class="w-4 h-4 border-2 border-red-500 rounded-sm" />
+        <span>1400 Вт</span>
+      </label>
+    </div>
+  </div>
+
+  <hr class="border-gray-200" />
+
+  <!-- Корпус -->
+  <div class="grid grid-cols-2 gap-6">
+    <div>
+      <p class="font-medium mb-3">Корпус</p>
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="checkbox" class="w-4 h-4 border-2 border-red-500 rounded-sm" />
+        <span>сталь</span>
+      </label>
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="checkbox" class="w-4 h-4 border-2 border-red-500 rounded-sm" />
+        <span>металл</span>
+      </label>
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="checkbox" class="w-4 h-4 border-2 border-red-500 rounded-sm" />
+        <span>пластик</span>
+      </label>
+    </div>
+    <div class="pt-6">
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="checkbox" class="w-4 h-4 border-2 border-red-500 rounded-sm" />
+        <span>литой алюминий</span>
+      </label>
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="checkbox" class="w-4 h-4 border-2 border-red-500 rounded-sm" />
+        <span>алюминий</span>
+      </label>
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="checkbox" class="w-4 h-4 border-2 border-red-500 rounded-sm" />
+        <span>нержавеющая сталь</span>
+      </label>
+    </div>
+  </div>
+</div>
+      </div>
+    `;
+    document.getElementById("filter-desktop").innerHTML = filterHTML;
+    document.getElementById("filter-mobile").innerHTML = filterHTML;
+
+    // Переключение моб. фильтра
+    const toggle = document.getElementById("filter-toggle");
+    const mobileFilter = document.getElementById("filter-mobile");
+    let open = false;
+    toggle.addEventListener("click", () => {
+      open = !open;
+      mobileFilter.style.display = open ? "block" : "none";
+      toggle.textContent = open ? "Сбросить фильтры" : "Фильтр";
+      toggle.classList.toggle("bg-[#EF3824]", !open);
+      toggle.classList.toggle("bg-[#2E2C30]", open);
+    });
+  </script>
+
+</body>
+</html>
