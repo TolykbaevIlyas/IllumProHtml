@@ -22,6 +22,11 @@
       body {
         font-family: "Montserrat", sans-serif;
       }
+
+      .swiper-pagination{
+        position: absolute !important;
+        bottom: -50px !important;
+      }
     </style>
   </head>
   <body>
@@ -424,6 +429,78 @@
       </li>
     </ul>
 
+    <!-- ===========================================SliderMain================================================================== -->
+<div class="xl:max-w-[1200px]  2xl:max-w-[1353px] mx-auto w-full flex justify-end items-end max-[1280px]:px-[24px] relative mt-[91px]">
+  <!-- Заголовок -->
+  <h2
+    class="absolute max-w-[360px] leading-[120%] xl:max-w-[298px] 2xl:max-w-[342px] top-0 md:top-[40px] md:left-[0] text-[24px] xl:text-[18px] 2xl:text-[24px] text-[#2E2C30]  ">
+    IPRO — современные и надежные решения для проектов любого масштаба
+  </h2>
+
+  <!-- Десктоп (грид картинок) -->
+  <div class="hidden md:flex gap-[14px] max-w-[1129px]">
+    <!-- Левая колонка -->
+    <div class="flex flex-col items-end justify-end gap-[14px]">
+      <img src="../assets/slide1.jpg" alt="" class="rounded-xl object-cover 2xl:w-[296px] 2xl:h-[245px] xl:w-[235px] xl:h-[194px]" />
+      <img src="../assets/slide2.jpg" alt="" class="rounded-xl object-cover 2xl:w-[430px] 2xl:h-[245px] xl:w-[341px] xl:h-[194px]" />
+    </div>
+
+    <!-- Центральная колонка -->
+    <div>
+      <img src="../assets/slide3.jpg" alt="" class="rounded-xl object-cover 2xl:w-[294px] 2xl:h-[500px] xl:w-[233px] xl:h-[397px]" />
+    </div>
+
+    <!-- Правая колонка -->
+    <div class="flex flex-col gap-[14px]">
+      <img src="../assets/slide4.jpg" alt="" class="rounded-xl object-cover 2xl:w-[376px] 2xl:h-[245px] xl:w-[298px] xl:h-[194px]" />
+      <img src="../assets/slide5.jpg" alt="" class="rounded-xl object-cover 2xl:w-[296px] 2xl:h-[245px] xl:w-[235px] xl:h-[194px]" />
+    </div>
+
+    <!-- Стрелка справа -->
+    <div class="absolute hidden 2xl:block right-0 bottom-0">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M21.948 8L30 16.5L21.948 25L20.514 23.51L26.154 17.557H3V15.442H26.153L20.514 9.49L21.948 8Z"
+          fill="#2E2C30" />
+      </svg>
+    </div>
+  </div>
+
+  <!-- Стрелка (адаптивная версия) -->
+  <div class="ml-[50px] mr-[30px]  hidden xl:block 2xl:hidden">
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M21.948 8L30 16.5L21.948 25L20.514 23.51L26.154 17.557H3V15.442H26.153L20.514 9.49L21.948 8Z"
+        fill="#2E2C30" />
+    </svg>
+  </div>
+
+  <!-- Мобилка (слайдер Swiper) -->
+<div class="md:hidden flex w-full mx-auto mt-[135px] relative">
+  <div class="swiper swiper-main w-[342px] h-[232px] mx-auto relative">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="../assets/slide1.jpg" alt="" class="rounded-xl object-cover w-full h-full" />
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/slide2.jpg" alt="" class="rounded-xl object-cover w-full h-full" />
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/slide3.jpg" alt="" class="rounded-xl object-cover w-full h-full" />
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/slide4.jpg" alt="" class="rounded-xl object-cover w-full h-full" />
+      </div>
+      <div class="swiper-slide">
+        <img src="../assets/slide5.jpg" alt="" class="rounded-xl object-cover w-full h-full" />
+      </div>
+    </div>
+    <!-- Пагинация -->
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+
+</div>
     <!-- ============================================Direction======================================================== -->
 
     <div
@@ -1308,6 +1385,19 @@
     },
     watchOverflow: true,     // если слайдов меньше, чем slidesPerView — отключит навигацию
     centeredSlides: false,
+  });
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    new Swiper(".swiper-main", {
+      slidesPerView: 1, // показывать только 1 карточку
+      spaceBetween: 16,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
   });
 </script>
   </body>
