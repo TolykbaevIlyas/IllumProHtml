@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Серия TORNADO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-[#1C1C1C]">
+    <!-- ===== Header ===== -->
+    <header class="max-w-[1160px] mx-auto px-4 lg:px-0 pt-6">
+      <div class="flex items-center justify-between gap-4">
+        <p class="text-[12px] leading-4 text-[#9CA3AF]">
+          Главная <span class="mx-1">→</span> Каталог
+          <span class="mx-1">→</span> TORNADO
+        </p>
+        <button
+          class="text-[12px] leading-4 text-[#6B7280] hover:text-[#111827] underline underline-offset-2"
+        >
+          Скачать каталог (PDF)
+        </button>
+      </div>
+
+      <h1
+        class="mt-3 text-[26px] leading-[32px] font-bold tracking-[-0.2px]"
+      >
+        СЕРИЯ TORNADO: <span id="powerTitle" class="text-[#D92D20]"
+          >4000K S 800 ВТ</span
+        >
+      </h1>
+      <p class="mt-1 text-[14px] leading-5 text-[#6B7280]">
+        УЗКОНАПРАВЛЕННЫЙ СВЕТИЛЬНИК ДЛЯ ПОДСВЕТКИ ФАСАДОВ И АКЦЕНТОВ С ВЫСОТЫ
+        ДО 40 М
+      </p>
+    </header>
+
+    <!-- ===== Hero Section ===== -->
+    <section
+  class="max-w-[1160px] mx-auto px-4 lg:px-0 mt-6 grid grid-cols-1 md:grid-cols-[560px_1fr] gap-10"
+>
+  <!-- Left: Image -->
+  <div>
+    <div
+  class="relative w-full bg-[#F6F7F8] rounded-[8px] border border-[#ECEFF3] flex items-center justify-center"
+>
+  <img
+    id="main-image"
+    src="../assets/catalog/catalogInner/image 184.png"
+    alt="TORNADO"
+    class="h-[420px] w-auto object-contain transition-opacity duration-500 ease-in-out opacity-100"
+  />
+</div>
+
+    <!-- Thumbnails -->
+    <div class="mt-4 grid grid-cols-4 gap-3">
+      <div
+        class="thumb h-[64px] rounded-[8px] border border-[#D92D20] bg-white flex items-center justify-center cursor-pointer"
+        data-img="../assets/catalog/catalogInner/image 184.png"
+      >
+        <img src="../assets/catalog/catalogInner/image 184.png" class="w-[44px] h-[44px] object-contain rounded" />
+      </div>
+      <div
+        class="thumb h-[64px] rounded-[8px] border border-[#E5E7EB] bg-white flex items-center justify-center cursor-pointer"
+        data-img="../assets/catalog/catalogInner/image 184.png"
+      >
+        <img src="../assets/catalog/catalogInner/image 184.png" class="w-[44px] h-[44px] object-contain rounded" />
+      </div>
+      <div
+        class="thumb h-[64px] rounded-[8px] border border-[#E5E7EB] bg-white flex items-center justify-center cursor-pointer"
+        data-img="../assets/catalog/catalogInner/image 184.png"
+      >
+        <img src="../assets/catalog/catalogInner/image 184.png" class="w-[44px] h-[44px] object-contain rounded" />
+      </div>
+      <div
+        class="thumb h-[64px] rounded-[8px] border border-[#E5E7EB] bg-white flex items-center justify-center cursor-pointer"
+        data-img="../assets/catalog/catalogInner/image 184.png"
+      >
+        <img src="../assets/catalog/catalogInner/image 184.png" class="w-[44px] h-[44px] object-contain rounded" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Right: Controls -->
+  <div class="pt-1">
+    <div class="flex items-center justify-between">
+      <p class="text-[13px] text-[#9CA3AF]">Артикул: 3603</p>
+      <p class="text-[13px] text-[#9CA3AF]">В наличии</p>
+    </div>
+
+    <!-- Power -->
+    <div class="mt-4 flex flex-col gap-y-4">
+      <div class="flex items-center gap-[127px]">
+        <p class="text-[12px] text-[#6B7280]">Мощность</p>
+        <div class="mt-1 flex gap-2">
+          <button
+            class="power-btn h-8 px-3 rounded-[6px] border text-[13px] border-[#D92D20] text-[#D92D20] bg-[#FFF5F4]"
+            data-power="800"
+          >
+            800
+          </button>
+          <button
+            class="power-btn h-8 px-3 rounded-[6px] border text-[13px] border-[#E5E7EB] text-[#111827]"
+            data-power="1400"
+          >
+            1400
+          </button>
+        </div>
+      </div>
+
+      <!-- Voltage -->
+      <div class="flex items-center gap-[127px]">
+        <p class="text-[12px] text-[#6B7280]">Напряжение</p>
+        <span
+          class="h-8 px-3 inline-flex items-center rounded-[6px] border border-[#E5E7EB] text-[13px]"
+          >230</span
+        >
+      </div>
+
+      <!-- Flux -->
+      <div class="flex items-center gap-[127px]">
+        <p class="text-[12px] text-[#6B7280]">Световой поток</p>
+        <span
+          class="h-8 px-3 inline-flex items-center rounded-[6px] border border-[#E5E7EB] text-[13px]"
+          >94680</span
+        >
+      </div>
+
+      <!-- Body & Size -->
+      <div class="grid grid-cols-2 gap-3 col-span-2">
+        <div>
+          <p class="text-[12px] text-[#6B7280]">Корпус</p>
+          <select
+            class="mt-1 h-9 w-full rounded-[6px] border border-[#E5E7EB] px-3 text-[13px]"
+          >
+            <option>литой алюминиевый</option>
+          </select>
+        </div>
+        <div>
+          <p class="text-[12px] text-[#6B7280]">Размеры</p>
+          <select
+            class="mt-1 h-9 w-full rounded-[6px] border border-[#E5E7EB] px-3 text-[13px]"
+          >
+            <option>445×520×702 мм</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Text -->
+    <p class="mt-[101px]">
+      ТОРNADO 800 Вт — один из самых мощных архитектурных светильников на
+      рынке. Используется в проектах премиального уровня, где важны:
+    </p>
+
+    <div class="flex gap-[60px]">
+      <ul class="mt-5 space-y-1.5 text-[13px] text-[#4B5563]">
+        <li>— максимальный световой поток</li>
+        <li>— точная оптика (10°)</li>
+        <li>— высокая энергоэффективность</li>
+      </ul>
+
+      <!-- Actions -->
+      <div
+        class="mt-6 flex flex-col items-center max-w-[202px] w-full gap-[10px]"
+      >
+        <button
+          class="max-w-[202px] w-full h-10 px-5 rounded-[8px] border border-[#D1D5DB] text-[14px] font-medium hover:bg-[#F9FAFB]"
+        >
+          Обсудить проект
+        </button>
+        <button
+          class="max-w-[202px] w-full h-10 rounded-[8px] bg-[#D92D20] text-white text-[14px] font-medium hover:bg-[#b92519]"
+        >
+          Добавить в избранное
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- ===== Tabs ===== -->
+    <section
+      class="max-w-[1160px] mx-auto px-4 lg:px-0 mt-8 md:mt-10 grid grid-cols-1 md:grid-cols-[560px_1fr] gap-10"
+    >
+      <!-- Tabs -->
+      <div>
+        <div class="border-b border-[#E5E7EB] flex gap-8">
+          <button
+            class="tab-btn relative py-3 text-[14px] text-[#111827]"
+            data-tab="desc"
+          >
+            Описание
+            <span
+              class="tab-underline absolute left-0 right-0 -bottom-[1px] h-[2px] bg-[#D92D20]"
+            ></span>
+          </button>
+          <button
+            class="tab-btn relative py-3 text-[14px] text-[#6B7280]"
+            data-tab="reviews"
+          >
+            Отзывы
+          </button>
+          <button
+            class="tab-btn relative py-3 text-[14px] text-[#6B7280]"
+            data-tab="usage"
+          >
+            Применение
+          </button>
+        </div>
+
+        <div id="tabContent" class="pt-4 text-[14px] leading-[22px] text-[#4B5563]">
+          <p>
+            Tornado 4000K S 800 Вт — мощный архитектурный светильник, созданный
+            для задач, где важна направленная акцентная подсветка с экономичным
+            потреблением.
+          </p>
+        </div>
+      </div>
+
+      <!-- Specs -->
+      <aside class="md:pt-[6px]">
+        <div class="rounded-[10px] border border-[#EF3824]">
+          <div class="px-6 py-4 border-b border-[#E4E7EC]">
+            <h3
+              class="text-[18px] leading-6 font-bold uppercase tracking-wide"
+            >
+              Технические характеристики
+            </h3>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2">
+            <ul class="divide-y divide-[#F1F3F5]">
+              <li class="px-6 py-3 text-[13px]">
+                <span class="text-[#6B7280]">Тип ИС: </span>LED
+              </li>
+              <li class="px-6 py-3 text-[13px]">
+                <span class="text-[#6B7280]">Цвет свечения: </span>4000 K
+              </li>
+              <li class="px-6 py-3 text-[13px]">
+                <span class="text-[#6B7280]">Шаг MacAdam: </span>5
+              </li>
+            </ul>
+            <ul class="divide-y divide-[#F1F3F5]">
+              <li class="px-6 py-3 text-[13px]">
+                <span class="text-[#6B7280]">Мощность: </span>800 Вт
+              </li>
+              <li class="px-6 py-3 text-[13px]">
+                <span class="text-[#6B7280]">Степень защиты: </span>IP65
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+      
+      
+    </section>
+    <section class="max-w-[1160px] mx-auto px-4 lg:px-0 mt-14">
+  <h2 class="text-[20px] font-bold uppercase mb-6">Кейсы</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Case 1 -->
+    <div>
+      <img
+        src="../assets/catalog/product/Frame 1141.png"
+        alt="Храм Василия Блаженного"
+        class="rounded-[8px] object-cover w-full h-auto"
+      />
+      <div class="mt-2 flex items-center justify-between">
+        <p class="text-[13px] text-[#6B7280]">Храм Василия Блаженного</p>
+        <button class="text-[13px] text-[#175CD3] hover:underline flex items-center gap-1">
+          Подробнее
+          <span aria-hidden>→</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Case 2 -->
+    <div>
+      <img
+        src="../assets/catalog/product/image.png"
+        alt="Неглинная галерея"
+        class="rounded-[8px] object-cover w-full h-auto"
+      />
+      <div class="mt-2 flex items-center justify-between">
+        <p class="text-[13px] text-[#6B7280]">Неглинная галерея</p>
+        <button class="text-[13px] text-[#175CD3] hover:underline flex items-center gap-1">
+          Подробнее
+          <span aria-hidden>→</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Рекомендуем посмотреть ===== -->
+<section class="max-w-[1160px] mx-auto px-4 lg:px-0 mt-14">
+  <h2 class="text-[20px] font-bold uppercase mb-6">Рекомендуем посмотреть</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+    <!-- Товар 1 -->
+    <div class="border border-[#ECEFF3] rounded-[10px] p-5 flex flex-col items-center">
+      <img
+        src="../assets/catalog/catalogInner/image 184.png"
+        alt="TORNADO"
+        class="object-contain w-[160px] h-[120px]"
+      />
+      <p class="mt-3 text-[13px] text-center text-[#374151]">
+        TORNADO 4000K S 66IP LED
+      </p>
+    </div>
+
+    <!-- Товар 2 -->
+    <div class="border border-[#ECEFF3] rounded-[10px] p-5 flex flex-col items-center">
+      <img
+        src="../assets/catalog/catalogInner/image 184.png"
+        alt="TORNADO"
+        class="object-contain w-[160px] h-[120px]"
+      />
+      <p class="mt-3 text-[13px] text-center text-[#374151]">
+        TORNADO 4000K S 66IP LED
+      </p>
+    </div>
+
+    <!-- Товар 3 -->
+    <div class="border border-[#ECEFF3] rounded-[10px] p-5 flex flex-col items-center">
+      <img
+        src="../assets/catalog/catalogInner/image 184.png"
+        alt="TORNADO"
+        class="object-contain w-[160px] h-[120px]"
+      />
+      <p class="mt-3 text-[13px] text-center text-[#374151]">
+        TORNADO 4000K S 66IP LED
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Мы можем + форма ===== -->
+<section class="max-w-[1160px] mx-auto px-4 lg:px-0 mt-16 mb-20 grid grid-cols-1 md:grid-cols-2 gap-10">
+  <!-- left list -->
+  <div>
+    <h2 class="text-[20px] font-bold uppercase mb-6">Мы можем</h2>
+    <ul class="space-y-4">
+      <li class="flex gap-3 items-start">
+        <span class="min-w-[24px] text-[#D92D20] font-bold">01</span>
+        <span class="text-[14px] leading-[22px] text-[#374151]">Сделать красивое ландшафтное освещение</span>
+      </li>
+      <li class="flex gap-3 items-start">
+        <span class="min-w-[24px] text-[#D92D20] font-bold">02</span>
+        <span class="text-[14px] leading-[22px] text-[#374151]">Грамотно осветить автомобильные дороги различного класса</span>
+      </li>
+      <li class="flex gap-3 items-start">
+        <span class="min-w-[24px] text-[#D92D20] font-bold">03</span>
+        <span class="text-[14px] leading-[22px] text-[#374151]">Сделать проект АХП (архитектурно-художественную подсветку), поставку и монтаж</span>
+      </li>
+      <li class="flex gap-3 items-start">
+        <span class="min-w-[24px] text-[#D92D20] font-bold">04</span>
+        <span class="text-[14px] leading-[22px] text-[#374151]">Изготовить металлоконструкции и конструкции</span>
+      </li>
+      <li class="flex gap-3 items-start">
+        <span class="min-w-[24px] text-[#D92D20] font-bold">05</span>
+        <span class="text-[14px] leading-[22px] text-[#374151]">Сделать торшеры в историческом стиле с помощью художественного литья</span>
+      </li>
+      <li class="flex gap-3 items-start">
+        <span class="min-w-[24px] text-[#D92D20] font-bold">06</span>
+        <span class="text-[14px] leading-[22px] text-[#374151]">Сделать светильники для интерьера</span>
+      </li>
+      <li class="flex gap-3 items-start">
+        <span class="min-w-[24px] text-[#D92D20] font-bold">07</span>
+        <span class="text-[14px] leading-[22px] text-[#374151]">Материалы для электромонтажа</span>
+      </li>
+      <li class="flex gap-3 items-start">
+        <span class="min-w-[24px] text-[#D92D20] font-bold">08</span>
+        <span class="text-[14px] leading-[22px] text-[#374151]">Реализовать нестандартный проект</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- right form -->
+  <div class="rounded-[10px] bg-[#141416] text-white p-8">
+    <h3 class="text-[18px] font-bold uppercase tracking-wide text-[#FF4B3A]">
+      Сопровождаем на всех этапах проекта
+    </h3>
+
+    <form class="mt-5 space-y-3">
+      <input
+        type="text"
+        placeholder="Имя"
+        class="w-full h-11 px-3 rounded-[8px] bg-[#1E1F23] border border-[#2B2C31] text-[14px] placeholder:text-[#6B7280] focus:outline-none"
+      />
+      <input
+        type="tel"
+        placeholder="Телефон"
+        class="w-full h-11 px-3 rounded-[8px] bg-[#1E1F23] border border-[#2B2C31] text-[14px] placeholder:text-[#6B7280] focus:outline-none"
+      />
+      <input
+        type="email"
+        placeholder="Email"
+        class="w-full h-11 px-3 rounded-[8px] bg-[#1E1F23] border border-[#2B2C31] text-[14px] placeholder:text-[#6B7280] focus:outline-none"
+      />
+      <textarea
+        placeholder="Текст обращения"
+        class="w-full h-[110px] px-3 py-2 rounded-[8px] bg-[#1E1F23] border border-[#2B2C31] text-[14px] placeholder:text-[#6B7280] focus:outline-none resize-none"
+      ></textarea>
+      <button
+        type="submit"
+        class="w-full h-11 rounded-[8px] bg-[#D92D20] text-white font-semibold hover:bg-[#b92519] transition"
+      >
+        Отправить заявку
+      </button>
+    </form>
+  </div>
+</section>
+
+    <!-- ===== JavaScript ===== -->
+    <script>
+      // Power buttons
+      const powerBtns = document.querySelectorAll(".power-btn");
+      const powerTitle = document.getElementById("powerTitle");
+      const thumbs = document.querySelectorAll(".thumb");
+        const mainImage = document.getElementById("main-image");
+
+        thumbs.forEach((thumb) => {
+        thumb.addEventListener("click", () => {
+            const img = thumb.getAttribute("data-img");
+
+            // убрать выделение у всех
+            thumbs.forEach((t) => {
+            t.classList.remove("border-[#D92D20]");
+            t.classList.add("border-[#E5E7EB]");
+            });
+
+            // выделить текущую
+            thumb.classList.remove("border-[#E5E7EB]");
+            thumb.classList.add("border-[#D92D20]");
+
+            // плавное исчезновение → смена фото → появление
+            mainImage.classList.add("opacity-0");
+            setTimeout(() => {
+            mainImage.src = img;
+            mainImage.classList.remove("opacity-0");
+            }, 300); // задержка меньше чем duration-500, чтобы выглядело плавно
+        });
+        });
+      powerBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          powerBtns.forEach((b) =>
+            b.classList.remove(
+              "border-[#D92D20]",
+              "text-[#D92D20]",
+              "bg-[#FFF5F4]"
+            )
+          );
+          btn.classList.add(
+            "border-[#D92D20]",
+            "text-[#D92D20]",
+            "bg-[#FFF5F4]"
+          );
+          powerTitle.textContent = `4000K S ${btn.dataset.power} ВТ`;
+        });
+      });
+
+      // Tabs
+      const tabs = document.querySelectorAll(".tab-btn");
+      const tabContent = document.getElementById("tabContent");
+
+      const contents = {
+        desc: `
+          <p>
+            Tornado 4000K S 800 Вт — мощный архитектурный светильник,
+            созданный для задач, где важна направленная акцентная подсветка
+            с экономичным потреблением.
+          </p>`,
+        reviews: `<p>Пока нет отзывов. Будьте первым, кто оставит отзыв.</p>`,
+        usage: `<p>Используется для подсветки фасадов, колонн, арок и акцентной подсветки с большой высоты (до 40 м).</p>`,
+      };
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          tabs.forEach((t) => {
+            t.classList.remove("text-[#111827]");
+            t.classList.add("text-[#6B7280]");
+            const underline = t.querySelector(".tab-underline");
+            if (underline) underline.remove();
+          });
+
+          tab.classList.remove("text-[#6B7280]");
+          tab.classList.add("text-[#111827]");
+
+          const underline = document.createElement("span");
+          underline.className =
+            "tab-underline absolute left-0 right-0 -bottom-[1px] h-[2px] bg-[#D92D20]";
+          tab.appendChild(underline);
+
+          const tabId = tab.dataset.tab;
+          tabContent.innerHTML = contents[tabId];
+        });
+      });
+    </script>
+  </body>
+</html>
