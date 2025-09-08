@@ -38,6 +38,23 @@
   
 }
 
+/* ==== FIX для Firefox ==== */
+@-moz-document url-prefix() {
+  /* Видео всегда растягивается корректно */
+  video {
+    object-fit: cover !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  /* Исправляем баг с vh в Firefox */
+  .firefox-fix {
+    min-height: -moz-available; /* Firefox */
+    min-height: -webkit-fill-available; /* Safari */
+    min-height: fill-available; /* Chrome */
+  }
+}
+
 
     </style>
   </head>
@@ -227,7 +244,7 @@
 
     </header>
     <div
-      class="relative hidden xl:block w-full max-w-dvw max-h-dvh min-[390px]:h-[736px] xl:h-[757px] min-[1919px]:h-[1058px] overflow-hidden"
+      class="relative hidden xl:block firefox-fix w-full max-w-dvw min-[390px]:h-[736px] xl:h-[793px] 2xl:h-[1000px] overflow-hidden"
     >
       <!-- Фоновое видео -->
       <video
