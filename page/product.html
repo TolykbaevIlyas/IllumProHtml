@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Серия TORNADO</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
   </head>
   <body class="bg-white text-[#1C1C1C]">
     <!-- ===== Header ===== -->
@@ -119,7 +127,7 @@
                 />
               </svg>
 
-              <p>+7 (499) 551-51-85</p>
+              <p class="hover:text-[#EF3824] duration-300 cursor-pointer">+7 (499) 551-51-85</p>
             </span>
 
             <div class="flex gap-[35px] items-center">
@@ -142,19 +150,19 @@
               </svg>
 
               <div class="flex gap-[5px] text-[18px] font-medium items-center">
-                <button>EN</button>
+                <button class="hover:text-[#EF3824] duration-300 cursor-pointer">EN</button>
                 <div class="bg-[#2E2C30] w-[1px] h-[22px]"></div>
-                <button class="text-[#EF3824]">RU</button>
+                <button class="text-[#EF3824] cursor-pointer hover:text-[#EF3824] duration-300">RU</button>
               </div>
             </div>
           </div>
         </div>
 
         <ul class="flex gap-[26px] text-[14px] font-medium">
-          <li><a href="#">О НАС</a></li>
-          <li><a href="#">ПОДДЕРЖКА</a></li>
-          <li><a href="#">ПОРТФОЛИОПОРТФОЛИО</a></li>
-          <li><a href="#">КОНТАКТЫ</a></li>
+          <li class="hover:text-[#EF3824] duration-300"><a href="#">О НАС</a></li>
+          <li class="hover:text-[#EF3824] duration-300"><a href="#">ПОДДЕРЖКА</a></li>
+          <li class="hover:text-[#EF3824] duration-300"><a href="#">ПОРТФОЛИО</a></li>
+          <li class="hover:text-[#EF3824] duration-300"><a href="#">КОНТАКТЫ</a></li>
         </ul>
       </div>
 
@@ -171,23 +179,23 @@
       href="#"
       class="bg-[#EF3824] text-white rounded-[8px] py-[8px] px-[16px] text-[14px] font-semibold transition-all duration-300"
     >
-      Подробнее
+      Каталог
     </a>
   </ul>
 
   <ul class="border-t border-[#2E2C30] flex pt-[29px] flex-col gap-4 text-[16px] font-medium">
-    <li><a href="#">ПРОЕКТИРОВЩИКАМ</a></li>
-    <li><a href="#">ДЕВЕЛОПЕРАМ</a></li>
-    <li><a href="#">АРХИТЕКТОРАМ</a></li>
-    <li><a href="#">ДИЗАЙНЕРАМ</a></li>
-    <li><a href="#">МАРКЕТПЛЕЙСЫ</a></li>
+    <li class="hover:text-[#EF3824] duration-300 cursor-pointer"><a href="#">ПРОЕКТИРОВЩИКАМ</a></li>
+    <li class="hover:text-[#EF3824] duration-300 cursor-pointer"><a href="#">ДЕВЕЛОПЕРАМ</a></li>
+    <li class="hover:text-[#EF3824] duration-300 cursor-pointer"><a href="#">АРХИТЕКТОРАМ</a></li>
+    <li class="hover:text-[#EF3824] duration-300 cursor-pointer"><a href="#">ДИЗАЙНЕРАМ</a></li>
+    <li class="hover:text-[#EF3824] duration-300 cursor-pointer"><a href="#">МАРКЕТПЛЕЙСЫ</a></li>
   </ul>
 
   <ul class="border-t border-[#2E2C30] mt-4 pt-[29px] flex flex-col gap-4 text-[16px] font-medium">
-    <li><a href="#">О НАС</a></li>
-    <li><a href="#">ПОДДЕРЖКА</a></li>
-    <li><a href="#">ПОРТФОЛИО</a></li>
-    <li><a href="#">КОНТАКТЫ</a></li>
+    <li class="hover:text-[#EF3824] duration-300 cursor-pointer"><a href="#">О НАС</a></li>
+    <li class="hover:text-[#EF3824] duration-300 cursor-pointer"><a href="#">ПОДДЕРЖКА</a></li>
+    <li class="hover:text-[#EF3824] duration-300 cursor-pointer"><a href="#">ПОРТФОЛИО</a></li>
+    <li class="hover:text-[#EF3824] duration-300 cursor-pointer"><a href="#">КОНТАКТЫ</a></li>
   </ul>
 </nav>
 
@@ -198,47 +206,95 @@
   class="max-w-[1160px] mx-auto px-4 lg:px-0 mt-6 grid grid-cols-1 md:grid-cols-[560px_1fr] gap-10"
 >
   <!-- Left: Image -->
-  <div>
-    <div
-  class="relative w-full bg-[#F6F7F8] rounded-[8px] border border-[#ECEFF3] flex items-center justify-center"
->
-  <img
-    id="main-image"
-    src="../assets/catalog/catalogInner/image 184.png"
-    alt="TORNADO"
-    class="h-[420px] w-auto object-contain transition-opacity duration-500 ease-in-out opacity-100"
-  />
-</div>
+<div>
+  <!-- Главное изображение -->
+  <div
+    class="relative w-full bg-[#F6F7F8] rounded-[8px] border border-[#ECEFF3] flex items-center justify-center"
+  >
+    <a
+      data-fancybox="gallery"
+      href="../assets/catalog/catalogInner/image 184.png"
+    >
+      <img
+        id="main-image"
+        src="../assets/catalog/catalogInner/image 184.png"
+        alt="TORNADO"
+        class="h-[420px] w-auto object-contain transition-opacity duration-500 ease-in-out opacity-100 cursor-zoom-in"
+      />
+    </a>
+  </div>
 
-    <!-- Thumbnails -->
-    <div class="mt-4 grid grid-cols-4 gap-3">
-      <div
-        class="thumb h-[64px] rounded-[8px] border border-[#D92D20] bg-white flex items-center justify-center cursor-pointer"
-        data-img="../assets/catalog/catalogInner/image 184.png"
-      >
-        <img src="../assets/catalog/catalogInner/image 184.png" class="w-[44px] h-[44px] object-contain rounded" />
-      </div>
-      <div
-        class="thumb h-[64px] rounded-[8px] border border-[#E5E7EB] bg-white flex items-center justify-center cursor-pointer"
-        data-img="../assets/catalog/catalogInner/image 184.png"
-      >
-        <img src="../assets/catalog/catalogInner/image 184.png" class="w-[44px] h-[44px] object-contain rounded" />
-      </div>
-      <div
-        class="thumb h-[64px] rounded-[8px] border border-[#E5E7EB] bg-white flex items-center justify-center cursor-pointer"
-        data-img="../assets/catalog/catalogInner/image 184.png"
-      >
-        <img src="../assets/catalog/catalogInner/image 184.png" class="w-[44px] h-[44px] object-contain rounded" />
-      </div>
-      <div
-        class="thumb h-[64px] rounded-[8px] border border-[#E5E7EB] bg-white flex items-center justify-center cursor-pointer"
-        data-img="../assets/catalog/catalogInner/image 184.png"
-      >
-        <img src="../assets/catalog/catalogInner/image 184.png" class="w-[44px] h-[44px] object-contain rounded" />
-      </div>
+  <!-- Превью (если <= 4 картинки) -->
+  <div class="mt-4 grid grid-cols-4 gap-3 no-swiper">
+    <div
+      class="thumb h-[64px] rounded-[8px] border border-[#D92D20] bg-white flex items-center justify-center cursor-pointer"
+      data-img="../assets/catalog/catalogInner/image 184.png"
+    >
+      <img src="../assets/catalog/catalogInner/image 184.png" class="w-[44px] h-[44px] object-contain rounded" />
+    </div>
+    <div
+      class="thumb h-[64px] rounded-[8px] border border-[#E5E7EB] bg-white flex items-center justify-center cursor-pointer"
+      data-img="../assets/catalog/catalogInner/image 185.png"
+    >
+      <img src="../assets/catalog/catalogInner/image 185.png" class="w-[44px] h-[44px] object-contain rounded" />
+    </div>
+    <div
+      class="thumb h-[64px] rounded-[8px] border border-[#E5E7EB] bg-white flex items-center justify-center cursor-pointer"
+      data-img="../assets/catalog/catalogInner/image 186.png"
+    >
+      <img src="../assets/catalog/catalogInner/image 186.png" class="w-[44px] h-[44px] object-contain rounded" />
+    </div>
+    <div
+      class="thumb h-[64px] rounded-[8px] border border-[#E5E7EB] bg-white flex items-center justify-center cursor-pointer"
+      data-img="../assets/catalog/catalogInner/image 184.png"
+    >
+      <img src="../assets/catalog/catalogInner/image 184.png" class="w-[44px] h-[44px] object-contain rounded" />
     </div>
   </div>
 
+  <!-- Превью (слайдер, если > 4 картинки) -->
+  <div class="mt-4 swiper mySwiper hidden">
+    <div class="swiper-wrapper">
+      <!-- Каждое превью внутри swiper-slide -->
+      <div class="swiper-slide">
+        <div
+          class="thumb h-[64px] rounded-[8px] border border-[#D92D20] bg-white flex items-center justify-center cursor-pointer"
+          data-img="../assets/catalog/catalogInner/image 184.png"
+        >
+          <img src="../assets/catalog/catalogInner/image 184.png" class="w-[44px] h-[44px] object-contain rounded" />
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div
+          class="thumb h-[64px] rounded-[8px] border border-[#D92D20] bg-white flex items-center justify-center cursor-pointer"
+          data-img="../assets/catalog/catalogInner/image 185.png"
+        >
+          <img src="../assets/catalog/catalogInner/image 185.png" class="w-[44px] h-[44px] object-contain rounded" />
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div
+          class="thumb h-[64px] rounded-[8px] border border-[#D92D20] bg-white flex items-center justify-center cursor-pointer"
+          data-img="../assets/catalog/catalogInner/image 186.png"
+        >
+          <img src="../assets/catalog/catalogInner/image 186.png" class="w-[44px] h-[44px] object-contain rounded" />
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div
+          class="thumb h-[64px] rounded-[8px] border border-[#D92D20] bg-white flex items-center justify-center cursor-pointer"
+          data-img="../assets/catalog/catalogInner/image 184.png"
+        >
+          <img src="../assets/catalog/catalogInner/image 184.png" class="w-[44px] h-[44px] object-contain rounded" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Стрелки -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>
   <!-- Right: Controls -->
   <div class="pt-1">
     <div class="flex items-center justify-between">
@@ -453,41 +509,72 @@
 <section class="max-w-[1160px] mx-auto px-4 lg:px-0 mt-14">
   <h2 class="text-[20px] font-bold uppercase mb-6">Рекомендуем посмотреть</h2>
   <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-    <!-- Товар 1 -->
-    <div class="border border-[#ECEFF3] rounded-[10px] p-5 flex flex-col items-center">
+    
+    <!-- Товар -->
+    <div class="relative group border border-[#ECEFF3] rounded-[10px] p-5 flex flex-col items-center overflow-hidden">
+      <!-- Контент -->
       <img
         src="../assets/catalog/catalogInner/image 184.png"
         alt="TORNADO"
-        class="object-contain w-[160px] h-[120px]"
+        class="object-contain w-[160px] h-[120px] relative z-10"
       />
-      <p class="mt-3 text-[13px] text-center text-[#374151]">
+      <p class="mt-3 text-[13px] text-center text-[#374151] relative z-10">
         TORNADO 4000K S 66IP LED
       </p>
+
+      <!-- Оверлей для затемнения -->
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0"></div>
+
+      <!-- Кнопка -->
+      <button
+        class="absolute bottom-5 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 bg-[#D92D20] text-white text-[14px] px-4 py-2 rounded-[6px] z-20"
+      >
+        Подробнее
+      </button>
+    </div>
+    <div class="relative group border border-[#ECEFF3] rounded-[10px] p-5 flex flex-col items-center overflow-hidden">
+      <!-- Контент -->
+      <img
+        src="../assets/catalog/catalogInner/image 184.png"
+        alt="TORNADO"
+        class="object-contain w-[160px] h-[120px] relative z-10"
+      />
+      <p class="mt-3 text-[13px] text-center text-[#374151] relative z-10">
+        TORNADO 4000K S 66IP LED
+      </p>
+
+      <!-- Оверлей для затемнения -->
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0"></div>
+
+      <!-- Кнопка -->
+      <button
+        class="absolute bottom-5 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 bg-[#D92D20] text-white text-[14px] px-4 py-2 rounded-[6px] z-20"
+      >
+        Подробнее
+      </button>
+    </div>
+    <div class="relative group border border-[#ECEFF3] rounded-[10px] p-5 flex flex-col items-center overflow-hidden">
+      <!-- Контент -->
+      <img
+        src="../assets/catalog/catalogInner/image 184.png"
+        alt="TORNADO"
+        class="object-contain w-[160px] h-[120px] relative z-10"
+      />
+      <p class="mt-3 text-[13px] text-center text-[#374151] relative z-10">
+        TORNADO 4000K S 66IP LED
+      </p>
+
+      <!-- Оверлей для затемнения -->
+      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0"></div>
+
+      <!-- Кнопка -->
+      <button
+        class="absolute bottom-5 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 bg-[#D92D20] text-white text-[14px] px-4 py-2 rounded-[6px] z-20"
+      >
+        Подробнее
+      </button>
     </div>
 
-    <!-- Товар 2 -->
-    <div class="border border-[#ECEFF3] rounded-[10px] p-5 flex flex-col items-center">
-      <img
-        src="../assets/catalog/catalogInner/image 184.png"
-        alt="TORNADO"
-        class="object-contain w-[160px] h-[120px]"
-      />
-      <p class="mt-3 text-[13px] text-center text-[#374151]">
-        TORNADO 4000K S 66IP LED
-      </p>
-    </div>
-
-    <!-- Товар 3 -->
-    <div class="border border-[#ECEFF3] rounded-[10px] p-5 flex flex-col items-center">
-      <img
-        src="../assets/catalog/catalogInner/image 184.png"
-        alt="TORNADO"
-        class="object-contain w-[160px] h-[120px]"
-      />
-      <p class="mt-3 text-[13px] text-center text-[#374151]">
-        TORNADO 4000K S 66IP LED
-      </p>
-    </div>
   </div>
 </section>
 
@@ -763,7 +850,9 @@
     </footer>
 
     <!-- ===== JavaScript ===== -->
-    <script>
+         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <!-- <script>
       // Power buttons
       const powerBtns = document.querySelectorAll(".power-btn");
       const powerTitle = document.getElementById("powerTitle");
@@ -846,7 +935,7 @@
           tabContent.innerHTML = contents[tabId];
         });
       });
-    </script>
+    </script> -->
     <script>
       const burgerBtn = document.getElementById("burgerBtn");
       const mobileMenu = document.getElementById("mobileMenu");
@@ -860,5 +949,40 @@
         window.scrollTo({ top: 0, behavior: "smooth" });
       });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+<script>
+  const thumbs = document.querySelectorAll(".thumb");
+  const mainImage = document.getElementById("main-image");
+
+  // Клик по превью → меняем главное изображение
+  thumbs.forEach((thumb) => {
+    thumb.addEventListener("click", () => {
+      const imgSrc = thumb.getAttribute("data-img");
+      mainImage.src = imgSrc;
+      mainImage.parentElement.setAttribute("href", imgSrc);
+
+      thumbs.forEach((t) => t.classList.remove("border-[#D92D20]"));
+      thumb.classList.add("border-[#D92D20]");
+    });
+  });
+
+  // Проверяем количество картинок → если > 4, включаем swiper
+  const thumbCount = thumbs.length;
+  if (thumbCount > 4) {
+    document.querySelector(".no-swiper").classList.add("hidden");
+    document.querySelector(".mySwiper").classList.remove("hidden");
+
+    new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  }
+</script>
   </body>
 </html>
