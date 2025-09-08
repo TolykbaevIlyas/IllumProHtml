@@ -13,6 +13,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+
     <title>illumpro</title>
     <!-- Подключаем Tailwind через CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -637,61 +639,88 @@
      
 
 
-      <!-- Десктоп (слайдер) -->
+      
 <div class="hidden lg:block max-w-[897px] 2xl:max-w-[1129px] relative">
  <div class="swiper swiper-desktop">
       <div class="swiper-wrapper relative">
         <!-- Слайд 1 (весь набор картинок в три колонки) -->
-        <div class="swiper-slide !w-auto">
-          <div class="flex gap-[14px]">
-            <!-- Левая колонка -->
-            <div class="flex flex-col items-end justify-end gap-[14px]">
-              <img src="../assets/slide1.jpg" alt=""
-                class="rounded-xl object-cover 2xl:w-[296px] 2xl:h-[245px] w-[235px] h-[194px]" />
-              <img src="../assets/slide2.jpg" alt=""
-                class="rounded-xl object-cover 2xl:w-[430px] 2xl:h-[245px] w-[341px] h-[194px]" />
-            </div>
+      <div class="swiper-slide !w-auto">
+  <div class="flex gap-[14px]">
+    <!-- Левая колонка -->
+    <div class="flex flex-col items-end justify-end gap-[14px]">
+      <a href="../assets/slide1.jpg" data-fancybox="ipro-gallery" data-caption="IPRO — slide 1">
+        <img src="../assets/slide1.jpg" alt="slide1"
+          class="rounded-xl object-cover 2xl:w-[296px] 2xl:h-[245px] w-[235px] h-[194px]" />
+      </a>
 
-            <!-- Центральная колонка -->
-            <div>
-              <img src="../assets/slide3.jpg" alt=""
-                class="rounded-xl object-cover 2xl:w-[294px] 2xl:h-[500px] w-[233px] h-[397px]" />
-            </div>
+      <a href="../assets/slide2.jpg" data-fancybox="ipro-gallery" data-caption="IPRO — slide 2">
+        <img src="../assets/slide2.jpg" alt="slide2"
+          class="rounded-xl object-cover 2xl:w-[430px] 2xl:h-[245px] w-[341px] h-[194px]" />
+      </a>
+    </div>
 
-            <!-- Правая колонка -->
-            <div class="flex flex-col gap-[14px]">
-              <img src="../assets/slide4.jpg" alt=""
-                class="rounded-xl object-cover 2xl:w-[376px] 2xl:h-[245px] w-[298px] h-[194px]" />
-              <img src="../assets/slide5.jpg" alt=""
-                class="rounded-xl object-cover 2xl:w-[296px] 2xl:h-[245px] w-[235px] h-[194px]" />
-            </div>
-          </div>
-        </div>
+    <!-- Центральная колонка -->
+    <div>
+      <a href="../assets/slide3.jpg" data-fancybox="ipro-gallery" data-caption="IPRO — slide 3">
+        <img src="../assets/slide3.jpg" alt="slide3"
+          class="rounded-xl object-cover 2xl:w-[294px] 2xl:h-[500px] w-[233px] h-[397px]" />
+      </a>
+    </div>
 
-        <!-- Слайд 2 (пример: можно добавлять другие наборы/варианты, пока — дублирую, замени при необходимости) -->
-        <div class="swiper-slide !w-auto">
-          <div class="flex gap-[14px]">
-            <!-- Здесь можно выводить другой набор картинок (или тот же) -->
-            <div class="flex flex-col items-end justify-end gap-[14px]">
-              <img src="../assets/slide4.jpg" alt=""
-                class="rounded-xl object-cover 2xl:w-[296px] 2xl:h-[245px] w-[235px] h-[194px]" />
-              <img src="../assets/slide5.jpg" alt=""
-                class="rounded-xl object-cover 2xl:w-[430px] 2xl:h-[245px] w-[341px] h-[194px]" />
-            </div>
+    <!-- Правая колонка -->
+    <div class="flex flex-col gap-[14px]">
+      <a href="../assets/slide4.jpg" data-fancybox="ipro-gallery">
+        <img src="../assets/slide4.jpg" alt="slide4"
+          class="rounded-xl object-cover 2xl:w-[376px] 2xl:h-[245px] w-[298px] h-[194px]" />
+      </a>
 
-            <div>
-              <img src="../assets/slide1.jpg" alt=""
-                class="rounded-xl object-cover 2xl:w-[294px] 2xl:h-[500px] w-[233px] h-[397px]" />
-            </div>
+      <a href="../assets/slide5.jpg" data-fancybox="ipro-gallery">
+        <img src="../assets/slide5.jpg" alt="slide5"
+          class="rounded-xl object-cover 2xl:w-[296px] 2xl:h-[245px] w-[235px] h-[194px]" />
+      </a>
+    </div>
+  </div>
+</div>
 
-            <div class="flex flex-col gap-[14px]">
-              <img src="../assets/slide2.jpg" alt=""
-                class="rounded-xl object-cover 2xl:w-[376px] 2xl:h-[245px] w-[298px] h-[194px]" />
-              <img src="../assets/slide3.jpg" alt=""
-                class="rounded-xl object-cover 2xl:w-[296px] 2xl:h-[245px] w-[235px] h-[194px]" />
-            </div>
-          </div>
-        </div>
+
+    
+          <div class="swiper-slide !w-auto">
+  <div class="flex gap-[14px]">
+    <!-- Левая колонка -->
+    <div class="flex flex-col items-end justify-end gap-[14px]">
+      <a href="../assets/slide1.jpg" data-fancybox="ipro-gallery" data-caption="IPRO — slide 1">
+        <img src="../assets/slide1.jpg" alt="slide1"
+          class="rounded-xl object-cover 2xl:w-[296px] 2xl:h-[245px] w-[235px] h-[194px]" />
+      </a>
+
+      <a href="../assets/slide2.jpg" data-fancybox="ipro-gallery" data-caption="IPRO — slide 2">
+        <img src="../assets/slide2.jpg" alt="slide2"
+          class="rounded-xl object-cover 2xl:w-[430px] 2xl:h-[245px] w-[341px] h-[194px]" />
+      </a>
+    </div>
+
+    <!-- Центральная колонка -->
+    <div>
+      <a href="../assets/slide3.jpg" data-fancybox="ipro-gallery" data-caption="IPRO — slide 3">
+        <img src="../assets/slide3.jpg" alt="slide3"
+          class="rounded-xl object-cover 2xl:w-[294px] 2xl:h-[500px] w-[233px] h-[397px]" />
+      </a>
+    </div>
+
+    <!-- Правая колонка -->
+    <div class="flex flex-col gap-[14px]">
+      <a href="../assets/slide4.jpg" data-fancybox="ipro-gallery">
+        <img src="../assets/slide4.jpg" alt="slide4"
+          class="rounded-xl object-cover 2xl:w-[376px] 2xl:h-[245px] w-[298px] h-[194px]" />
+      </a>
+
+      <a href="../assets/slide5.jpg" data-fancybox="ipro-gallery">
+        <img src="../assets/slide5.jpg" alt="slide5"
+          class="rounded-xl object-cover 2xl:w-[296px] 2xl:h-[245px] w-[235px] h-[194px]" />
+      </a>
+    </div>
+  </div>
+</div>
        
       </div>
     </div>
@@ -714,42 +743,72 @@
       <div class="lg:hidden flex w-full mx-auto mt-[135px] relative">
         <div class="swiper swiper-main w-[342px] md:w-full h-[232px] md:px-[24px] md:h-[400px] mx-auto relative">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                src="../assets/slide1.jpg"
-                alt=""
-                class="rounded-xl object-cover w-full h-full"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="../assets/slide2.jpg"
-                alt=""
-                class="rounded-xl object-cover w-full h-full"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="../assets/slide3.jpg"
-                alt=""
-                class="rounded-xl object-cover w-full h-full"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="../assets/slide4.jpg"
-                alt=""
-                class="rounded-xl object-cover w-full h-full"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="../assets/slide5.jpg"
-                alt=""
-                class="rounded-xl object-cover w-full h-full"
-              />
-            </div>
-          </div>
+    <div class="swiper-slide">
+      <a
+        href="../assets/slide1.jpg"
+        data-fancybox="gallery"
+        class="block w-full h-full"
+      >
+        <img
+          src="../assets/slide1.jpg"
+          alt="Слайд 1"
+          class="rounded-xl object-cover w-full h-full"
+        />
+      </a>
+    </div>
+    <div class="swiper-slide">
+      <a
+        href="../assets/slide2.jpg"
+        data-fancybox="gallery"
+        class="block w-full h-full"
+      >
+        <img
+          src="../assets/slide2.jpg"
+          alt="Слайд 2"
+          class="rounded-xl object-cover w-full h-full"
+        />
+      </a>
+    </div>
+    <div class="swiper-slide">
+      <a
+        href="../assets/slide3.jpg"
+        data-fancybox="gallery"
+        class="block w-full h-full"
+      >
+        <img
+          src="../assets/slide3.jpg"
+          alt="Слайд 3"
+          class="rounded-xl object-cover w-full h-full"
+        />
+      </a>
+    </div>
+    <div class="swiper-slide">
+      <a
+        href="../assets/slide4.jpg"
+        data-fancybox="gallery"
+        class="block w-full h-full"
+      >
+        <img
+          src="../assets/slide4.jpg"
+          alt="Слайд 4"
+          class="rounded-xl object-cover w-full h-full"
+        />
+      </a>
+    </div>
+    <div class="swiper-slide">
+      <a
+        href="../assets/slide5.jpg"
+        data-fancybox="gallery"
+        class="block w-full h-full"
+      >
+        <img
+          src="../assets/slide5.jpg"
+          alt="Слайд 5"
+          class="rounded-xl object-cover w-full h-full"
+        />
+      </a>
+    </div>
+  </div>
           <!-- Пагинация -->
         </div>
         <div class="swiper-pagination"></div>
@@ -1829,5 +1888,18 @@
     });
       });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // bind всех ссылок с data-fancybox="ipro-gallery"
+    Fancybox.bind('[data-fancybox="ipro-gallery"]', {
+      Thumbs: false,
+      Toolbar: {
+        display: ["zoom", "close"]
+      },
+      dragToClose: false
+    });
+  });
+</script>
   </body>
 </html>
