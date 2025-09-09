@@ -51,6 +51,13 @@
   }
 }
 
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE и Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari, Opera */
+}
 
 
 /* ==== FIX для Firefox ==== */
@@ -259,7 +266,7 @@
 
     </header>
     <div
-      class="relative hidden xl:block firefox-fix w-full max-w-dvw min-[390px]:h-[736px] xl:h-[793px] 2xl:h-[1000px] overflow-hidden"
+      class="relative hidden xl:block firefox-fix w-full max-w-dvw min-[390px]:h-[736px] xl:h-[793px]  overflow-hidden"
     >
       <!-- Фоновое видео -->
       <video
@@ -1472,7 +1479,18 @@
       </div>
       <div class="flex flex-col mx-auto">
     <div class="relative max-w-[1206px] 2xl:max-w-[1600px] w-full mx-auto overflow-hidden">
-  <ul class="flex items-center gap-[30px] 2xl:gap-[50px] animate-scroll">
+        <!-- mobile -->
+  <ul class="flex items-center gap-[30px] 2xl:gap-[50px] overflow-x-auto xl:overflow-hidden scrollbar-hide md:hidden">
+    <li class="flex-shrink-0"><img src="../assets/huSVG.png" class="h-auto max-h-[50px] 2xl:max-h-[60px]" /></li>
+    <li class="flex-shrink-0"><img src="../assets/9 → SVG.png" class="h-auto max-h-[50px] 2xl:max-h-[60px]" /></li>
+    <li class="flex-shrink-0"><img src="../assets/skSVG.png" class="h-auto max-h-[50px] 2xl:max-h-[60px]" /></li>
+    <li class="flex-shrink-0"><img src="../assets/1SVG.png" class="h-auto max-h-[50px] 2xl:max-h-[60px]" /></li>
+    <li class="flex-shrink-0"><img src="../assets/laSVG.png" class="h-auto max-h-[50px] 2xl:max-h-[60px]" /></li>
+    <li class="flex-shrink-0"><img src="../assets/tbankSVG.png" class="h-auto max-h-[50px] 2xl:max-h-[60px]" /></li>
+    <li class="flex-shrink-0"><img src="../assets/2SVG.png" class="h-auto max-h-[50px] 2xl:max-h-[60px]" /></li>
+    <li class="flex-shrink-0"><img src="../assets/WkSVG.png" class="h-auto max-h-[50px] 2xl:max-h-[60px]" /></li>
+  </ul>
+  <ul class="hidden items-center gap-[30px] 2xl:gap-[50px] animate-scroll  md:flex">
     <!-- Первый список -->
     <li class="flex-shrink-0"><img src="../assets/huSVG.png" class="h-auto max-h-[50px] 2xl:max-h-[60px]" /></li>
     <li class="flex-shrink-0"><img src="../assets/9 → SVG.png" class="h-auto max-h-[50px] 2xl:max-h-[60px]" /></li>
