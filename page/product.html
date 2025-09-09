@@ -202,11 +202,34 @@
     </header>
 
     <!-- ===== Hero Section ===== -->
+     <section class="max-w-[1160px] mx-auto">
+        <div class="flex gap-[9px] items-center text-[#A9A9A9] mt-[51px]">
+        <a href="main.html">Главная</a>
+        <svg width="7" height="6" viewBox="0 0 7 6" fill="none">
+          <path d="M0.919922 3H6.41992M6.41992 3L4.1258 1M6.41992 3L4.1258 5" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="max-w-[43px] w-full h-[27px] items-center text-center bg-[#F8F8F8] text-[14px] font-[700] leading-[150%] flex justify-center">...</div>
+        <svg width="7" height="6" viewBox="0 0 7 6" fill="none">
+          <path d="M0.919922 3H6.41992M6.41992 3L4.1258 1M6.41992 3L4.1258 5" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <p>TORNADO</p>
+      </div>
+      <div class="flex mt-[36px] justify-between">
+        <div>
+          <h2 class="text-[42px] font-bold uppercase">СЕРИЯ TORNADO: 4000К S 800 Вт </h2>
+          <p class="max-w-[725px] w-full text-[20px] font-bold uppercase">узконаправленный светильник для подсветки фасадов и акцентов с высоты до 40 м</p>
+        </div>
+        <div class="flex gap-[17px] items-center cursor-pointer  mb-auto">
+          Скачать каталог (PDF)
+          <img src="../assets/catalog/all/donwload.svg" class="max-w-[17px] w-full h-[21px]" alt="">
+        </div>
+      </div>
+     </section>
     <section
   class="max-w-[1160px] mx-auto px-4 lg:px-0 mt-6 grid grid-cols-1 md:grid-cols-[560px_1fr] gap-10"
 >
   <!-- Left: Image -->
-<div>
+<div class="">
   <!-- Главное изображение -->
   <div
     class="relative w-full bg-[#F6F7F8] rounded-[8px] border border-[#ECEFF3] flex items-center justify-center"
@@ -215,6 +238,20 @@
       data-fancybox="gallery"
       href="../assets/catalog/catalogInner/image 184.png"
     >
+    <div class="absolute top-0 left-0 mt-[35px] bg-[#EF3824] max-w-[183px] w-full h-[36px] text-white text-[10px] flex font-semibold m-auto text-center items-center justify-center">Собственное производство</div>
+    <div class="absolute bottom-0 right-0 mr-[31px] mb-[22px]"> 
+        <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_950_5802)">
+          <path d="M2.45406 15.0256C2.95837 16.2579 3.69146 17.375 4.61149 18.313C5.53151 19.2511 6.62045 19.9918 7.81612 20.4928C9.0118 20.9939 10.2908 21.2454 11.5801 21.2332C12.8694 21.2209 14.1437 20.945 15.3304 20.4213C16.517 19.8976 17.5927 19.1363 18.496 18.1809C19.3993 17.2255 20.1126 16.0947 20.5951 14.853C21.0776 13.6114 21.3198 12.2832 21.308 10.9443C21.2962 9.60539 21.0305 8.28203 20.5262 7.04976C20.0219 5.81748 19.2888 4.70042 18.3688 3.76236C17.4488 2.82429 16.3598 2.0836 15.1641 1.58256C13.9685 1.08152 12.6895 0.829957 11.4002 0.842225C10.1109 0.854492 8.83652 1.13035 7.64989 1.65406C6.46325 2.17776 5.38756 2.93906 4.48425 3.89447C3.58093 4.84988 2.86767 5.9807 2.38519 7.22237C1.90272 8.46403 1.66047 9.79223 1.67229 11.1311C1.6841 12.47 1.94975 13.7934 2.45406 15.0256Z" stroke="#2E2C30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M18.4316 18.2461L26.0464 26.1548" stroke="#2E2C30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_950_5802">
+          <rect width="26" height="27" fill="white" transform="translate(0.859375 -0.000976562)"/>
+          </clipPath>
+          </defs>
+        </svg>
+    </div>
       <img
         id="main-image"
         src="../assets/catalog/catalogInner/image 184.png"
@@ -225,7 +262,7 @@
   </div>
 
   <!-- Превью (если <= 4 картинки) -->
-  <div class="mt-4 grid grid-cols-4 gap-3 no-swiper">
+  <!-- <div class="mt-4 grid grid-cols-4 gap-3 no-swiper">
     <div
       class="thumb h-[64px] rounded-[8px] border border-[#D92D20] bg-white flex items-center justify-center cursor-pointer"
       data-img="../assets/catalog/catalogInner/image 184.png"
@@ -250,7 +287,7 @@
     >
       <img src="../assets/catalog/catalogInner/image 184.png" class="w-[44px] h-[44px] object-contain rounded" />
     </div>
-  </div>
+  </div> -->
 
   <!-- Превью (слайдер, если > 4 картинки) -->
   <div class="mt-4 swiper mySwiper hidden">
@@ -298,14 +335,30 @@
   <!-- Right: Controls -->
   <div class="pt-1">
     <div class="flex items-center justify-between">
-      <p class="text-[13px] text-[#9CA3AF]">Артикул: 3603</p>
+      <div class="flex gap-[10px] cursor-pointer">
+        <p class="text-[13px] text-[#9CA3AF]">Артикул: 3603 </p>
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_950_5505)">
+        <path d="M6.06601 0.950988C5.90972 0.997542 5.70355 1.21369 5.657 1.38661C5.58051 1.68256 5.6969 1.99182 5.94963 2.14811L6.07599 2.22792L10.0365 2.24454L13.9936 2.26117L14.2463 2.38421C14.5489 2.53385 14.7352 2.72672 14.8815 3.03597L14.9879 3.25877L15.0045 8.54605L15.0211 13.8333L15.1009 13.9597C15.1442 14.0295 15.2406 14.126 15.3138 14.1758C15.4268 14.2523 15.4867 14.2656 15.6696 14.2656C15.8525 14.2656 15.9123 14.2523 16.0254 14.1758C16.0985 14.126 16.195 14.0295 16.2382 13.9597L16.318 13.8333V8.49617C16.318 3.61458 16.3147 3.14238 16.2615 2.95949C16.1185 2.43741 15.899 2.05167 15.5532 1.70251C15.3271 1.46974 14.9413 1.21036 14.6786 1.11393C14.1599 0.917734 14.4758 0.931035 10.1495 0.924385C7.68878 0.92106 6.13252 0.931035 6.06601 0.950988Z" fill="#2E2C30"/>
+        <path d="M4.16401 3.65806C3.04337 3.8875 2.21204 4.75209 2.03912 5.8694C2.00919 6.0523 2.00254 7.37245 2.00919 10.9239C2.01917 16.1613 2.00587 15.7623 2.20206 16.2844C2.42153 16.8729 3.06997 17.5214 3.65856 17.7408C4.17066 17.9337 3.93124 17.9237 7.8385 17.9237C11.7458 17.9237 11.5063 17.9337 12.0184 17.7408C12.6104 17.5214 13.2555 16.8763 13.4749 16.2844C13.6711 15.7656 13.6578 16.1414 13.6578 10.7743C13.6578 6.28174 13.6545 5.83615 13.6013 5.65326C13.4583 5.13118 13.2388 4.74544 12.893 4.39628C12.6669 4.16351 12.2811 3.90413 12.0184 3.8077C11.503 3.61483 11.7724 3.6248 7.92164 3.61815C5.09178 3.61483 4.33693 3.62148 4.16401 3.65806ZM11.5529 5.06135C11.8622 5.20766 12.055 5.39388 12.2047 5.69649L12.3277 5.94921V10.7743V15.5993L12.2047 15.8521C12.055 16.1547 11.8622 16.3409 11.5529 16.4872L11.3301 16.5936H7.8385H4.3469L4.1241 16.4872C3.81485 16.3409 3.62198 16.1547 3.47234 15.8521L3.3493 15.5993V10.7776V5.95254L3.45571 5.72974C3.51224 5.6067 3.62198 5.44044 3.69514 5.36063C3.84145 5.20101 4.14406 5.02477 4.35023 4.97489C4.42671 4.95826 5.90648 4.94496 7.90501 4.94829L11.3301 4.95494L11.5529 5.06135Z" fill="#2E2C30"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_950_5505">
+        <rect width="17.0257" height="17.0257" fill="white" transform="translate(0.672852 0.915039)"/>
+        </clipPath>
+        </defs>
+        </svg>
+
+      </div>
+
       <p class="text-[13px] text-[#9CA3AF]">В наличии</p>
     </div>
+    <div class="border border-[#C4C4C4] max-w-[652pc] w-full mt-[28px]"></div>
 
     <!-- Power -->
-    <div class="mt-4 flex flex-col gap-y-4">
+    <div class="mt-4 flex flex-col gap-y-[16px]">
       <div class="flex items-center gap-[127px]">
-        <p class="text-[12px] text-[#6B7280]">Мощность</p>
+        <p class="text-[18px] font-bold text-[#2E2C30] max-w-[156px] w-full">Мощность</p>
         <div class="mt-1 flex gap-2">
           <button
             class="power-btn h-8 px-3 rounded-[6px] border text-[13px] border-[#D92D20] text-[#D92D20] bg-[#FFF5F4]"
@@ -324,7 +377,7 @@
 
       <!-- Voltage -->
       <div class="flex items-center gap-[127px]">
-        <p class="text-[12px] text-[#6B7280]">Напряжение</p>
+        <p class="text-[18px] font-bold text-[#2E2C30] max-w-[156px] w-full">Напряжение</p>
         <span
           class="h-8 px-3 inline-flex items-center rounded-[6px] border border-[#E5E7EB] text-[13px]"
           >230</span
@@ -332,8 +385,8 @@
       </div>
 
       <!-- Flux -->
-      <div class="flex items-center gap-[127px]">
-        <p class="text-[12px] text-[#6B7280]">Световой поток</p>
+      <div class="flex items-center gap-[127px] ">
+        <p class="text-[18px] font-bold text-[#2E2C30] max-w-[156px] w-full">Световой поток</p>
         <span
           class="h-8 px-3 inline-flex items-center rounded-[6px] border border-[#E5E7EB] text-[13px]"
           >94680</span
@@ -341,9 +394,9 @@
       </div>
 
       <!-- Body & Size -->
-      <div class="grid grid-cols-2 gap-3 col-span-2">
+      <div class="grid grid-cols-2 gap-3 col-span-2 mt-[52px]">
         <div>
-          <p class="text-[12px] text-[#6B7280]">Корпус</p>
+          <p class="text-[18px] font-bold text-[#2E2C30]">Корпус</p>
           <select
             class="mt-1 h-9 w-full rounded-[6px] border border-[#E5E7EB] px-3 text-[13px]"
           >
@@ -351,7 +404,7 @@
           </select>
         </div>
         <div>
-          <p class="text-[12px] text-[#6B7280]">Размеры</p>
+          <p class="text-[18px] font-bold text-[#2E2C30] ">Размеры</p>
           <select
             class="mt-1 h-9 w-full rounded-[6px] border border-[#E5E7EB] px-3 text-[13px]"
           >
@@ -362,8 +415,8 @@
     </div>
 
     <!-- Text -->
-    <p class="mt-[101px]">
-      ТОРNADO 800 Вт — один из самых мощных архитектурных светильников на
+    <p class="mt-[101px] text-[20px]">
+      <span class="font-bold">ТОРNADO 800 Вт</span> — один из самых мощных архитектурных светильников на
       рынке. Используется в проектах премиального уровня, где важны:
     </p>
 
@@ -423,12 +476,21 @@
         </div>
 
         <div id="tabContent" class="pt-4 text-[14px] leading-[22px] text-[#4B5563]">
-          <p>
-            Tornado 4000K S 800 Вт — мощный архитектурный светильник, созданный
-            для задач, где важна направленная акцентная подсветка с экономичным
-            потреблением.
+          <p class="text-[20px] text-[#2E2C30] font-regular leading-[120%]">
+            Tornado 4000К S 800 Вт — мощный архитектурный светильник, созданный для задач, где важна направленная акцентная подсветка с экономичным потреблением. При световом потоке 94 680 лм он демонстрирует отличное соотношение «сила света на ватт», обеспечивая яркое, но чётко сфокусированное освещение. 
+Узкая оптика (≈10°) позволяет «рисовать» светом детали фасадов
+и ландшафтных элементов. Корпус из литого алюминия защищён по классу IP66 и выдерживает температуры от –40 до +60 °С. Эта модель подходит для объектов, где нет потребности в максимальной мощности, но важна высокая эффективность и точность света.
           </p>
         </div>
+        <p class="mt-[80px] text-[20px] text-[#2E2C30] leading-[141%] font-regular">
+          Скачать документацию и файлы:
+            <ul class="list-disc ml-[30px]">
+              <li>[PDF] Паспорт изделия</li>
+              <li>[DWG] Чертёж</li>
+              <li>[IES] Фотометрия</li>
+              <li>[RFA] BIM (Revit)</li>
+            </ul>
+        </p>
       </div>
 
       <!-- Specs -->
@@ -443,23 +505,77 @@
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2">
-            <ul class="divide-y divide-[#F1F3F5]">
-              <li class="px-6 py-3 text-[13px]">
-                <span class="text-[#6B7280]">Тип ИС: </span>LED
+            <ul class="text-[#EF3824]">
+              <li class="px-6 py-3 text-[13px]  font-bold flex flex-col">
+                <span class="text-[#6B7280]">Артикул </span class="text-[#EF3824]">3803
               </li>
-              <li class="px-6 py-3 text-[13px]">
-                <span class="text-[#6B7280]">Цвет свечения: </span>4000 K
+              <li class="px-6 py-3 text-[13px] font-bold flex flex-col">
+                <span class="text-[#6B7280]">Тип ИС</span class="text-[#EF3824]">LED
               </li>
-              <li class="px-6 py-3 text-[13px]">
-                <span class="text-[#6B7280]">Шаг MacAdam: </span>5
+              <li class="px-6 py-3 text-[13px] font-bold flex flex-col">
+                <span class="text-[#6B7280]">Цвет свечения</span class="text-[#EF3824]">4000 К
+              </li>
+              <li class="px-6 py-3 text-[13px] font-bold flex flex-col">
+                <span class="text-[#6B7280]">Шаг MacAdam</span class="text-[#EF3824]">5
+              </li>
+              <li class="px-6 py-3 text-[13px] font-bold flex flex-col">
+                <span class="text-[#6B7280]">энергоэффективность</span class="text-[#EF3824]">118
+              </li>
+              <li class="px-6 py-3 text-[13px] font-bold flex flex-col">
+                <span class="text-[#6B7280]">Коэффициент мощности (cos )</span class="text-[#EF3824]">0,95
+              </li>
+              <li class="px-6 py-3 text-[13px] font-bold flex flex-col">
+                <span class="text-[#6B7280]">Степерь защиты</span class="text-[#EF3824]">IP66
+              </li>
+              <li class="px-6 py-3 text-[13px] font-bold flex flex-col">
+                <span class="text-[#6B7280]">Температура эксплуатации</span class="text-[#EF3824]">от -40 °С до +45 °С
+              </li>
+              <li class="px-6 py-3  text-[13px] text-[#EF3824] font-bold flex flex-col">
+                <span class="text-[#6B7280]">Система управления</span class="text-[#EF3824]">DALI
+              </li>
+              <li class="px-6 py-3 text-[13px] font-bold flex flex-col">
+                <span class="text-[#6B7280]">Гарантия</span class="text-[#EF3824]">2 года
+              </li>
+              <li class="px-6 py-3 text-[13px] font-bold flex flex-col">
+                <span class="text-[#6B7280]">Габаритные размеры</span class="text-[#EF3824]">484x520x702 мм
+              </li>
+              <li class="px-6 py-3 text-[13px] font-bold flex flex-col">
+                <span class="text-[#6B7280]">Материал рассеивателя</span class="text-[#EF3824]">стекло
               </li>
             </ul>
-            <ul class="divide-y divide-[#F1F3F5]">
-              <li class="px-6 py-3 text-[13px]">
-                <span class="text-[#6B7280]">Мощность: </span>800 Вт
+            <ul class="text-[#EF3824]">
+              <li class="px-6 py-3 text-[13px] font-bold flex flex-col">
+                <span class="text-[#6B7280]">Способ монтажа</span class="text-[#EF3824]">
               </li>
-              <li class="px-6 py-3 text-[13px]">
-                <span class="text-[#6B7280]">Степень защиты: </span>IP65
+              <li class="px-6 py-3 text-[13px] font-bold flex flex-col">
+                <span class="text-[#6B7280]">Потребляемая мощность</span class="text-[#EF3824]">800 Вт
+              </li>
+              <li class="px-6 py-3 text-[13px] font-bold flex flex-col">
+                <span class="text-[#6B7280]">Индекс цветопередачи</span class="text-[#EF3824]">Ra>80
+              </li>
+              <li class="px-6 py-3 text-[13px] font-bold flex flex-col">
+                <span class="text-[#6B7280]">Световой поток</span class="text-[#EF3824]">94680 лм
+              </li>
+              <li class="px-6 py-3 text-[13px] font-bold flex flex-col">
+                <span class="text-[#6B7280]">Напряжение</span class="text-[#EF3824]">230 В
+              </li>
+              <li class="px-6 py-3 text-[13px] font-bold flex flex-col">
+                <span class="text-[#6B7280]">Класс защиты от поражения электрическим током</span class="text-[#EF3824]">Класс II
+              </li>
+              <li class="px-6 py-3 text-[13px] font-bold flex flex-col">
+                <span class="text-[#6B7280]">Вид климатического исполнения по ГОСТ 15150-69</span class="text-[#EF3824]">У1
+              </li>
+              <li class="px-6 py-3 text-[13px] font-bold flex flex-col">
+                <span class="text-[#6B7280]">Индекс степени защиты</span class="text-[#EF3824]">IK09
+              </li>
+              <li class="px-6 py-3 text-[13px] font-bold flex flex-col">
+                <span class="text-[#6B7280]">Срок службы</span class="text-[#EF3824]">не менее 50 000 часов
+              </li>
+              <li class="px-6 py-3 text-[13px] font-bold flex flex-col">
+                <span class="text-[#6B7280]">Масса</span class="text-[#EF3824]">8
+              </li>
+              <li class="px-6 py-3 text-[13px] font-bold flex flex-col">
+                <span class="text-[#6B7280]">Материалы корпуса</span class="text-[#EF3824]">литой алюминий
               </li>
             </ul>
           </div>
@@ -852,35 +968,35 @@
     <!-- ===== JavaScript ===== -->
          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-    <!-- <script>
+    <script>
       // Power buttons
       const powerBtns = document.querySelectorAll(".power-btn");
       const powerTitle = document.getElementById("powerTitle");
-      const thumbs = document.querySelectorAll(".thumb");
-        const mainImage = document.getElementById("main-image");
+      // const thumbs = document.querySelectorAll(".thumb");
+      //   const mainImage = document.getElementById("main-image");
 
-        thumbs.forEach((thumb) => {
-        thumb.addEventListener("click", () => {
-            const img = thumb.getAttribute("data-img");
+        // thumbs.forEach((thumb) => {
+        // thumb.addEventListener("click", () => {
+        //     const img = thumb.getAttribute("data-img");
 
-            // убрать выделение у всех
-            thumbs.forEach((t) => {
-            t.classList.remove("border-[#D92D20]");
-            t.classList.add("border-[#E5E7EB]");
-            });
+        //     // убрать выделение у всех
+        //     thumbs.forEach((t) => {
+        //     t.classList.remove("border-[#D92D20]");
+        //     t.classList.add("border-[#E5E7EB]");
+        //     });
 
-            // выделить текущую
-            thumb.classList.remove("border-[#E5E7EB]");
-            thumb.classList.add("border-[#D92D20]");
+        //     // выделить текущую
+        //     thumb.classList.remove("border-[#E5E7EB]");
+        //     thumb.classList.add("border-[#D92D20]");
 
-            // плавное исчезновение → смена фото → появление
-            mainImage.classList.add("opacity-0");
-            setTimeout(() => {
-            mainImage.src = img;
-            mainImage.classList.remove("opacity-0");
-            }, 300); // задержка меньше чем duration-500, чтобы выглядело плавно
-        });
-        });
+        //     // плавное исчезновение → смена фото → появление
+        //     mainImage.classList.add("opacity-0");
+        //     setTimeout(() => {
+        //     mainImage.src = img;
+        //     mainImage.classList.remove("opacity-0");
+        //     }, 300); // задержка меньше чем duration-500, чтобы выглядело плавно
+        // });
+        // });
       powerBtns.forEach((btn) => {
         btn.addEventListener("click", () => {
           powerBtns.forEach((b) =>
@@ -935,7 +1051,7 @@
           tabContent.innerHTML = contents[tabId];
         });
       });
-    </script> -->
+    </script>
     <script>
       const burgerBtn = document.getElementById("burgerBtn");
       const mobileMenu = document.getElementById("mobileMenu");
