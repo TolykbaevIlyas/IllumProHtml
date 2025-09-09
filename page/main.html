@@ -38,6 +38,21 @@
   
 }
 
+@keyframes scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); } 
+}
+
+@media (min-width: 1024px) {
+  .animate-scroll {
+    display: flex;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+  }
+}
+
+
+
 /* ==== FIX для Firefox ==== */
 @-moz-document url-prefix() {
   /* Видео всегда растягивается корректно */
@@ -59,9 +74,9 @@
     </style>
   </head>
   <body>
-    <header class="text-[#2E2C30] max-w-[1400px] mx-auto p-4 z-20">
+    <header class="text-[#2E2C30] max-w-[1400px] fixed md:static top-0 left-0 w-full bg-white  mx-auto p-4 z-20">
       <!-- MOBILE HEADER -->
-      <div class="flex items-center justify-between md:hidden">
+      <div class="flex items-center justify-between md:hidden ">
         <button id="burgerBtn">
           <!-- Burger Icon -->
           <svg
@@ -436,8 +451,6 @@
           <p class="text-[#FFFFFF] text-[16px] uppercase mt-[22px] font-bold">
             Собственное производство
           </p>
-
-          <img src="../assets/bg.jpg" class="mt-[55px] rounded-[10px]" />
         </div>
 
         <div
@@ -601,7 +614,7 @@
       <li
         class="border-l-2 border-[#EF3824] xl:h-[93px] 2xl:h-[124px] px-[16px] h-full flex flex-col"
       >
-        <h2 class="text-[34px] 2xl:text-[42px] font-bold">> 500 видов</h2>
+        <h2 class="text-[34px] 2xl:text-[42px] text-nowrap font-bold">> 500 видов</h2>
         <p class="xl:text-[16px] 2xl:text-[18px]">
           светильников на собственном заводе в Тульской области
         </p>
@@ -645,7 +658,7 @@
 
 
           <button
-          class=".custom-next absolute hidden 2xl:block"
+          class="custom-next absolute hidden 2xl:block z-20"
           
         >
          <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -657,7 +670,7 @@
 
 
       
-<div class="hidden lg:block max-w-[897px] 2xl:max-w-[1129px] relative">
+<div class="hidden lg:block max-w-[897px] 2xl:max-w-[1129px] relative z-10">
  <div class="swiper swiper-desktop">
       <div class="swiper-wrapper relative">
         <!-- Слайд 1 (весь набор картинок в три колонки) -->
@@ -1458,75 +1471,30 @@
         </h2>
       </div>
       <div class="flex flex-col mx-auto">
-        <div class="max-w-[1206px] 2xl:max-w-[1600px] w-full mx-auto">
-          <ul
-            class="flex items-center justify-center gap-[30px] 2xl:gap-[50px] overflow-x-auto xl:overflow-x-visible scrollbar-hide"
-          >
-            <li class="flex-shrink-0">
-              <img
-                src="../assets/huSVG.png"
-                alt="icon-1"
-                class="h-auto max-h-[50px] 2xl:max-h-[60px]"
-              />
-            </li>
-            <li class="flex-shrink-0">
-              <img
-                src="../assets/9 → SVG.png"
-                alt="icon-2"
-                class="h-auto max-h-[50px] 2xl:max-h-[60px]"
-              />
-            </li>
-            <li class="flex-shrink-0">
-              <img
-                src="../assets/skSVG.png"
-                alt="icon-3"
-                class="h-auto max-h-[50px] 2xl:max-h-[60px]"
-              />
-            </li>
-            <li class="flex-shrink-0">
-              <img
-                src="../assets/1SVG.png"
-                alt="icon-4"
-                class="h-auto max-h-[50px] 2xl:max-h-[60px]"
-              />
-            </li>
-            <li class="flex-shrink-0">
-              <img
-                src="../assets/laSVG.png"
-                alt="icon-5"
-                class="h-auto max-h-[50px] 2xl:max-h-[60px]"
-              />
-            </li>
-            <li class="flex-shrink-0">
-              <img
-                src="../assets/laSVG.png"
-                alt="icon-5"
-                class="h-auto max-h-[50px] 2xl:max-h-[60px]"
-              />
-            </li>
-            <li class="flex-shrink-0">
-              <img
-                src="../assets/tbankSVG.png"
-                alt="icon-5"
-                class="h-auto max-h-[50px] 2xl:max-h-[60px]"
-              />
-            </li>
-            <li class="flex-shrink-0">
-              <img
-                src="../assets/2SVG.png"
-                alt="icon-5"
-                class="h-auto max-h-[50px] 2xl:max-h-[60px]"
-              />
-            </li>
-            <li class="flex-shrink-0">
-              <img
-                src="../assets/WkSVG.png"
-                alt="icon-5"
-                class="h-auto max-h-[50px] 2xl:max-h-[60px]"
-              />
-            </li>
-          </ul>
-        </div>
+    <div class="relative max-w-[1206px] 2xl:max-w-[1600px] w-full mx-auto overflow-hidden">
+  <ul class="flex items-center gap-[30px] 2xl:gap-[50px] animate-scroll">
+    <!-- Первый список -->
+    <li class="flex-shrink-0"><img src="../assets/huSVG.png" class="h-auto max-h-[50px] 2xl:max-h-[60px]" /></li>
+    <li class="flex-shrink-0"><img src="../assets/9 → SVG.png" class="h-auto max-h-[50px] 2xl:max-h-[60px]" /></li>
+    <li class="flex-shrink-0"><img src="../assets/skSVG.png" class="h-auto max-h-[50px] 2xl:max-h-[60px]" /></li>
+    <li class="flex-shrink-0"><img src="../assets/1SVG.png" class="h-auto max-h-[50px] 2xl:max-h-[60px]" /></li>
+    <li class="flex-shrink-0"><img src="../assets/laSVG.png" class="h-auto max-h-[50px] 2xl:max-h-[60px]" /></li>
+    <li class="flex-shrink-0"><img src="../assets/tbankSVG.png" class="h-auto max-h-[50px] 2xl:max-h-[60px]" /></li>
+    <li class="flex-shrink-0"><img src="../assets/2SVG.png" class="h-auto max-h-[50px] 2xl:max-h-[60px]" /></li>
+    <li class="flex-shrink-0"><img src="../assets/WkSVG.png" class="h-auto max-h-[50px] 2xl:max-h-[60px]" /></li>
+
+    <!-- Дублированный список -->
+    <li class="flex-shrink-0"><img src="../assets/huSVG.png" class="h-auto max-h-[50px] 2xl:max-h-[60px]" /></li>
+    <li class="flex-shrink-0"><img src="../assets/9 → SVG.png" class="h-auto max-h-[50px] 2xl:max-h-[60px]" /></li>
+    <li class="flex-shrink-0"><img src="../assets/skSVG.png" class="h-auto max-h-[50px] 2xl:max-h-[60px]" /></li>
+    <li class="flex-shrink-0"><img src="../assets/1SVG.png" class="h-auto max-h-[50px] 2xl:max-h-[60px]" /></li>
+    <li class="flex-shrink-0"><img src="../assets/laSVG.png" class="h-auto max-h-[50px] 2xl:max-h-[60px]" /></li>
+    <li class="flex-shrink-0"><img src="../assets/tbankSVG.png" class="h-auto max-h-[50px] 2xl:max-h-[60px]" /></li>
+    <li class="flex-shrink-0"><img src="../assets/2SVG.png" class="h-auto max-h-[50px] 2xl:max-h-[60px]" /></li>
+    <li class="flex-shrink-0"><img src="../assets/WkSVG.png" class="h-auto max-h-[50px] 2xl:max-h-[60px]" /></li>
+  </ul>
+</div>
+
         <div
           class="max-w-[1206px] 2xl:max-w-[1356px] mx-auto w-full flex flex-col gap-[42px] xl:flex-row justify-between px-[24px] xl:px-0 xl:items-center mt-[42px] xl:mt-[110px]"
         >
@@ -1918,5 +1886,7 @@
     });
   });
 </script>
+
+
   </body>
 </html>
