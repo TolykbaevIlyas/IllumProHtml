@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Каталог</title>
+  <title>Каталог Tornado</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white text-black">
-    
-<header class="text-[#2E2C30]  fixed shadow-md  md:static top-0 left-0 w-full bg-white  mx-auto p-4 z-20">
+<body >
+<section class="bg-white text-black ">
+    <header class="text-[#2E2C30]  fixed shadow-md  md:static top-0 left-0 w-full bg-white  mx-auto p-4 z-20">
       <!-- MOBILE HEADER -->
       <div class="flex items-center max-w-[1400px] m-auto justify-between md:hidden ">
         <button id="burgerBtn">
@@ -172,66 +172,70 @@
 
     </header>
 <div class="max-w-[1400px] mx-auto p-4">
-  <!-- Хлебные крошки -->
-  <div class="flex gap-[9px] items-center text-[#A9A9A9] mt-[51px]">
-    <a href="main.html">Главная</a>
+
+    <!-- Хлебные крошки -->
+  <div class="flex gap-[9px] items-center text-[#A9A9A9] mt-[51px] text-[14px] p-4">
+    <p>Главная</p>
     <svg width="7" height="6" viewBox="0 0 7 6" fill="none">
-      <path d="M0.919922 3H6.41992M6.41992 3L4.1258 1M6.41992 3L4.1258 5" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M0.9 3H6.4M6.4 3L4.1 1M6.4 3L4.1 5" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
-    <div class="max-w-[43px] w-full h-[27px] items-center text-center bg-[#F8F8F8] text-[14px] font-[700] leading-[150%] flex justify-center">...</div>
+    <div class="max-w-[43px] w-full h-[27px] flex items-center justify-center bg-[#F8F8F8] font-[700]">...</div>
     <svg width="7" height="6" viewBox="0 0 7 6" fill="none">
-      <path d="M0.919922 3H6.41992M6.41992 3L4.1258 1M6.41992 3L4.1258 5" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M0.9 3H6.4M6.4 3L4.1 1M6.4 3L4.1 5" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
     <p>TORNADO</p>
   </div>
 
-  <!-- Заголовок + Кнопка -->
-  <div class="flex justify-between max-lg:flex-col">
-    <h3 class="text-[42px] leading-[100%] font-[700] uppercase mt-[40px] max-lg:text-[24px]">Каталог</h3>
-    <div class="relative inline-block mt-4 max-lg:mt-2">
-      <button id="dropdownBtn" class="flex items-center gap-[8px] text-[#F44336] hover:text-[#d9362c] transition font-medium">
-        Скачать каталог (PDF)
-        <img id="dropdownIcon" src="../assets/catalog/all/donwload.svg" alt="download" class="w-[17px] h-[21px] transition-transform rotate-0"/>
-      </button>
-      <div id="dropdownMenu" class="hidden absolute mt-3 w-[230px] bg-white shadow-md rounded-md overflow-hidden border">
-        <a href="/pdf/catalog-2021.pdf" target="_blank" class="flex items-center justify-between px-4 py-3 text-gray-800 hover:bg-gray-100 transition">
-          Каталог 2021 год (PDF)
-          <img src="../assets/catalog/all/donwload.svg" alt="" class="w-[17px] h-[21px]"/>
-        </a>
-        <a href="/pdf/catalog-2022.pdf" target="_blank" class="flex items-center justify-between px-4 py-3 text-gray-800 hover:bg-gray-100 transition">
-          Каталог 2022 год (PDF)
-          <img src="../assets/catalog/all/donwload.svg" alt="" class="w-[17px] h-[21px]"/>
-        </a>
+  <!-- Заголовок -->
+  <div class="flex justify-between max-lg:flex-col gap-4">
+    <h3 class="text-[42px] leading-[100%] font-[700] uppercase mt-[40px]">КАТАЛОГ СЕРИИ TORNADO</h3>
+    <div class="flex gap-[17px] cursor-pointer text-[#F44336] hover:text-[#d9362c] transition">
+      Скачать каталог (PDF)
+      <img src="./img/catalog/all/donwload.svg" alt="" class="w-[17px] h-[21px]"/>
+    </div>
+  </div>
+
+  <!-- Описание -->
+  <p class="mt-[47px] max-w-[1339px] w-full text-[18px] leading-[150%]">
+    Для щитовых решений любого уровня сложности. Токовые характеристики от 6 до 63 А, типы кривых B, C, D, установка на DIN-рейку.
+    Соответствие ГОСТ, стабильность срабатывания и надёжность в эксплуатации.
+  </p>
+
+  <!-- Основная часть -->
+  <div class="flex gap-[20px] mt-[57px] max-lg:flex-col">
+
+    <!-- Фильтры -->
+    <div class="lg:max-w-[451px] w-full">
+
+      <div id="filter-toggle" class="rounded-[7px] mt-[31px] max-w-[202px] text-center flex items-center justify-center h-[48px] bg-[#EF3824] text-white cursor-pointer lg:hidden ml-auto">
+            Фильтр
+        </div>
+
+      <!-- Мобильные фильтры -->
+      <div id="filter-mobile" class="hidden bg-[#F8F8F8] mt-[20px] max-w-[451px] w-full rounded-t-[8px] lg:hidden ml-auto"></div>
+
+      <!-- Десктоп фильтры -->
+      <div class="bg-[#F8F8F8] max-w-[451px] w-full rounded-t-[8px] max-lg:hidden" id="filter-desktop"></div>
+
+      <div class="rounded-[7px] mt-[31px] max-w-[202px] text-center flex items-center justify-center w-full h-[48px] bg-[#EF3824] text-white max-sm:max-w-full max-sm:mt-[20px] max-lg:hidden cursor-pointer">
+        Сбросить фильтры
       </div>
     </div>
-  </div>
 
-  <!-- Каталог + Модули -->
-  <div class="flex gap-[20px] mt-[57px] max-lg:mt-[25px]">
-    <div id="catalogContainer" class="grid grid-cols-3 gap-[20px] max-w-[858px] w-full rounded-[9px]">
-      <!-- Рендер каталога JS -->
-    </div>
-
-    <div class="max-lg:hidden max-w-[476px] w-full border border-[#EF3824] py-[39px] px-[36px] rounded-[9px]">
-      <h4 class="text-[42px] uppercase leading-[120%] font-[700]">Модульное <br/>оборудование</h4>
-      <p class="mt-[41px] text-[18px] leading-[120%] font-[400]">
-        Надёжные компоненты <span class="text-[#EF3824]">для щитовых <br/>систем и электробезопасности.<br/></span> 
-        Подходят для промышленных<br/>и городских объектов<br/>
-      </p>
-      <div id="modulesContainer" class="mt-[129px] flex flex-col gap-[10px] mb-[207px]"></div>
+    <!-- Таблица -->
+    <div class="max-w-[883px] w-full bg-white rounded-lg overflow-hidden shadow-sm">
+      <!-- Заголовки -->
+      <div class="grid grid-cols-3 bg-[#EF3824] text-white font-medium text-sm max-lg:hidden">
+        <p class="px-4 py-3">Фото</p>
+        <p class="px-4 py-3">Наименование</p>
+        <p class="px-4 py-3">Технические характеристики</p>
+      </div>
+      <!-- Строки -->
+      <div id="product-list"></div>
     </div>
   </div>
-
-  <!-- Наше Качество -->
-  <div class="mt-[110px]">
-    <h4 class="text-[42px] leading-[100%] font-[700] uppercase max-lg:text-[24px]">Наше Качество</h4>
-    <div id="qualityContainer" class="mt-[57px] mb-[137px] grid grid-cols-3 max-lg:grid-cols-2 gap-[23px]">
-      <!-- Рендер качества JS -->
-    </div>
-  </div>
-</div>
-
-<footer class="bg-[#1A171B] text-white px-4 md:px-10 lg:px-20 py-10">
+</section>
+  <footer class="bg-[#1A171B] text-white px-4 md:px-10 lg:px-20 py-10">
       <div class="max-w-[1400px] mx-auto flex flex-col">
         <div class="flex items-center justify-between pb-5">
           <div>
@@ -424,106 +428,171 @@
           <p>© 2008 - 2025, Все права защищены</p>
         </div>
       </div>
-</footer>
+    </footer>
 
-<script>
-  // Данные
-  const modules = [
-    {id: 1, name: 'Автоматические выключатели', img: '../assets/catalog/catalog/avtomat.png'},
-    {id: 2, name: 'Контакторы', img: '../assets/catalog/catalog/kontaktor.png'},
-    {id: 3, name: 'Ограничители пускового тока', img: '../assets/catalog/catalog/opt.png'},
-    {id: 4, name: 'Устройства защитного отключения (УЗО)', img: '../assets/catalog/catalog/uzo.png'},
-  ];
+</div>
 
-  const catalog = [
-    { id: 1, name: "Архитектурное освещение", img: "../assets/catalog/catalog/ikonka_as 2.png", desk: "Описание архитектурного освещения" },
-    { id: 2, name: "Ландшафтное освещение", img: "../assets/catalog/catalog/icon-wa 4.png", desk: "Описание ландшафтного освещения" },
-    { id: 3, name: "Дорожное освещение", img: "../assets/catalog/catalog/speedway_60-2.png", desk: "Описание дорожного освещения" },
-    { id: 4, name: "Интерьерное освещение", img: "../assets/catalog/catalog/morrigan_ik.png", desk: "Описание интерьерного освещения" },
-    { id: 5, name: "Светильники для музеев", img: "../assets/catalog/catalog/ikonka.png", desk: "Описание светильников для музеев" },
-    { id: 6, name: "Болларды", img: "../assets/catalog/catalog/zigzag_600-1.png", desk: "Описание боллардов" },
-    { id: 7, name: "Художественное литьё", img: "../assets/catalog/catalog/vivaldi_ikonka.png", desk: "Описание художественного литья" },
-    { id: 8, name: "Световые фасады", img: "../assets/catalog/catalog/dom-tip-1-1.png", desk: "Описание световых фасадов" },
-    { id: 9, name: "Поля света", img: "../assets/catalog/catalog/svetilnik-svetodiodnyj-shar.png.png", desk: "Описание полей света" },
-    { id: 10, name: "Опоры освещения", img: "../assets/catalog/catalog/modulnyj-stolb.png", desk: "Описание опор освещения" },
-    { id: 11, name: "Модульное оборудование", img:"../assets/catalog/catalog/uzo2.png", desk: "Автоматы, УЗО, контакторы и защита" },
-    { id: 12, name: "Аксессуары", img: "../assets/catalog/catalog/2-plates-512x512-1.png", desk: "Описание аксессуаров" },
-  ];
+  <script>
+    // Данные
+    const products = [
+      { id: 3803, name: "Tornado 4000K S 66IP led", img: "./img/catalog/catalogInner/image 184.png", power: 800, voltage: 230, luminousFlux: 94680 },
+      { id: 3806, name: "Tornado 3000K S 66IP led", img: "./img/catalog/catalogInner/image 184.png", power: 1400, voltage: 230, luminousFlux: 161518 },
+      { id: 3809, name: "Tornado 4000K S 66IP led", img: "./img/catalog/catalogInner/image 184.png", power: 1400, voltage: 230, luminousFlux: 165690 },
+    ];
 
-  const Quality = [
-    {id:1, name: 'гарантийные обязательства', desc: 'Наши светильники разрабатываются собственным конструкторским бюро и проходят испытания. Поэтому мы даем на них фирменную гарантию не менее трех лет.', icon: '../assets/catalog/catalog/Group 2087329838.svg'},
-    {id:2, name: 'Согласовательные работы', desc: 'Мы готовим проекты освещения для согласования с городскими службами, структурами, собственниками и эксплуатирующими организациями.', icon: '../assets/catalog/catalog/Text Flow Columns--Streamline-Ultimate.svg'},
-    {id:3, name: 'Квалифицированный монтаж', desc: 'Мы располагаем собственными электромонтажными бригадами. Благодаря опыту работы во множестве регионов и климатических зон они обеспечивают качественный монтаж на каждом объекте.', icon: '../assets/catalog/catalog/Group.svg'},
-    {id:4, name: 'Испытания', desc: 'Мы производим большинство компонентов светильников IPRO на собственном заводе в Тульской области. Наша продукция проходит испытания в светотехнической лаборатории, тестирование в климатической камере.', icon: '../assets/catalog/catalog/Cursor Choose 1--Streamline-Ultimate.svg'},
-    {id:5, name: 'Эксплуатация и обслуживание', desc: 'Мы осуществляем обслуживание объектов: проводим мойку и чистку, мониторинг технического состояния светильников, проверку герметичности соединений и целостности изоляции, выверку нацеливания светильников.', icon: '../assets/catalog/catalog/Cog--Streamline-Ultimate.svg'},
-    {id:6, name: 'Продуманная логистика', desc: 'Мы реализуем проекты на территории России и других стран, например, в Казахстане и Саудовской Аравии. При необходимости подберем поставщиков специальных светотехнических решений, возьмем на себя вопросы ВЭД, организуем доставку оборудования', icon: '../assets/catalog/catalog/Group 2087329652.svg'},
-  ];
+    // Рендер товаров
+    const list = document.getElementById("product-list");
+    products.forEach((p, i) => {
+      list.innerHTML += `
+        <a href="./product.html" class="grid grid-cols-3 text-sm ${i % 2 === 1 ? "bg-[#F8F8F8]" : "bg-white"}">
+          <div class="p-4 flex items-center">
+            <img src="${p.img}" alt="${p.name}" class="h-16 w-auto mx-auto" />
+          </div>
+          <div class="p-4 flex flex-col justify-center">
+            <p class="font-medium">${p.name}</p>
+            <p class="text-gray-500 text-sm">Артикул: ${p.id}</p>
+          </div>
+          <div class="p-4 space-y-1">
+            <p><span class="font-medium">Мощность:</span> ${p.power} Вт</p>
+            <p><span class="font-medium">Напряжение:</span> ${p.voltage} В</p>
+            <p><span class="font-medium">Световой поток:</span> ${p.luminousFlux.toLocaleString("ru-RU")} Лм</p>
+          </div>
+        </a>
+      `;
+    });
 
-  // Рендер каталог
-  const catalogContainer = document.getElementById("catalogContainer");
-  catalog.forEach(item => {
-    catalogContainer.innerHTML += `
-      <a href="./catalogInner.html" 
-         class="group flex flex-col gap-[20px] relative max-sm:h-[108px] h-[201px] w-full bg-[#F8F8F8] p-[14px] rounded-[9px] transition-all duration-300 hover:bg-[#EF3824] hover:text-white">
+    // Фильтры (одноразовый шаблон)
+    const filterHTML = `
+      <div class="bg-[#EF3824] max-lg:hidden h-[46px] text-[18px] font-[600] text-white flex justify-between p-[14px] rounded-t-[8px]">
+        <p>Фильтр</p>
+        <p class="cursor-pointer" id="reset-filters">Сбросить X</p>
+      </div>
+      <div class="p-4 space-y-6 text-sm bg-white rounded-xl shadow">
+  <!-- Мощность + Напряжение -->
+  <div class="grid grid-cols-2 gap-6">
+    <div>
+      <p class="font-medium mb-3">Мощность</p>
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="checkbox" class="w-4 h-4 border-2 border-red-500 rounded-sm" />
+        <span>800 Вт</span>
+      </label>
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="checkbox" class="w-4 h-4 border-2 border-red-500 rounded-sm" />
+        <span>1400 Вт</span>
+      </label>
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="checkbox" class="w-4 h-4 border-2 border-red-500 rounded-sm" />
+        <span>800 Вт</span>
+      </label>
+    </div>
+    <div>
+      <p class="font-medium mb-3">Напряжение</p>
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="checkbox" class="w-4 h-4 border-2 border-red-500 rounded-sm" />
+        <span>800 Вт</span>
+      </label>
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="checkbox" class="w-4 h-4 border-2 border-red-500 rounded-sm" />
+        <span>1400 Вт</span>
+      </label>
+    </div>
+  </div>
 
-        <!-- Название -->
-        <p class="flex flex-col text-[16px] font-[600] leading-[120%] max-sm:text-[12px]">
-          ${item.name.split(" ").join("<br/>")}
-        </p>
+  <hr class="border-gray-200" />
 
-        <!-- Описание (по умолчанию скрыто, видно только при hover) -->
-        <p class="text-[16px] font-[400] opacity-80 hidden group-hover:block">
-          ${item.desk ?? ""}
-        </p>
+  <!-- Размеры + Световой поток -->
+  <div class="grid grid-cols-2 gap-6">
+    <div>
+      <p class="font-medium mb-3">Размеры</p>
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="checkbox" class="w-4 h-4 border-2 border-red-500 rounded-sm" />
+        <span>800 Вт</span>
+      </label>
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="checkbox" class="w-4 h-4 border-2 border-red-500 rounded-sm" />
+        <span>1400 Вт</span>
+      </label>
+    </div>
+    <div>
+      <p class="font-medium mb-3">Световой поток</p>
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="checkbox" class="w-4 h-4 border-2 border-red-500 rounded-sm" />
+        <span>800 Вт</span>
+      </label>
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="checkbox" class="w-4 h-4 border-2 border-red-500 rounded-sm" />
+        <span>1400 Вт</span>
+      </label>
+    </div>
+  </div>
 
-        <!-- "Подобрать решение" (по умолчанию скрыто, видно при hover) -->
-        <span class="flex items-center justify-between hidden group-hover:flex">
-          Подобрать решение <img src="../assets/catalog/all/arrow.svg"/>
-        </span>
+  <hr class="border-gray-200" />
 
-        <!-- Картинка (по умолчанию есть, при hover скрывается) -->
-        ${item.img ? `<img src="${item.img}" class="absolute right-0 bottom-0 max-sm:scale-[0.5] origin-bottom-right group-hover:hidden"/>` : ""}
-      </a>
-    `;
-  });
-
-  // Рендер модулей
-  const modulesContainer = document.getElementById("modulesContainer");
-  modules.forEach(item => {
-    modulesContainer.innerHTML += `
-      <div class="flex gap-[20px]">
-        <img src="${item.img}" alt=""/>
-        <p>${item.name}</p>
+  <!-- Корпус -->
+  <div class="grid grid-cols-2 gap-6">
+    <div>
+      <p class="font-medium mb-3">Корпус</p>
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="checkbox" class="w-4 h-4 border-2 border-red-500 rounded-sm" />
+        <span>сталь</span>
+      </label>
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="checkbox" class="w-4 h-4 border-2 border-red-500 rounded-sm" />
+        <span>металл</span>
+      </label>
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="checkbox" class="w-4 h-4 border-2 border-red-500 rounded-sm" />
+        <span>пластик</span>
+      </label>
+    </div>
+    <div class="pt-6">
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="checkbox" class="w-4 h-4 border-2 border-red-500 rounded-sm" />
+        <span>литой алюминий</span>
+      </label>
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="checkbox" class="w-4 h-4 border-2 border-red-500 rounded-sm" />
+        <span>алюминий</span>
+      </label>
+      <label class="flex items-center space-x-2 mb-2">
+        <input type="checkbox" class="w-4 h-4 border-2 border-red-500 rounded-sm" />
+        <span>нержавеющая сталь</span>
+      </label>
+    </div>
+  </div>
+</div>
       </div>
     `;
-  });
+    document.getElementById("filter-desktop").innerHTML = filterHTML;
+    document.getElementById("filter-mobile").innerHTML = filterHTML;
 
-  // Рендер качества
-  const qualityContainer = document.getElementById("qualityContainer");
-  Quality.forEach(item => {
-    qualityContainer.innerHTML += `
-      <div class="flex gap-[27px] py-[27px] pl-[16px] pr-[13px] bg-[#F8F8F8] max-w-[437px] w-full rounded-[9px]">
-        <img src="${item.icon}" class="max-w-[25px] w-full h-[25px] hidden lg:block"/>
-        <div class="flex flex-col gap-[27px]">
-          <h5 class="uppercase font-[700] text-[16px] max-sm:text-[12px] leading-[120%]">${item.name}</h5>
-          <p class="text-[14px] max-sm:text-[10px] leading-[120%] font-[400]">${item.desc}</p>
-        </div>
-      </div>
-    `;
-  });
-
-  // Dropdown
-  const dropdownBtn = document.getElementById("dropdownBtn");
-  const dropdownMenu = document.getElementById("dropdownMenu");
-  const dropdownIcon = document.getElementById("dropdownIcon");
-
-  dropdownBtn.addEventListener("click", () => {
-    dropdownMenu.classList.toggle("hidden");
-    dropdownIcon.classList.toggle("rotate-180");
-  });
-</script>
-
+    // Переключение моб. фильтра
+    const toggle = document.getElementById("filter-toggle");
+    const mobileFilter = document.getElementById("filter-mobile");
+    let open = false;
+    toggle.addEventListener("click", () => {
+      open = !open;
+      mobileFilter.style.display = open ? "block" : "none";
+      toggle.textContent = open ? "Сбросить фильтры" : "Фильтр";
+      toggle.classList.toggle("bg-[#EF3824]", !open);
+      toggle.classList.toggle("bg-[#2E2C30]", open);
+    });
+  </script>
 <script>
+      const burgerBtn = document.getElementById("burgerBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      burgerBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        mobileMenu.classList.toggle("flex");
+      });
+
+      document.getElementById("toTopBtn").addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+
+    <script>
 (() => {
   const burger = document.getElementById('burgerBtn');
   if (!burger) return console.warn('burgerBtn not found');
@@ -640,6 +709,5 @@
   });
 })();
 </script>
-    
 </body>
 </html>
