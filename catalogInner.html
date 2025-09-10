@@ -190,9 +190,21 @@
     <h3 class="text-[42px] leading-[100%] font-[700] uppercase mt-[40px] max-lg:text-[24px]">
       Архитектурное освещение
     </h3>
-    <div class="flex gap-[17px] items-center cursor-pointer">
-      Скачать каталог (PDF)
-      <img src="./img/catalog/all/donwload.svg" class="max-w-[17px] w-full h-[21px]" alt="">
+    <div class="relative inline-block mt-4 max-lg:mt-2">
+      <button id="dropdownBtn" class="flex items-center gap-[8px] text-[#F44336] hover:text-[#d9362c] transition font-medium">
+        Скачать каталог (PDF)
+        <img id="dropdownIcon" src="./img/catalog/all/donwload.svg" alt="download" class="w-[17px] h-[21px] transition-transform rotate-0"/>
+      </button>
+      <div id="dropdownMenu" class="hidden absolute mt-3 w-[230px] bg-white shadow-md rounded-md overflow-hidden border">
+        <a href="/pdf/catalog-2021.pdf" target="_blank" class="flex items-center justify-between px-4 py-3 text-gray-800 hover:bg-gray-100 transition">
+          Каталог 2021 год (PDF)
+          <img src="./img/catalog/all/donwload.svg" alt="" class="w-[17px] h-[21px]"/>
+        </a>
+        <a href="/pdf/catalog-2022.pdf" target="_blank" class="flex items-center justify-between px-4 py-3 text-gray-800 hover:bg-gray-100 transition">
+          Каталог 2022 год (PDF)
+          <img src="./img/catalog/all/donwload.svg" alt="" class="w-[17px] h-[21px]"/>
+        </a>
+      </div>
     </div>
   </div>
 
@@ -588,6 +600,17 @@
     else openOverlay();
   });
 })();
+</script>
+
+<script>
+  const dropdownBtn = document.getElementById("dropdownBtn");
+  const dropdownMenu = document.getElementById("dropdownMenu");
+  const dropdownIcon = document.getElementById("dropdownIcon");
+
+  dropdownBtn.addEventListener("click", () => {
+    dropdownMenu.classList.toggle("hidden");
+    dropdownIcon.classList.toggle("rotate-180");
+  });
 </script>
 </body>
 </html>

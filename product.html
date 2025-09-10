@@ -198,10 +198,22 @@
           <p class="max-w-[725px] w-full text-[20px] font-bold uppercase">узконаправленный светильник для подсветки фасадов и акцентов с высоты до 40 м</p>
         </div>
         <div class="max-lg:flex max-lg:justify-between max-lg:mt-[26px]">
-          <div class="flex gap-[17px] items-center cursor-pointer mb-auto">
-            Скачать каталог (PDF)
-            <img src="./img/catalog/all/donwload.svg" class="max-w-[17px] w-full h-[21px]" alt="">
-          </div>
+          <div class="relative inline-block mt-4 max-lg:mt-2">
+      <button id="dropdownBtn" class="flex items-center gap-[8px] text-[#F44336] hover:text-[#d9362c] transition font-medium">
+        Скачать каталог (PDF)
+        <img id="dropdownIcon" src="./img/catalog/all/donwload.svg" alt="download" class="w-[17px] h-[21px] transition-transform rotate-0"/>
+      </button>
+      <div id="dropdownMenu" class="hidden absolute mt-3 w-[230px] bg-white shadow-md rounded-md overflow-hidden border">
+        <a href="/pdf/catalog-2021.pdf" target="_blank" class="flex items-center justify-between px-4 py-3 text-gray-800 hover:bg-gray-100 transition">
+          Каталог 2021 год (PDF)
+          <img src="./img/catalog/all/donwload.svg" alt="" class="w-[17px] h-[21px]"/>
+        </a>
+        <a href="/pdf/catalog-2022.pdf" target="_blank" class="flex items-center justify-between px-4 py-3 text-gray-800 hover:bg-gray-100 transition">
+          Каталог 2022 год (PDF)
+          <img src="./img/catalog/all/donwload.svg" alt="" class="w-[17px] h-[21px]"/>
+        </a>
+      </div>
+    </div>
           <div class="flex gap-[10px] cursor-pointer lg:hidden ">
               <p class="text-[13px] text-[#9CA3AF]">Артикул: 3603 </p>
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1078,13 +1090,13 @@
 
       const contents = {
         desc: `
-          <p>
-            Tornado 4000K S 800 Вт — мощный архитектурный светильник,
-            созданный для задач, где важна направленная акцентная подсветка
-            с экономичным потреблением.
+          <p class="text-[20px] text-[#2E2C30] font-regular leading-[120%]">
+            Tornado 4000К S 800 Вт — мощный архитектурный светильник, созданный для задач, где важна направленная акцентная подсветка с экономичным потреблением. При световом потоке 94 680 лм он демонстрирует отличное соотношение «сила света на ватт», обеспечивая яркое, но чётко сфокусированное освещение. 
+            Узкая оптика (≈10°) позволяет «рисовать» светом детали фасадов
+            и ландшафтных элементов. Корпус из литого алюминия защищён по классу IP66 и выдерживает температуры от –40 до +60 °С. Эта модель подходит для объектов, где нет потребности в максимальной мощности, но важна высокая эффективность и точность света.
           </p>`,
-        reviews: `<p>Пока нет отзывов. Будьте первым, кто оставит отзыв.</p>`,
-        usage: `<p>Используется для подсветки фасадов, колонн, арок и акцентной подсветки с большой высоты (до 40 м).</p>`,
+        reviews: `<p class="text-[20px] text-[#2E2C30] font-regular leading-[120%]">Пока нет отзывов. Будьте первым, кто оставит отзыв.</p>`,
+        usage: `<p class="text-[20px] text-[#2E2C30] font-regular leading-[120%]">Используется для подсветки фасадов, колонн, арок и акцентной подсветки с большой высоты (до 40 м).</p>`,
       };
 
       tabs.forEach((tab) => {
@@ -1323,6 +1335,17 @@
     else openOverlay();
   });
 })();
+</script>
+
+<script>
+  const dropdownBtn = document.getElementById("dropdownBtn");
+  const dropdownMenu = document.getElementById("dropdownMenu");
+  const dropdownIcon = document.getElementById("dropdownIcon");
+
+  dropdownBtn.addEventListener("click", () => {
+    dropdownMenu.classList.toggle("hidden");
+    dropdownIcon.classList.toggle("rotate-180");
+  });
 </script>
   </body>
 </html>
