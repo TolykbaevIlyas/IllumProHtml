@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Каталог</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white text-black">
-    
-<header class="text-[#2E2C30] max-w-[1400px] mx-auto p-4 z-20">
+<body >
+<section class="">
+    <header class="text-[#2E2C30]  fixed shadow-md  md:static top-0 left-0 w-full bg-white  mx-auto p-4 z-20">
       <!-- MOBILE HEADER -->
-      <div class="flex items-center justify-between md:hidden">
+      <div class="flex items-center max-w-[1400px] m-auto justify-between md:hidden ">
         <button id="burgerBtn">
           <!-- Burger Icon -->
           <svg
@@ -26,7 +26,7 @@
           </svg>
         </button>
 
-        <!-- Лого (замена твоему <Logo/>) -->
+        <!-- Лого) -->
          <a href="main.html">
 
            <svg
@@ -54,7 +54,7 @@
       </div>
 
       <!-- DESKTOP HEADER -->
-      <div class="hidden md:flex flex-col gap-[30px] max-h-[158px]">
+      <div class="hidden md:flex max-w-[1400px] m-auto flex-col gap-[30px] max-h-[158px]">
         <div class="flex justify-between gap-[29px]">
           <div class="flex gap-[30px] items-center w-full">
             <!-- Лого -->
@@ -150,109 +150,71 @@
           </div>
         </div>
 
-        <ul class="flex gap-[26px] text-[14px] font-medium">
-          <li class="hover:text-[#EF3824] duration-300"><a href="#">О НАС</a></li>
-          <li class="hover:text-[#EF3824] duration-300"><a href="#">ПОДДЕРЖКА</a></li>
-          <li class="hover:text-[#EF3824] duration-300"><a href="#">ПОРТФОЛИО</a></li>
-          <li class="hover:text-[#EF3824] duration-300"><a href="#">КОНТАКТЫ</a></li>
-        </ul>
+        <div class="flex justify-between">
+          <ul class="flex gap-[26px] text-[14px] font-medium max-lg:hidden">
+            <li class="hover:text-[#EF3824] duration-300 uppercase"><a href="#">Проектировщикам</a></li>
+            <li class="hover:text-[#EF3824] duration-300 uppercase"><a href="#">ДевелоперАМ</a></li>
+            <li class="hover:text-[#EF3824] duration-300 uppercase"><a href="#">АрхитекторАМ</a></li>
+            <li class="hover:text-[#EF3824] duration-300 uppercase"><a href="#">дИЗАЙНЕРАМ</a></li>
+            <li class="hover:text-[#EF3824] duration-300 uppercase"><a href="#">МАРКЕТПЛЕЙСЫ</a></li>
+          </ul>
+          <ul class="flex gap-[26px] text-[14px] font-medium">
+            <li class="hover:text-[#EF3824] duration-300"><a href="#">О НАС</a></li>
+            <li class="hover:text-[#EF3824] duration-300"><a href="#">ПОДДЕРЖКА</a></li>
+            <li class="hover:text-[#EF3824] duration-300"><a href="#">ПОРТФОЛИО</a></li>
+            <li class="hover:text-[#EF3824] duration-300"><a href="#">КОНТАКТЫ</a></li>
+          </ul>
+          
+        </div>
       </div>
 
-      <!-- MOBILE MENU -->
-     <nav id="mobileMenu" class="hidden md:hidden flex-col gap-4 mt-4 text-[16px] font-medium relative">
-  <ul class="flex gap-[6px] mb-[30px]">
-    <input
-      type="text"
-      placeholder="Поиск..."
-      class="border border-[#C4C4C4] rounded-[7px] px-3 py-2 max-w-[420px] w-full"
-    />
 
-    <a
-      href="#"
-      class="bg-[#EF3824] text-white rounded-[8px] py-[8px] px-[16px] text-[14px] font-semibold transition-all duration-300"
-    >
-      Каталог
-    </a>
-  </ul>
-
-  <ul class="border-t border-[#2E2C30] flex pt-[29px] flex-col gap-4 text-[16px] font-medium">
-    <li class="hover:text-[#EF3824] duration-300 cursor-pointer"><a href="#">ПРОЕКТИРОВЩИКАМ</a></li>
-    <li class="hover:text-[#EF3824] duration-300 cursor-pointer"><a href="#">ДЕВЕЛОПЕРАМ</a></li>
-    <li class="hover:text-[#EF3824] duration-300 cursor-pointer"><a href="#">АРХИТЕКТОРАМ</a></li>
-    <li class="hover:text-[#EF3824] duration-300 cursor-pointer"><a href="#">ДИЗАЙНЕРАМ</a></li>
-    <li class="hover:text-[#EF3824] duration-300 cursor-pointer"><a href="#">МАРКЕТПЛЕЙСЫ</a></li>
-  </ul>
-
-  <ul class="border-t border-[#2E2C30] mt-4 pt-[29px] flex flex-col gap-4 text-[16px] font-medium">
-    <li class="hover:text-[#EF3824] duration-300 cursor-pointer"><a href="#">О НАС</a></li>
-    <li class="hover:text-[#EF3824] duration-300 cursor-pointer"><a href="#">ПОДДЕРЖКА</a></li>
-    <li class="hover:text-[#EF3824] duration-300 cursor-pointer"><a href="#">ПОРТФОЛИО</a></li>
-    <li class="hover:text-[#EF3824] duration-300 cursor-pointer"><a href="#">КОНТАКТЫ</a></li>
-  </ul>
-</nav>
 
     </header>
-<div class="max-w-[1400px] mx-auto p-4">
   <!-- Хлебные крошки -->
-  <div class="flex gap-[9px] items-center text-[#A9A9A9] mt-[51px]">
-    <a href="main.html">Главная</a>
+    <div class="max-w-[1400px] mx-auto p-4">
+        <div class="flex gap-[9px] items-center text-[#A9A9A9] mt-[51px]">
+    <p>Главная</p>
     <svg width="7" height="6" viewBox="0 0 7 6" fill="none">
-      <path d="M0.919922 3H6.41992M6.41992 3L4.1258 1M6.41992 3L4.1258 5" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M0.9 3H6.4M6.4 3L4.1 1M6.4 3L4.1 5" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
-    <div class="max-w-[43px] w-full h-[27px] items-center text-center bg-[#F8F8F8] text-[14px] font-[700] leading-[150%] flex justify-center">...</div>
+    <div class="max-w-[43px] w-full h-[27px] flex items-center justify-center bg-[#F8F8F8] text-[14px] font-[700]">...</div>
     <svg width="7" height="6" viewBox="0 0 7 6" fill="none">
-      <path d="M0.919922 3H6.41992M6.41992 3L4.1258 1M6.41992 3L4.1258 5" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M0.9 3H6.4M6.4 3L4.1 1M6.4 3L4.1 5" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
     <p>TORNADO</p>
   </div>
 
-  <!-- Заголовок + Кнопка -->
+  <!-- Заголовок -->
   <div class="flex justify-between max-lg:flex-col">
-    <h3 class="text-[42px] leading-[100%] font-[700] uppercase mt-[40px] max-lg:text-[24px]">Каталог</h3>
-    <div class="relative inline-block mt-4 max-lg:mt-2">
-      <button id="dropdownBtn" class="flex items-center gap-[8px] text-[#F44336] hover:text-[#d9362c] transition font-medium">
-        Скачать каталог (PDF)
-        <img id="dropdownIcon" src="../assets/catalog/all/donwload.svg" alt="download" class="w-[17px] h-[21px] transition-transform rotate-0"/>
-      </button>
-      <div id="dropdownMenu" class="hidden absolute mt-3 w-[230px] bg-white shadow-md rounded-md overflow-hidden border">
-        <a href="/pdf/catalog-2021.pdf" target="_blank" class="flex items-center justify-between px-4 py-3 text-gray-800 hover:bg-gray-100 transition">
-          Каталог 2021 год (PDF)
-          <img src="../assets/catalog/all/donwload.svg" alt="" class="w-[17px] h-[21px]"/>
-        </a>
-        <a href="/pdf/catalog-2022.pdf" target="_blank" class="flex items-center justify-between px-4 py-3 text-gray-800 hover:bg-gray-100 transition">
-          Каталог 2022 год (PDF)
-          <img src="../assets/catalog/all/donwload.svg" alt="" class="w-[17px] h-[21px]"/>
-        </a>
-      </div>
+    <h3 class="text-[42px] leading-[100%] font-[700] uppercase mt-[40px] max-lg:text-[24px]">
+      Архитектурное освещение
+    </h3>
+    <div class="flex gap-[17px] items-center cursor-pointer">
+      Скачать каталог (PDF)
+      <img src="./img/catalog/all/donwload.svg" class="max-w-[17px] w-full h-[21px]" alt="">
     </div>
   </div>
 
-  <!-- Каталог + Модули -->
-  <div class="flex gap-[20px] mt-[57px] max-lg:mt-[25px]">
-    <div id="catalogContainer" class="grid grid-cols-3 gap-[20px] max-w-[858px] w-full rounded-[9px]">
-      <!-- Рендер каталога JS -->
-    </div>
+  <!-- Описание -->
+  <p class="mt-[47px] max-w-[890px] w-full max-lg:text-[14px]">
+    Мы разрабатывает решения для архитектурной подсветки фасадов, ниш, колонн и кровель. Мы поставляем надёжные светильники с разной оптикой, цветовой температурой
+    и DALI-управлением. Работаем с современными и историческими объектами.
+  </p>
 
-    <div class="max-lg:hidden max-w-[476px] w-full border border-[#EF3824] py-[39px] px-[36px] rounded-[9px]">
-      <h4 class="text-[42px] uppercase leading-[120%] font-[700]">Модульное <br/>оборудование</h4>
-      <p class="mt-[41px] text-[18px] leading-[120%] font-[400]">
-        Надёжные компоненты <span class="text-[#EF3824]">для щитовых <br/>систем и электробезопасности.<br/></span> 
-        Подходят для промышленных<br/>и городских объектов<br/>
-      </p>
-      <div id="modulesContainer" class="mt-[129px] flex flex-col gap-[10px] mb-[207px]"></div>
-    </div>
+  <!-- Каталог -->
+  <div class="flex gap-[20px] mt-[57px]">
+    <div id="catalog-grid" class="grid grid-cols-5 max-lg:grid-cols-3 gap-[25px] max-w-[1349px] w-full"></div>
   </div>
 
-  <!-- Наше Качество -->
+  <!-- Наше качество -->
   <div class="mt-[110px]">
-    <h4 class="text-[42px] leading-[100%] font-[700] uppercase max-lg:text-[24px]">Наше Качество</h4>
-    <div id="qualityContainer" class="mt-[57px] mb-[137px] grid grid-cols-3 max-lg:grid-cols-2 gap-[23px]">
-      <!-- Рендер качества JS -->
-    </div>
+    <h4 class="text-[42px] leading-[100%] font-[700] uppercase">Наше Качество</h4>
+    <div id="quality-grid" class="mt-[57px] mb-[137px] grid grid-cols-3 max-lg:grid-cols-2 gap-[23px]"></div>
   </div>
-</div>
+</section>
 
-<footer class="bg-[#1A171B] text-white px-4 md:px-10 lg:px-20 py-10">
+  <footer class="bg-[#1A171B] text-white px-4 md:px-10 lg:px-20 py-10">
       <div class="max-w-[1400px] mx-auto flex flex-col">
         <div class="flex items-center justify-between pb-5">
           <div>
@@ -445,84 +407,48 @@
           <p>© 2008 - 2025, Все права защищены</p>
         </div>
       </div>
-</footer>
+    </footer>
 
-<script>
-  // Данные
-  const modules = [
-    {id: 1, name: 'Автоматические выключатели', img: '../assets/catalog/catalog/avtomat.png'},
-    {id: 2, name: 'Контакторы', img: '../assets/catalog/catalog/kontaktor.png'},
-    {id: 3, name: 'Ограничители пускового тока', img: '../assets/catalog/catalog/opt.png'},
-    {id: 4, name: 'Устройства защитного отключения (УЗО)', img: '../assets/catalog/catalog/uzo.png'},
-  ];
+    </div>
 
-  const catalog = [
-    { id: 1, name: "Архитектурное освещение", img: "../assets/catalog/catalog/ikonka_as 2.png", desk: "Описание архитектурного освещения" },
-    { id: 2, name: "Ландшафтное освещение", img: "../assets/catalog/catalog/icon-wa 4.png", desk: "Описание ландшафтного освещения" },
-    { id: 3, name: "Дорожное освещение", img: "../assets/catalog/catalog/speedway_60-2.png", desk: "Описание дорожного освещения" },
-    { id: 4, name: "Интерьерное освещение", img: "../assets/catalog/catalog/morrigan_ik.png", desk: "Описание интерьерного освещения" },
-    { id: 5, name: "Светильники для музеев", img: "../assets/catalog/catalog/ikonka.png", desk: "Описание светильников для музеев" },
-    { id: 6, name: "Болларды", img: "../assets/catalog/catalog/zigzag_600-1.png", desk: "Описание боллардов" },
-    { id: 7, name: "Художественное литьё", img: "../assets/catalog/catalog/vivaldi_ikonka.png", desk: "Описание художественного литья" },
-    { id: 8, name: "Световые фасады", img: "../assets/catalog/catalog/dom-tip-1-1.png", desk: "Описание световых фасадов" },
-    { id: 9, name: "Поля света", img: "../assets/catalog/catalog/svetilnik-svetodiodnyj-shar.png.png", desk: "Описание полей света" },
-    { id: 10, name: "Опоры освещения", img: "../assets/catalog/catalog/modulnyj-stolb.png", desk: "Описание опор освещения" },
-    { id: 11, name: "Модульное оборудование", img:"../assets/catalog/catalog/uzo2.png", desk: "Автоматы, УЗО, контакторы и защита" },
-    { id: 12, name: "Аксессуары", img: "../assets/catalog/catalog/2-plates-512x512-1.png", desk: "Описание аксессуаров" },
-  ];
+  <script>
+    const catalog = [
+      { id: 1, name: "Tornado", img: "./img/catalog/catalogInner/image 184.png" },
+      { id: 2, name: "Archspot", img: "./img/catalog/catalogInner/image 185.png" },
+      { id: 3, name: "Mesh", img: "./img/catalog/catalogInner/image 196.png" },
+      { id: 4, name: "Pin", img: "./img/catalog/catalogInner/image 197.png" },
+      { id: 5, name: "Bruce", img: "./img/catalog/catalogInner/image 186.png" },
+      { id: 6, name: "Sofia", img: "./img/catalog/catalogInner/image 198.png" },
+      { id: 7, name: "Proline Premium", img: "./img/catalog/catalogInner/image 199.png" },
+      { id: 8, name: "TD", img: "./img/catalog/catalogInner/image 200.png" },
+      { id: 9, name: "Stem", img: "./img/catalog/catalogInner/image 201.png" },
+      { id: 10, name: "TC", img: "./img/catalog/catalogInner/image 202.png" },
+      { id: 11, name: "Flex IP68", img: "./img/catalog/catalogInner/image 204.png", bg: "#ef3824" },
+      { id: 12, name: "Underwater", img: "./img/catalog/catalogInner/image 205.png" },
+      { id: 13, name: "Archline", img: "./img/catalog/catalogInner/image 206.png" },
+    ];
 
-  const Quality = [
-    {id:1, name: 'гарантийные обязательства', desc: 'Наши светильники разрабатываются собственным конструкторским бюро и проходят испытания. Поэтому мы даем на них фирменную гарантию не менее трех лет.', icon: '../assets/catalog/catalog/Group 2087329838.svg'},
-    {id:2, name: 'Согласовательные работы', desc: 'Мы готовим проекты освещения для согласования с городскими службами, структурами, собственниками и эксплуатирующими организациями.', icon: '../assets/catalog/catalog/Text Flow Columns--Streamline-Ultimate.svg'},
-    {id:3, name: 'Квалифицированный монтаж', desc: 'Мы располагаем собственными электромонтажными бригадами. Благодаря опыту работы во множестве регионов и климатических зон они обеспечивают качественный монтаж на каждом объекте.', icon: '../assets/catalog/catalog/Group.svg'},
-    {id:4, name: 'Испытания', desc: 'Мы производим большинство компонентов светильников IPRO на собственном заводе в Тульской области. Наша продукция проходит испытания в светотехнической лаборатории, тестирование в климатической камере.', icon: '../assets/catalog/catalog/Cursor Choose 1--Streamline-Ultimate.svg'},
-    {id:5, name: 'Эксплуатация и обслуживание', desc: 'Мы осуществляем обслуживание объектов: проводим мойку и чистку, мониторинг технического состояния светильников, проверку герметичности соединений и целостности изоляции, выверку нацеливания светильников.', icon: '../assets/catalog/catalog/Cog--Streamline-Ultimate.svg'},
-    {id:6, name: 'Продуманная логистика', desc: 'Мы реализуем проекты на территории России и других стран, например, в Казахстане и Саудовской Аравии. При необходимости подберем поставщиков специальных светотехнических решений, возьмем на себя вопросы ВЭД, организуем доставку оборудования', icon: '../assets/catalog/catalog/Group 2087329652.svg'},
-  ];
+    const Quality = [
+        {id:1, name: 'гарантийные обязательства', desc: 'Наши светильники разрабатываются собственным конструкторским бюро и проходят испытания. Поэтому мы даем на них фирменную гарантию не менее трех лет.', icon: './img/catalog/catalog/Group 2087329838.svg'},
+        {id:2, name: 'Согласовательные работы', desc: 'Мы готовим проекты освещения для согласования с городскими службами, структурами, собственниками и эксплуатирующими организациями.', icon: './img/catalog/catalog/Text Flow Columns--Streamline-Ultimate.svg'},
+        {id:3, name: 'Квалифицированный монтаж', desc: 'Мы располагаем собственными электромонтажными бригадами. Благодаря опыту работы во множестве регионов и климатических зон они обеспечивают качественный монтаж на каждом объекте.', icon: './img/catalog/catalog/Group.svg'},
+        {id:4, name: 'Испытания', desc: 'Мы производим большинство компонентов светильников IPRO на собственном заводе в Тульской области. Наша продукция проходит испытания в светотехнической лаборатории, тестирование в климатической камере.', icon: './img/catalog/catalog/Cursor Choose 1--Streamline-Ultimate.svg'},
+        {id:5, name: 'Эксплуатация и обслуживание', desc: 'Мы осуществляем обслуживание объектов: проводим мойку и чистку, мониторинг технического состояния светильников, проверку герметичности соединений и целостности изоляции, выверку нацеливания светильников.', icon: './img/catalog/catalog/Cog--Streamline-Ultimate.svg'},
+        {id:6, name: 'Продуманная логистика', desc: 'Мы реализуем проекты на территории России и других стран, например, в Казахстане и Саудовской Аравии. При необходимости подберем поставщиков специальных светотехнических решений, возьмем на себя вопросы ВЭД, организуем доставку оборудования', icon: './img/catalog/catalog/Group 2087329652.svg'},
+    ];
 
-  // Рендер каталог
-  const catalogContainer = document.getElementById("catalogContainer");
-  catalog.forEach(item => {
-    catalogContainer.innerHTML += `
-      <a href="./catalogInner.html" 
-         class="group flex flex-col gap-[20px] relative max-sm:h-[108px] h-[201px] w-full bg-[#F8F8F8] p-[14px] rounded-[9px] transition-all duration-300 hover:bg-[#EF3824] hover:text-white">
+    const catalogGrid = document.getElementById("catalog-grid");
+    catalog.forEach(item => {
+        catalogGrid.innerHTML += `
+          <a href="./catalogSeries.html" class="relative h-[201px] max-lg:h-[108px] max-lg:max-w-[108px] max-lg:w-full bg-[#F8F8F8] p-[14px] rounded-[9px] hover:bg-[#EF3824]">
+            <p class="flex flex-col text-[16px] font-[600] leading-[120%]">${item.name}</p>
+            <img src="${item.img}" class="w-auto h-auto absolute right-0 bottom-0 max-sm:scale-[0.5] origin-bottom-right" alt="">
+          </a>`;
+    });
 
-        <!-- Название -->
-        <p class="flex flex-col text-[16px] font-[600] leading-[120%] max-sm:text-[12px]">
-          ${item.name.split(" ").join("<br/>")}
-        </p>
-
-        <!-- Описание (по умолчанию скрыто, видно только при hover) -->
-        <p class="text-[16px] font-[400] opacity-80 hidden group-hover:block">
-          ${item.desk ?? ""}
-        </p>
-
-        <!-- "Подобрать решение" (по умолчанию скрыто, видно при hover) -->
-        <span class="flex items-center justify-between hidden group-hover:flex">
-          Подобрать решение <img src="../assets/catalog/all/arrow.svg"/>
-        </span>
-
-        <!-- Картинка (по умолчанию есть, при hover скрывается) -->
-        ${item.img ? `<img src="${item.img}" class="absolute right-0 bottom-0 max-sm:scale-[0.5] origin-bottom-right group-hover:hidden"/>` : ""}
-      </a>
-    `;
-  });
-
-  // Рендер модулей
-  const modulesContainer = document.getElementById("modulesContainer");
-  modules.forEach(item => {
-    modulesContainer.innerHTML += `
-      <div class="flex gap-[20px]">
-        <img src="${item.img}" alt=""/>
-        <p>${item.name}</p>
-      </div>
-    `;
-  });
-
-  // Рендер качества
-  const qualityContainer = document.getElementById("qualityContainer");
-  Quality.forEach(item => {
-    qualityContainer.innerHTML += `
+    const qualityGrid = document.getElementById("quality-grid");
+    Quality.forEach(item => {
+    qualityGrid.innerHTML += `
       <div class="flex gap-[27px] py-[27px] pl-[16px] pr-[13px] bg-[#F8F8F8] max-w-[437px] w-full rounded-[9px]">
         <img src="${item.icon}" class="max-w-[25px] w-full h-[25px] hidden lg:block"/>
         <div class="flex flex-col gap-[27px]">
@@ -532,17 +458,7 @@
       </div>
     `;
   });
-
-  // Dropdown
-  const dropdownBtn = document.getElementById("dropdownBtn");
-  const dropdownMenu = document.getElementById("dropdownMenu");
-  const dropdownIcon = document.getElementById("dropdownIcon");
-
-  dropdownBtn.addEventListener("click", () => {
-    dropdownMenu.classList.toggle("hidden");
-    dropdownIcon.classList.toggle("rotate-180");
-  });
-</script>
+  </script>
 <script>
       const burgerBtn = document.getElementById("burgerBtn");
       const mobileMenu = document.getElementById("mobileMenu");
@@ -556,5 +472,122 @@
         window.scrollTo({ top: 0, behavior: "smooth" });
       });
     </script>
+    <script>
+(() => {
+  const burger = document.getElementById('burgerBtn');
+  if (!burger) return console.warn('burgerBtn not found');
+
+  let overlay = null;
+
+  function createOverlay() {
+    overlay = document.createElement('div');
+    overlay.id = 'mobileMenuOverlay';
+    overlay.className =
+      'fixed inset-0 z-[9999] bg-white flex flex-col overflow-auto p-4'; // fullscreen
+    
+    overlay.innerHTML = `
+    
+     <div class="flex justify-between">
+ <a href="main.html">
+ <svg width="78" height="25" viewBox="0 0 78 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.57521 24.557H0V0.560547H3.57521V24.557Z" fill="#2E2C30"/>
+<path d="M42.3295 18.9184H36.5029V24.5574H32.9277V15.3467H40.0782L32.9277 4.0972V0.564453H41.3702C46.4321 0.564453 50.5383 4.67064 50.5383 9.73259C50.5383 13.1839 48.641 16.1857 45.8056 17.7432L50.1525 24.5609H45.933L42.3295 18.922V18.9184ZM43.8905 14.7131C45.7065 13.8105 46.9631 11.9096 46.9631 9.72905C46.9631 6.63171 44.4675 4.13259 41.3702 4.13259H37.172L43.8905 14.7096V14.7131Z" fill="#2E2C30"/>
+<path d="M66.108 0.560547C59.6054 0.560547 54.3027 5.934 54.3027 12.5322C54.3027 19.1304 59.6054 24.5534 66.108 24.5534C72.6107 24.5534 77.9169 19.18 77.9169 12.5818C77.9169 5.98356 72.6107 0.560547 66.108 0.560547ZM66.108 20.9818C64.4266 20.9818 62.8691 20.4756 61.5735 19.5871C61.5735 19.5871 60.0478 18.5924 59.1558 17.0172C58.3346 15.7216 57.8815 14.1853 57.8815 12.5322C57.8815 7.90214 61.5771 4.13222 66.1116 4.13222C67.7894 4.13222 69.4886 4.68798 70.6425 5.52691C71.8071 6.37293 72.2638 6.80479 73.0708 8.09328C73.9062 9.51983 74.3452 10.9251 74.3452 12.5818C74.3452 17.2083 70.6709 20.9818 66.1116 20.9818H66.108Z" fill="#2E2C30"/>
+<path d="M18.5167 0.560547H13.6707V4.13577H18.5167C19.3379 4.13577 20.1025 4.30923 20.7963 4.61719C20.7963 4.61719 21.7025 5.01364 22.3468 5.65081C23.2777 6.56762 23.4087 7.03843 23.4087 7.03843C23.8689 7.83489 24.1096 8.74815 24.1096 9.73222C24.1096 12.826 21.6105 15.3464 18.5167 15.3464H10.0742V24.557H13.6423V18.9181H18.5167C23.5786 18.9181 27.6813 14.7906 27.6813 9.72869C27.6813 4.66675 23.5786 0.560547 18.5167 0.560547Z" fill="#2E2C30"/>
+</svg>
+</a>
+
+ <button id="mobileMenuClose" aria-label="Закрыть меню"
+        class="absolute right-4 top-4 text-3xl"><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="1.42188" y="1.48738" width="18.997" height="1.00819" transform="rotate(45 1.42188 1.48738)" fill="#2E2C30" stroke="#2E2C30"/>
+<rect x="14.1406" y="1.48738" width="1.00819" height="18.997" transform="rotate(45 14.1406 1.48738)" fill="#2E2C30" stroke="#2E2C30"/>
+</svg>
+</button>
+</div>
+
+      <nav class="flex flex-col flex-1 mt-10 text-[16px] font-medium">
+        <div class="flex-col flex flex-1 h-full">
+          <ul class="flex gap-[6px] mb-[30px]">
+            <input
+              type="text"
+              placeholder="Поиск..."
+              class="border border-[#C4C4C4] rounded-[7px] px-3 py-2 max-w-[420px] w-full"
+            />
+            <a
+              href="./catalog.html"
+              class="bg-[#EF3824] text-white rounded-[8px] py-[8px] px-[16px] text-[14px] font-semibold transition-all duration-300"
+            >
+              Каталог
+            </a>
+          </ul>
+
+          <ul class="border-t border-[#2E2C30] flex pt-[29px] flex-col gap-4 text-[16px] font-medium">
+            <li><a href="#" class="hover:text-[#EF3824]">ПРОЕКТИРОВЩИКАМ</a></li>
+            <li><a href="#" class="hover:text-[#EF3824]">ДЕВЕЛОПЕРАМ</a></li>
+            <li><a href="#" class="hover:text-[#EF3824]">АРХИТЕКТОРАМ</a></li>
+            <li><a href="#" class="hover:text-[#EF3824]">ДИЗАЙНЕРАМ</a></li>
+            <li><a href="#" class="hover:text-[#EF3824]">МАРКЕТПЛЕЙСЫ</a></li>
+          </ul>
+
+          <ul class="border-t border-[#2E2C30] mt-4 pt-[29px] flex flex-col gap-4 text-[16px] font-medium">
+            <li><a href="#" class="hover:text-[#EF3824]">О НАС</a></li>
+            <li><a href="#" class="hover:text-[#EF3824]">ПОДДЕРЖКА</a></li>
+            <li><a href="#" class="hover:text-[#EF3824]">ПОРТФОЛИО</a></li>
+            <li><a href="#" class="hover:text-[#EF3824]">КОНТАКТЫ</a></li>
+          </ul>
+        </div>
+
+        <!-- Нижний блок -->
+        <div class="flex justify-between mt-auto">
+          <span class="flex gap-[8px] items-center">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.8521 10.7808L11.0567 9.08241C10.9096 9.01875 10.7489 8.99275 10.5892 9.00679C10.4295 9.02083 10.2758 9.07446 10.142 9.16281C10.1313 9.1696 10.1211 9.17708 10.1115 9.18534L8.11811 10.8845C8.07374 10.9115 8.02343 10.9273 7.9715 10.9302C7.91965 10.9331 7.86787 10.9232 7.82073 10.9013C6.51539 10.2712 5.16425 8.93055 4.53409 7.6405C4.5118 7.59366 4.50145 7.54212 4.50398 7.49034C4.50651 7.43857 4.52182 7.38826 4.54856 7.34389L6.25256 5.31757C6.2606 5.30792 6.26784 5.29748 6.27507 5.28702C6.36315 5.15344 6.41662 5.00003 6.43065 4.84064C6.44468 4.68124 6.41884 4.52086 6.35544 4.37394L4.65386 0.584958C4.57171 0.393058 4.42952 0.232987 4.24864 0.128781C4.06777 0.0245747 3.85797 -0.0181425 3.65074 0.00705142C2.63925 0.140409 1.7109 0.63742 1.03907 1.40524C0.367243 2.17306 -0.00210595 3.15919 9.0331e-06 4.17943C9.0331e-06 10.3845 5.0477 15.4322 11.2529 15.4322C12.2731 15.4343 13.2592 15.065 14.027 14.3932C14.7949 13.7213 15.2919 12.793 15.4252 11.7815C15.4502 11.5753 15.408 11.3664 15.3047 11.1861C15.2014 11.0057 15.0427 10.8636 14.8521 10.7808ZM14.7895 11.7011C14.676 12.5577 14.2543 13.3437 13.6034 13.912C12.9526 14.4804 12.1169 14.7922 11.2529 14.7892C5.40298 14.7892 0.643026 10.0293 0.643026 4.17943C0.640032 3.31533 0.951864 2.47972 1.52021 1.82883C2.08856 1.17794 2.8745 0.756333 3.73112 0.642836C3.74397 0.642034 3.75686 0.642034 3.7697 0.642836C3.83313 0.643376 3.89498 0.662667 3.94748 0.698277C3.99996 0.733886 4.04075 0.784234 4.06469 0.842969L5.76146 4.63195C5.78125 4.67826 5.78989 4.72857 5.78668 4.77883C5.78347 4.82909 5.76849 4.8779 5.74297 4.92131L4.03978 6.94682C4.03174 6.95723 4.0237 6.96688 4.01647 6.97815C3.92572 7.11688 3.87228 7.27676 3.8613 7.44212C3.85032 7.60755 3.88217 7.77306 3.95377 7.9226C4.65225 9.35247 6.09261 10.7824 7.53863 11.4809C7.68917 11.552 7.8556 11.583 8.02166 11.5707C8.18771 11.5584 8.34774 11.5034 8.48624 11.411L8.51595 11.3884L10.5117 9.6909C10.5545 9.66482 10.6027 9.64923 10.6526 9.64545C10.7025 9.64167 10.7525 9.64985 10.7987 9.66922L14.5933 11.3699C14.6574 11.3966 14.7111 11.4432 14.7464 11.503C14.7817 11.5626 14.7969 11.6321 14.7895 11.7011Z" fill="#2E2C30"/>
+</svg>
+
+            <p class="hover:text-[#EF3824] cursor-pointer">+7 (499) 551-51-85</p>
+          </span>
+          <div class="flex gap-[5px] text-[18px] font-medium items-center">
+            <button class="hover:text-[#EF3824]">EN</button>
+            <div class="bg-[#2E2C30] w-[1px] h-[22px]"></div>
+            <button class="text-[#EF3824]">RU</button>
+          </div>
+        </div>
+      </nav>
+    `;
+
+    document.body.appendChild(overlay);
+
+    // Закрытие
+    document.getElementById('mobileMenuClose').addEventListener('click', closeOverlay);
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) closeOverlay();
+    });
+    document.addEventListener('keydown', onKey);
+
+    document.body.style.overflow = 'hidden'; // блокируем фон
+  }
+
+  function openOverlay() {
+    if (!overlay) createOverlay();
+  }
+
+  function closeOverlay() {
+    if (!overlay) return;
+    overlay.remove();
+    overlay = null;
+    document.body.style.overflow = '';
+    document.removeEventListener('keydown', onKey);
+  }
+
+  function onKey(e) {
+    if (e.key === 'Escape') closeOverlay();
+  }
+
+  burger.addEventListener('click', () => {
+    if (overlay) closeOverlay();
+    else openOverlay();
+  });
+})();
+</script>
 </body>
 </html>

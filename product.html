@@ -16,9 +16,9 @@
   </head>
   <body class="bg-white text-[#1C1C1C]">
     <!-- ===== Header ===== -->
-    <header class="text-[#2E2C30] max-w-[1400px] mx-auto p-4 z-20">
+    <header class="text-[#2E2C30]  fixed shadow-md  md:static top-0 left-0 w-full bg-white  mx-auto p-4 z-20">
       <!-- MOBILE HEADER -->
-      <div class="flex items-center justify-between md:hidden">
+      <div class="flex items-center max-w-[1400px] m-auto justify-between md:hidden ">
         <button id="burgerBtn">
           <!-- Burger Icon -->
           <svg
@@ -34,7 +34,7 @@
           </svg>
         </button>
 
-        <!-- Лого (замена твоему <Logo/>) -->
+        <!-- Лого) -->
          <a href="main.html">
 
            <svg
@@ -62,7 +62,7 @@
       </div>
 
       <!-- DESKTOP HEADER -->
-      <div class="hidden md:flex flex-col gap-[30px] max-h-[158px]">
+      <div class="hidden md:flex max-w-[1400px] m-auto flex-col gap-[30px] max-h-[158px]">
         <div class="flex justify-between gap-[29px]">
           <div class="flex gap-[30px] items-center w-full">
             <!-- Лого -->
@@ -158,70 +158,65 @@
           </div>
         </div>
 
-        <ul class="flex gap-[26px] text-[14px] font-medium">
-          <li class="hover:text-[#EF3824] duration-300"><a href="#">О НАС</a></li>
-          <li class="hover:text-[#EF3824] duration-300"><a href="#">ПОДДЕРЖКА</a></li>
-          <li class="hover:text-[#EF3824] duration-300"><a href="#">ПОРТФОЛИО</a></li>
-          <li class="hover:text-[#EF3824] duration-300"><a href="#">КОНТАКТЫ</a></li>
-        </ul>
+        <div class="flex justify-between">
+          <ul class="flex gap-[26px] text-[14px] font-medium max-lg:hidden">
+            <li class="hover:text-[#EF3824] duration-300 uppercase"><a href="#">Проектировщикам</a></li>
+            <li class="hover:text-[#EF3824] duration-300 uppercase"><a href="#">ДевелоперАМ</a></li>
+            <li class="hover:text-[#EF3824] duration-300 uppercase"><a href="#">АрхитекторАМ</a></li>
+            <li class="hover:text-[#EF3824] duration-300 uppercase"><a href="#">дИЗАЙНЕРАМ</a></li>
+            <li class="hover:text-[#EF3824] duration-300 uppercase"><a href="#">МАРКЕТПЛЕЙСЫ</a></li>
+          </ul>
+          <ul class="flex gap-[26px] text-[14px] font-medium">
+            <li class="hover:text-[#EF3824] duration-300"><a href="#">О НАС</a></li>
+            <li class="hover:text-[#EF3824] duration-300"><a href="#">ПОДДЕРЖКА</a></li>
+            <li class="hover:text-[#EF3824] duration-300"><a href="#">ПОРТФОЛИО</a></li>
+            <li class="hover:text-[#EF3824] duration-300"><a href="#">КОНТАКТЫ</a></li>
+          </ul>
+          
+        </div>
       </div>
 
-      <!-- MOBILE MENU -->
-     <nav id="mobileMenu" class="hidden md:hidden flex-col gap-4 mt-4 text-[16px] font-medium relative">
-  <ul class="flex gap-[6px] mb-[30px]">
-    <input
-      type="text"
-      placeholder="Поиск..."
-      class="border border-[#C4C4C4] rounded-[7px] px-3 py-2 max-w-[420px] w-full"
-    />
 
-    <a
-      href="#"
-      class="bg-[#EF3824] text-white rounded-[8px] py-[8px] px-[16px] text-[14px] font-semibold transition-all duration-300"
-    >
-      Каталог
-    </a>
-  </ul>
-
-  <ul class="border-t border-[#2E2C30] flex pt-[29px] flex-col gap-4 text-[16px] font-medium">
-    <li class="hover:text-[#EF3824] duration-300 cursor-pointer"><a href="#">ПРОЕКТИРОВЩИКАМ</a></li>
-    <li class="hover:text-[#EF3824] duration-300 cursor-pointer"><a href="#">ДЕВЕЛОПЕРАМ</a></li>
-    <li class="hover:text-[#EF3824] duration-300 cursor-pointer"><a href="#">АРХИТЕКТОРАМ</a></li>
-    <li class="hover:text-[#EF3824] duration-300 cursor-pointer"><a href="#">ДИЗАЙНЕРАМ</a></li>
-    <li class="hover:text-[#EF3824] duration-300 cursor-pointer"><a href="#">МАРКЕТПЛЕЙСЫ</a></li>
-  </ul>
-
-  <ul class="border-t border-[#2E2C30] mt-4 pt-[29px] flex flex-col gap-4 text-[16px] font-medium">
-    <li class="hover:text-[#EF3824] duration-300 cursor-pointer"><a href="#">О НАС</a></li>
-    <li class="hover:text-[#EF3824] duration-300 cursor-pointer"><a href="#">ПОДДЕРЖКА</a></li>
-    <li class="hover:text-[#EF3824] duration-300 cursor-pointer"><a href="#">ПОРТФОЛИО</a></li>
-    <li class="hover:text-[#EF3824] duration-300 cursor-pointer"><a href="#">КОНТАКТЫ</a></li>
-  </ul>
-</nav>
 
     </header>
-
     <!-- ===== Hero Section ===== -->
      <section class="max-w-[1160px] mx-auto">
-        <div class="flex gap-[9px] items-center text-[#A9A9A9] mt-[51px]">
-        <a href="main.html">Главная</a>
-        <svg width="7" height="6" viewBox="0 0 7 6" fill="none">
-          <path d="M0.919922 3H6.41992M6.41992 3L4.1258 1M6.41992 3L4.1258 5" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <div class="max-w-[43px] w-full h-[27px] items-center text-center bg-[#F8F8F8] text-[14px] font-[700] leading-[150%] flex justify-center">...</div>
-        <svg width="7" height="6" viewBox="0 0 7 6" fill="none">
-          <path d="M0.919922 3H6.41992M6.41992 3L4.1258 1M6.41992 3L4.1258 5" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <p>TORNADO</p>
+        <div class="flex gap-[9px] items-center text-[#A9A9A9] mt-[51px] max-lg:px-4">
+          <a href="main.html">Главная</a>
+          <svg width="7" height="6" viewBox="0 0 7 6" fill="none">
+            <path d="M0.919922 3H6.41992M6.41992 3L4.1258 1M6.41992 3L4.1258 5" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="max-w-[43px] w-full h-[27px] items-center text-center bg-[#F8F8F8] text-[14px] font-[700] leading-[150%] flex justify-center">...</div>
+          <svg width="7" height="6" viewBox="0 0 7 6" fill="none">
+            <path d="M0.919922 3H6.41992M6.41992 3L4.1258 1M6.41992 3L4.1258 5" stroke="#A9A9A9" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <a href="">TORNADO</a>
       </div>
-      <div class="flex mt-[36px] justify-between">
+      <div class="flex mt-[36px] justify-between max-lg:px-4 max-lg:flex-col">
         <div>
           <h2 class="text-[42px] font-bold uppercase">СЕРИЯ TORNADO: 4000К S 800 Вт </h2>
           <p class="max-w-[725px] w-full text-[20px] font-bold uppercase">узконаправленный светильник для подсветки фасадов и акцентов с высоты до 40 м</p>
         </div>
-        <div class="flex gap-[17px] items-center cursor-pointer  mb-auto">
-          Скачать каталог (PDF)
-          <img src="../assets/catalog/all/donwload.svg" class="max-w-[17px] w-full h-[21px]" alt="">
+        <div class="max-lg:flex max-lg:justify-between max-lg:mt-[26px]">
+          <div class="flex gap-[17px] items-center cursor-pointer mb-auto">
+            Скачать каталог (PDF)
+            <img src="./img/catalog/all/donwload.svg" class="max-w-[17px] w-full h-[21px]" alt="">
+          </div>
+          <div class="flex gap-[10px] cursor-pointer lg:hidden ">
+              <p class="text-[13px] text-[#9CA3AF]">Артикул: 3603 </p>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_950_5505)">
+              <path d="M6.06601 0.950988C5.90972 0.997542 5.70355 1.21369 5.657 1.38661C5.58051 1.68256 5.6969 1.99182 5.94963 2.14811L6.07599 2.22792L10.0365 2.24454L13.9936 2.26117L14.2463 2.38421C14.5489 2.53385 14.7352 2.72672 14.8815 3.03597L14.9879 3.25877L15.0045 8.54605L15.0211 13.8333L15.1009 13.9597C15.1442 14.0295 15.2406 14.126 15.3138 14.1758C15.4268 14.2523 15.4867 14.2656 15.6696 14.2656C15.8525 14.2656 15.9123 14.2523 16.0254 14.1758C16.0985 14.126 16.195 14.0295 16.2382 13.9597L16.318 13.8333V8.49617C16.318 3.61458 16.3147 3.14238 16.2615 2.95949C16.1185 2.43741 15.899 2.05167 15.5532 1.70251C15.3271 1.46974 14.9413 1.21036 14.6786 1.11393C14.1599 0.917734 14.4758 0.931035 10.1495 0.924385C7.68878 0.92106 6.13252 0.931035 6.06601 0.950988Z" fill="#2E2C30"/>
+              <path d="M4.16401 3.65806C3.04337 3.8875 2.21204 4.75209 2.03912 5.8694C2.00919 6.0523 2.00254 7.37245 2.00919 10.9239C2.01917 16.1613 2.00587 15.7623 2.20206 16.2844C2.42153 16.8729 3.06997 17.5214 3.65856 17.7408C4.17066 17.9337 3.93124 17.9237 7.8385 17.9237C11.7458 17.9237 11.5063 17.9337 12.0184 17.7408C12.6104 17.5214 13.2555 16.8763 13.4749 16.2844C13.6711 15.7656 13.6578 16.1414 13.6578 10.7743C13.6578 6.28174 13.6545 5.83615 13.6013 5.65326C13.4583 5.13118 13.2388 4.74544 12.893 4.39628C12.6669 4.16351 12.2811 3.90413 12.0184 3.8077C11.503 3.61483 11.7724 3.6248 7.92164 3.61815C5.09178 3.61483 4.33693 3.62148 4.16401 3.65806ZM11.5529 5.06135C11.8622 5.20766 12.055 5.39388 12.2047 5.69649L12.3277 5.94921V10.7743V15.5993L12.2047 15.8521C12.055 16.1547 11.8622 16.3409 11.5529 16.4872L11.3301 16.5936H7.8385H4.3469L4.1241 16.4872C3.81485 16.3409 3.62198 16.1547 3.47234 15.8521L3.3493 15.5993V10.7776V5.95254L3.45571 5.72974C3.51224 5.6067 3.62198 5.44044 3.69514 5.36063C3.84145 5.20101 4.14406 5.02477 4.35023 4.97489C4.42671 4.95826 5.90648 4.94496 7.90501 4.94829L11.3301 4.95494L11.5529 5.06135Z" fill="#2E2C30"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_950_5505">
+              <rect width="17.0257" height="17.0257" fill="white" transform="translate(0.672852 0.915039)"/>
+              </clipPath>
+              </defs>
+              </svg>
+
+            </div>
         </div>
       </div>
      </section>
@@ -236,7 +231,7 @@
   >
     <a
       data-fancybox="gallery"
-      href="../assets/catalog/catalogInner/image 184.png"
+      href="./img/catalog/catalogInner/image 184.png"
     >
     <div class="absolute top-0 left-0 mt-[35px] bg-[#EF3824] max-w-[183px] w-full h-[36px] text-white text-[10px] flex font-semibold m-auto text-center items-center justify-center">Собственное производство</div>
     <div class="absolute bottom-0 right-0 mr-[31px] mb-[22px]"> 
@@ -254,7 +249,7 @@
     </div>
       <img
         id="main-image"
-        src="../assets/catalog/catalogInner/image 184.png"
+        src="./img/catalog/catalogInner/image 184.png"
         alt="TORNADO"
         class="h-[420px] w-auto object-contain transition-opacity duration-500 ease-in-out opacity-100 cursor-zoom-in"
       />
@@ -265,64 +260,119 @@
   <!-- <div class="mt-4 grid grid-cols-4 gap-3 no-swiper">
     <div
       class="thumb h-[64px] rounded-[8px] border border-[#D92D20] bg-white flex items-center justify-center cursor-pointer"
-      data-img="../assets/catalog/catalogInner/image 184.png"
+      data-img="./img/catalog/catalogInner/image 184.png"
     >
-      <img src="../assets/catalog/catalogInner/image 184.png" class="w-[44px] h-[44px] object-contain rounded" />
+      <img src="./img/catalog/catalogInner/image 184.png" class="w-[44px] h-[44px] object-contain rounded" />
     </div>
     <div
       class="thumb h-[64px] rounded-[8px] border border-[#E5E7EB] bg-white flex items-center justify-center cursor-pointer"
-      data-img="../assets/catalog/catalogInner/image 185.png"
+      data-img="./img/catalog/catalogInner/image 185.png"
     >
-      <img src="../assets/catalog/catalogInner/image 185.png" class="w-[44px] h-[44px] object-contain rounded" />
+      <img src="./img/catalog/catalogInner/image 185.png" class="w-[44px] h-[44px] object-contain rounded" />
     </div>
     <div
       class="thumb h-[64px] rounded-[8px] border border-[#E5E7EB] bg-white flex items-center justify-center cursor-pointer"
-      data-img="../assets/catalog/catalogInner/image 186.png"
+      data-img="./img/catalog/catalogInner/image 186.png"
     >
-      <img src="../assets/catalog/catalogInner/image 186.png" class="w-[44px] h-[44px] object-contain rounded" />
+      <img src="./img/catalog/catalogInner/image 186.png" class="w-[44px] h-[44px] object-contain rounded" />
     </div>
     <div
       class="thumb h-[64px] rounded-[8px] border border-[#E5E7EB] bg-white flex items-center justify-center cursor-pointer"
-      data-img="../assets/catalog/catalogInner/image 184.png"
+      data-img="./img/catalog/catalogInner/image 184.png"
     >
-      <img src="../assets/catalog/catalogInner/image 184.png" class="w-[44px] h-[44px] object-contain rounded" />
+      <img src="./img/catalog/catalogInner/image 184.png" class="w-[44px] h-[44px] object-contain rounded" />
     </div>
   </div> -->
 
+  <!-- Превью с кастомными стрелками -->
+<div class="relative mt-4">
+  <!-- Контейнер с превью -->
+  <div class="relative flex items-center">
+    <!-- Левая стрелка -->
+    <button
+      id="thumb-prev"
+      class="absolute left-0 z-10 bg-white rounded-full cursor-pointer"
+    >
+      <svg width="27" height="18" viewBox="0 0 27 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.052 17.0977L-1.48619e-06 8.59766L8.052 0.0976577L9.486 1.58766L3.846 7.54066L27 7.54066L27 9.65566L3.847 9.65566L9.486 15.6077L8.052 17.0977Z" fill="#2E2C30"/>
+      </svg>
+    </button>
+
+    <!-- Превью -->
+    <div class="grid grid-cols-4 w-full gap-3 px-10" id="thumbs-container">
+      <div
+        class="thumb h-[64px] rounded-[8px] border border-[#D92D20] bg-white flex items-center justify-center cursor-pointer"
+        data-img="./img/catalog/catalogInner/image 184.png"
+      >
+        <img src="./img/catalog/catalogInner/image 184.png" class="w-[44px] h-[44px] object-contain rounded" />
+      </div>
+      <div
+        class="thumb h-[64px] rounded-[8px] border border-[#E5E7EB] bg-white flex items-center justify-center cursor-pointer"
+        data-img="./img/catalog/catalogInner/image 185.png"
+      >
+        <img src="./img/catalog/catalogInner/image 185.png" class="w-[44px] h-[44px] object-contain rounded" />
+      </div>
+      <div
+        class="thumb h-[64px] rounded-[8px] border border-[#E5E7EB] bg-white flex items-center justify-center cursor-pointer"
+        data-img="./img/catalog/catalogInner/image 186.png"
+      >
+        <img src="./img/catalog/catalogInner/image 186.png" class="w-[44px] h-[44px] object-contain rounded" />
+      </div>
+      <div
+        class="thumb h-[64px] rounded-[8px] border border-[#E5E7EB] bg-white flex items-center justify-center cursor-pointer"
+        data-img="./img/catalog/catalogInner/image 184.png"
+      >
+        <img src="./img/catalog/catalogInner/image 184.png" class="w-[44px] h-[44px] object-contain rounded" />
+      </div>
+    </div>
+
+    <!-- Правая стрелка -->
+    <button
+      id="thumb-next"
+      class="absolute right-0 z-10 bg-white rounded-full cursor-pointer"
+    >
+      <svg width="27" height="18" viewBox="0 0 27 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="rotate-180">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.052 17.0977L-1.48619e-06 8.59766L8.052 0.0976577L9.486 1.58766L3.846 7.54066L27 7.54066L27 9.65566L3.847 9.65566L9.486 15.6077L8.052 17.0977Z" fill="#2E2C30"/>
+      </svg>
+    </button>
+  </div>
+</div>
+
+
   <!-- Превью (слайдер, если > 4 картинки) -->
   <div class="mt-4 swiper mySwiper hidden">
-    <div class="swiper-wrapper">
+    <div class="swiper-wrapper w-full">
       <!-- Каждое превью внутри swiper-slide -->
       <div class="swiper-slide">
         <div
           class="thumb h-[64px] rounded-[8px] border border-[#D92D20] bg-white flex items-center justify-center cursor-pointer"
-          data-img="../assets/catalog/catalogInner/image 184.png"
+          data-img="./img/catalog/catalogInner/image 184.png"
         >
-          <img src="../assets/catalog/catalogInner/image 184.png" class="w-[44px] h-[44px] object-contain rounded" />
+          <img src="./img/catalog/catalogInner/image 184.png" class="w-[44px] h-[44px] object-contain rounded" />
         </div>
       </div>
       <div class="swiper-slide">
         <div
           class="thumb h-[64px] rounded-[8px] border border-[#D92D20] bg-white flex items-center justify-center cursor-pointer"
-          data-img="../assets/catalog/catalogInner/image 185.png"
+          data-img="./img/catalog/catalogInner/image 185.png"
         >
-          <img src="../assets/catalog/catalogInner/image 185.png" class="w-[44px] h-[44px] object-contain rounded" />
+          <img src="./img/catalog/catalogInner/image 185.png" class="w-[44px] h-[44px] object-contain rounded" />
         </div>
       </div>
       <div class="swiper-slide">
         <div
           class="thumb h-[64px] rounded-[8px] border border-[#D92D20] bg-white flex items-center justify-center cursor-pointer"
-          data-img="../assets/catalog/catalogInner/image 186.png"
+          data-img="./img/catalog/catalogInner/image 186.png"
         >
-          <img src="../assets/catalog/catalogInner/image 186.png" class="w-[44px] h-[44px] object-contain rounded" />
+          <img src="./img/catalog/catalogInner/image 186.png" class="w-[44px] h-[44px] object-contain rounded" />
         </div>
       </div>
       <div class="swiper-slide">
         <div
           class="thumb h-[64px] rounded-[8px] border border-[#D92D20] bg-white flex items-center justify-center cursor-pointer"
-          data-img="../assets/catalog/catalogInner/image 184.png"
+          data-img="./img/catalog/catalogInner/image 184.png"
         >
-          <img src="../assets/catalog/catalogInner/image 184.png" class="w-[44px] h-[44px] object-contain rounded" />
+          <img src="./img/catalog/catalogInner/image 184.png" class="w-[44px] h-[44px] object-contain rounded" />
         </div>
       </div>
     </div>
@@ -478,8 +528,8 @@
         <div id="tabContent" class="pt-4 text-[14px] leading-[22px] text-[#4B5563]">
           <p class="text-[20px] text-[#2E2C30] font-regular leading-[120%]">
             Tornado 4000К S 800 Вт — мощный архитектурный светильник, созданный для задач, где важна направленная акцентная подсветка с экономичным потреблением. При световом потоке 94 680 лм он демонстрирует отличное соотношение «сила света на ватт», обеспечивая яркое, но чётко сфокусированное освещение. 
-Узкая оптика (≈10°) позволяет «рисовать» светом детали фасадов
-и ландшафтных элементов. Корпус из литого алюминия защищён по классу IP66 и выдерживает температуры от –40 до +60 °С. Эта модель подходит для объектов, где нет потребности в максимальной мощности, но важна высокая эффективность и точность света.
+            Узкая оптика (≈10°) позволяет «рисовать» светом детали фасадов
+            и ландшафтных элементов. Корпус из литого алюминия защищён по классу IP66 и выдерживает температуры от –40 до +60 °С. Эта модель подходит для объектов, где нет потребности в максимальной мощности, но важна высокая эффективность и точность света.
           </p>
         </div>
         <p class="mt-[80px] text-[20px] text-[#2E2C30] leading-[141%] font-regular">
@@ -590,7 +640,7 @@
     <!-- Case 1 -->
     <div>
       <img
-        src="../assets/catalog/product/Frame 1141.png"
+        src="./img/catalog/product/Frame 1141.png"
         alt="Храм Василия Блаженного"
         class="rounded-[8px] object-cover w-full h-auto"
       />
@@ -606,7 +656,7 @@
     <!-- Case 2 -->
     <div>
       <img
-        src="../assets/catalog/product/image.png"
+        src="./img/catalog/product/image.png"
         alt="Неглинная галерея"
         class="rounded-[8px] object-cover w-full h-auto"
       />
@@ -630,7 +680,7 @@
     <div class="relative group border border-[#ECEFF3] rounded-[10px] p-5 flex flex-col items-center overflow-hidden">
       <!-- Контент -->
       <img
-        src="../assets/catalog/catalogInner/image 184.png"
+        src="./img/catalog/catalogInner/image 184.png"
         alt="TORNADO"
         class="object-contain w-[160px] h-[120px] relative z-10"
       />
@@ -651,7 +701,7 @@
     <div class="relative group border border-[#ECEFF3] rounded-[10px] p-5 flex flex-col items-center overflow-hidden">
       <!-- Контент -->
       <img
-        src="../assets/catalog/catalogInner/image 184.png"
+        src="./img/catalog/catalogInner/image 184.png"
         alt="TORNADO"
         class="object-contain w-[160px] h-[120px] relative z-10"
       />
@@ -672,7 +722,7 @@
     <div class="relative group border border-[#ECEFF3] rounded-[10px] p-5 flex flex-col items-center overflow-hidden">
       <!-- Контент -->
       <img
-        src="../assets/catalog/catalogInner/image 184.png"
+        src="./img/catalog/catalogInner/image 184.png"
         alt="TORNADO"
         class="object-contain w-[160px] h-[120px] relative z-10"
       />
@@ -770,200 +820,7 @@
     </form>
   </div>
 </section>
-<footer class="bg-[#1A171B] text-white px-4 md:px-10 lg:px-20 py-10">
-      <div class="max-w-[1400px] mx-auto flex flex-col">
-        <div class="flex items-center justify-between pb-5">
-          <div>
-            <svg
-              width="78"
-              height="24"
-              viewBox="0 0 78 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M3.57521 23.9964H0V0H3.57521V23.9964Z" fill="#fff" />
-              <path
-                d="M42.3295 18.3575H36.5029V23.9964H32.9277V14.7858H40.0782L32.9277 3.53629V0.00354004H41.3702C46.4321 0.00354004 50.5383 4.10973 50.5383 9.17167C50.5383 12.623 48.641 15.6248 45.8056 17.1823L50.1525 24H45.933L42.3295 18.361V18.3575ZM43.8905 14.1522C45.7065 13.2495 46.9631 11.3487 46.9631 9.16814C46.9631 6.0708 44.4675 3.57167 41.3702 3.57167H37.172L43.8905 14.1487V14.1522Z"
-                fill="#fff"
-              />
-              <path
-                d="M66.108 0C59.6054 0 54.3027 5.37345 54.3027 11.9717C54.3027 18.5699 59.6054 23.9929 66.108 23.9929C72.6107 23.9929 77.9169 18.6195 77.9169 12.0212C77.9169 5.42301 72.6107 0 66.108 0ZM66.108 20.4212C64.4266 20.4212 62.8691 19.915 61.5735 19.0265C61.5735 19.0265 60.0478 18.0319 59.1558 16.4566C58.3346 15.1611 57.8815 13.6248 57.8815 11.9717C57.8815 7.34159 61.5771 3.57168 66.1116 3.57168C67.7894 3.57168 69.4886 4.12743 70.6425 4.96637C71.8071 5.81239 72.2638 6.24424 73.0708 7.53274C73.9062 8.95929 74.3452 10.3646 74.3452 12.0212C74.3452 16.6478 70.6709 20.4212 66.1116 20.4212H66.108Z"
-                fill="#fff"
-              />
-              <path
-                d="M18.5167 0H13.6707V3.57522H18.5167C19.3379 3.57522 20.1025 3.74868 20.7963 4.05664C20.7963 4.05664 21.7025 4.4531 22.3468 5.09026C23.2777 6.00708 23.4087 6.47788 23.4087 6.47788C23.8689 7.27434 24.1096 8.18761 24.1096 9.17168C24.1096 12.2655 21.6105 14.7858 18.5167 14.7858H10.0742V23.9964H13.6423V18.3575H18.5167C23.5786 18.3575 27.6813 14.2301 27.6813 9.16815C27.6813 4.1062 23.5786 0 18.5167 0Z"
-                fill="#fff"
-              />
-            </svg>
-          </div>
 
-          <button id="toTopBtn" class="to-top-btn flex items-center gap-[9px]">
-            Наверх
-            <svg
-              width="10"
-              height="7"
-              viewBox="0 0 10 7"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M5.16535 0.772641L8.96033 4.56763C9.21147 4.84667 9.21147 5.26523 8.96033 5.51637L8.31853 6.15817C8.0674 6.40931 7.62093 6.40931 7.36979 6.15817L4.69097 3.45145L1.98426 6.15817C1.73312 6.40931 1.31455 6.40931 1.03551 6.15817L0.421615 5.51637C0.142572 5.26523 0.142572 4.84667 0.421615 4.56763L4.2166 0.772641C4.46774 0.521502 4.8863 0.521502 5.16535 0.772641Z"
-                fill="white"
-              />
-            </svg>
-          </button>
-        </div>
-
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-b-2 border-white pb-[50px]"
-        >
-          <div>
-            <h3
-              class="font-semibold text-[14px] md:text-[16px] mb-[30px] border-b-2 border-white pb-[12px]"
-            >
-              ИНФОРМАЦИЯ
-            </h3>
-            <ul class="space-y-4 text-[14px] font-semibold">
-              <li>
-                <a href="#">Главная</a>
-              </li>
-              <li>
-                <a href="#">Каталог</a>
-              </li>
-              <li>
-                <a href="#">Портфолио</a>
-              </li>
-              <li>
-                <a href="#">Компетенции</a>
-              </li>
-              <li>
-                <a href="#">Компания</a>
-              </li>
-              <li>
-                <a href="#">Загрузки</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3
-              class="font-semibold text-[14px] md:text-[16px] mb-[30px] mt-[25px] md:mt-0 border-b-2 border-white pb-[12px]"
-            >
-              ПРАВОВАЯ ИНФОРМАЦИЯ
-            </h3>
-            <ul class="space-y-4 text-[14px] font-semibold">
-              <li>
-                <a href="#">Условия пользования сайтом</a>
-              </li>
-              <li>
-                <a href="#">Файлы Cookie</a>
-              </li>
-              <li>
-                <a href="#">Закупка</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3
-              class="font-semibold text-[14px] md:text-[16px] mt-[25px] md:mt-0 mb-[30px] border-b-2 border-white pb-[12px]"
-            >
-              ПРОДУКЦИЯ
-            </h3>
-            <ul class="space-y-4 text-[14px] font-semibold">
-              <li>
-                <a href="#">Дорожное освещение</a>
-              </li>
-              <li>
-                <a href="#">Архитектурное освещение</a>
-              </li>
-              <li>
-                <a href="#">Ландшафтное освещение</a>
-              </li>
-              <li>
-                <a href="#">Интерьерное освещение</a>
-              </li>
-              <li>
-                <a href="#">Освещение для музеев</a>
-              </li>
-              <li>
-                <a href="#">Художественное литье</a>
-              </li>
-            </ul>
-          </div>
-          <div class="text-[14px]">
-            <h3
-              class="font-semibold mb-[30px] border-b-2 text-[14px] md:text-[16px] mt-[25px] md:mt-0 border-white pb-[12px]"
-            >
-              КОНТАКТЫ
-            </h3>
-            <div
-              class="text-start md:text-end float-none md:float-end max-w-[254px] flex flex-col gap-5"
-            >
-              <p class="font-semibold text-[14px]">
-                117105, Москва, Новоданиловская набережная, д.6, к.1
-              </p>
-              <p class="font-semibold text-[14px]">+7 (499) 551-51-85</p>
-              <p class="font-semibold text-[14px]">info@illumpro.ru</p>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="flex justify-between text-[14px] items-center text-xs font-semibold text-white mt-6 gap-4"
-        >
-          <div class="flex gap-4 items-center max-w-[195px] w-full">
-            <a href="#">
-              <span>
-                <svg
-                  width="24"
-                  height="21"
-                  viewBox="0 0 24 21"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M21.9115 4.01796C21.5926 5.37331 18.7225 9.43937 18.7225 9.43937C18.4833 9.838 18.3637 10.0373 18.7225 10.4758C18.8819 10.6751 21.8717 13.5453 22.3102 14.9006C22.5095 15.5783 22.1906 15.8972 21.5129 15.8972H19.161C18.284 15.8972 18.0049 15.2195 16.4104 13.625C15.0152 12.2697 14.4172 12.0703 14.0585 12.0703C13.3409 12.0703 13.4605 12.3494 13.4605 15.0202C13.4605 15.5783 13.2612 15.8972 11.7863 15.8972C9.31473 15.8972 6.56416 14.4223 4.61086 11.6319C1.70084 7.52593 0.903575 4.45646 0.903575 3.81865C0.903575 3.45988 1.06303 3.14097 1.70084 3.14097H4.05278C4.65072 3.14097 4.8899 3.42001 5.12908 4.05783C6.28512 7.40634 8.19856 10.3562 8.99582 10.3562C9.31473 10.3562 9.43432 10.1968 9.43432 9.43937V5.97126C9.35459 4.37673 8.51746 4.25714 8.51746 3.69906C8.51746 3.42001 8.71678 3.14097 9.11541 3.14097H12.7828C13.3011 3.14097 13.4605 3.42001 13.4605 4.01796V8.68197C13.4605 9.16033 13.6997 9.35964 13.8193 9.35964C14.1382 9.35964 14.3774 9.16033 14.9355 8.64211C16.6097 6.72867 17.8056 3.81865 17.8056 3.81865C17.9651 3.45988 18.2441 3.14097 18.8421 3.14097H21.194C21.9115 3.14097 22.0311 3.5396 21.9115 4.01796Z"
-                    fill="white"
-                  />
-                </svg>
-              </span>
-            </a>
-            <a href="#">
-              <span>
-                <svg
-                  width="20"
-                  height="22"
-                  viewBox="0 0 20 22"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M10.0048 0.633C15.466 0.633 19.8908 5.05783 19.8908 10.5191C19.8908 15.9804 15.466 20.4052 10.0048 20.4052C4.54348 20.4052 0.118652 15.9804 0.118652 10.5191C0.118652 5.05783 4.54348 0.633 10.0048 0.633ZM14.8282 7.40976C14.9877 6.77195 14.589 6.4929 14.1505 6.65236L4.62321 10.3198C3.98539 10.559 3.98539 10.9576 4.50362 11.117L6.93528 11.8745L12.5959 8.28675C12.8749 8.1273 13.1141 8.24689 12.9148 8.40634L8.33049 12.5521L8.17104 15.0635C8.41022 15.0635 8.52981 14.9439 8.6494 14.8243L9.8453 13.6683L12.3168 15.502C12.7952 15.7412 13.1141 15.6216 13.2337 15.0635L14.8282 7.40976Z"
-                    fill="white"
-                  />
-                </svg>
-              </span>
-            </a>
-            <a href="#">
-              <span>
-                <svg
-                  width="24"
-                  height="21"
-                  viewBox="0 0 24 21"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M22.7521 4.29701C23.2305 5.97126 23.2305 9.55896 23.2305 9.55896C23.2305 9.55896 23.2305 13.1068 22.7521 14.8209C22.513 15.7776 21.7556 16.4952 20.8387 16.7344C19.1246 17.1729 12.3478 17.1729 12.3478 17.1729C12.3478 17.1729 5.53119 17.1729 3.81707 16.7344C2.90022 16.4952 2.14281 15.7776 1.90363 14.8209C1.42527 13.1068 1.42527 9.55896 1.42527 9.55896C1.42527 9.55896 1.42527 5.97126 1.90363 4.29701C2.14281 3.34029 2.90022 2.58288 3.81707 2.3437C5.53119 1.86534 12.3478 1.86534 12.3478 1.86534C12.3478 1.86534 19.1246 1.86534 20.8387 2.3437C21.7556 2.58288 22.513 3.34029 22.7521 4.29701ZM10.1155 12.7879L15.7761 9.55896L10.1155 6.33003V12.7879Z"
-                    fill="white"
-                  />
-                </svg>
-              </span>
-            </a>
-          </div>
-          <p>© 2008 - 2025, Все права защищены</p>
-        </div>
-      </div>
-    </footer>
 
     <!-- ===== JavaScript ===== -->
          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -1069,36 +926,203 @@
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 
 <script>
-  const thumbs = document.querySelectorAll(".thumb");
-  const mainImage = document.getElementById("main-image");
+  document.addEventListener('DOMContentLoaded', () => {
+  const allThumbs = Array.from(document.querySelectorAll('.thumb'));
+  const mainImage = document.getElementById('main-image');
 
-  // Клик по превью → меняем главное изображение
-  thumbs.forEach((thumb) => {
-    thumb.addEventListener("click", () => {
-      const imgSrc = thumb.getAttribute("data-img");
-      mainImage.src = imgSrc;
-      mainImage.parentElement.setAttribute("href", imgSrc);
+  if (!allThumbs.length) {
+    console.warn('Thumbnails (.thumb) not found on the page');
+    return;
+  }
+  if (!mainImage) {
+    console.warn('Main image (#main-image) not found on the page');
+    return;
+  }
 
-      thumbs.forEach((t) => t.classList.remove("border-[#D92D20]"));
-      thumb.classList.add("border-[#D92D20]");
-    });
-  });
+  // Собираем уникальные src (в нужном порядке)
+  const uniqueSrcs = [...new Set(allThumbs.map(t => t.getAttribute('data-img')))];
+  const thumbCount = uniqueSrcs.length;
+  let currentIndex = 0;
+  let swiperInstance = null;
 
-  // Проверяем количество картинок → если > 4, включаем swiper
-  const thumbCount = thumbs.length;
-  if (thumbCount > 4) {
-    document.querySelector(".no-swiper").classList.add("hidden");
-    document.querySelector(".mySwiper").classList.remove("hidden");
+  const noSwiperEl = document.querySelector('.no-swiper');
+  const mySwiperEl = document.querySelector('.mySwiper');
 
-    new Swiper(".mySwiper", {
+  // Если >4 и Swiper доступен — переключаем на слайдер
+  if (thumbCount > 4 && typeof Swiper !== 'undefined' && mySwiperEl) {
+    if (noSwiperEl) noSwiperEl.classList.add('hidden');
+    mySwiperEl.classList.remove('hidden');
+
+    swiperInstance = new Swiper('.mySwiper', {
       slidesPerView: 4,
       spaceBetween: 10,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
     });
+  } else {
+    // fallback — показываем обычный набор
+    if (mySwiperEl) mySwiperEl.classList.add('hidden');
+    if (noSwiperEl) noSwiperEl.classList.remove('hidden');
   }
+
+  // Ф-я установки активного превью по индексу уникального списка
+  function setActiveThumb(index) {
+    if (!uniqueSrcs.length) return;
+    index = ((index % uniqueSrcs.length) + uniqueSrcs.length) % uniqueSrcs.length; // нормализуем
+    const src = uniqueSrcs[index];
+
+    // Подсветить все элементы, у которых совпадает data-img (и снять с остальных)
+    allThumbs.forEach(t => {
+      const isActive = t.getAttribute('data-img') === src;
+      t.classList.toggle('border-[#D92D20]', isActive);
+      t.classList.toggle('border-[#E5E7EB]', !isActive);
+    });
+
+    mainImage.src = src;
+    if (mainImage.parentElement) mainImage.parentElement.setAttribute('href', src);
+
+    currentIndex = index;
+    if (swiperInstance) swiperInstance.slideTo(index);
+  }
+
+  // Клики по миниатюрам (включая оба набора, если есть)
+  allThumbs.forEach(t => {
+    t.addEventListener('click', () => {
+      const src = t.getAttribute('data-img');
+      const idx = uniqueSrcs.indexOf(src);
+      if (idx !== -1) setActiveThumb(idx);
+    });
+  });
+
+  // Кнопки prev/next (если есть)
+  const prevBtn = document.getElementById('thumb-prev');
+  const nextBtn = document.getElementById('thumb-next');
+
+  if (prevBtn) prevBtn.addEventListener('click', () => setActiveThumb(currentIndex - 1));
+  if (nextBtn) nextBtn.addEventListener('click', () => setActiveThumb(currentIndex + 1));
+
+  // Инициализация
+  setActiveThumb(0);
+});
+</script>
+<script>
+(() => {
+  const burger = document.getElementById('burgerBtn');
+  if (!burger) return console.warn('burgerBtn not found');
+
+  let overlay = null;
+
+  function createOverlay() {
+    overlay = document.createElement('div');
+    overlay.id = 'mobileMenuOverlay';
+    overlay.className =
+      'fixed inset-0 z-[9999] bg-white flex flex-col overflow-auto p-4'; // fullscreen
+    
+    overlay.innerHTML = `
+    
+     <div class="flex justify-between">
+ <a href="main.html">
+ <svg width="78" height="25" viewBox="0 0 78 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.57521 24.557H0V0.560547H3.57521V24.557Z" fill="#2E2C30"/>
+<path d="M42.3295 18.9184H36.5029V24.5574H32.9277V15.3467H40.0782L32.9277 4.0972V0.564453H41.3702C46.4321 0.564453 50.5383 4.67064 50.5383 9.73259C50.5383 13.1839 48.641 16.1857 45.8056 17.7432L50.1525 24.5609H45.933L42.3295 18.922V18.9184ZM43.8905 14.7131C45.7065 13.8105 46.9631 11.9096 46.9631 9.72905C46.9631 6.63171 44.4675 4.13259 41.3702 4.13259H37.172L43.8905 14.7096V14.7131Z" fill="#2E2C30"/>
+<path d="M66.108 0.560547C59.6054 0.560547 54.3027 5.934 54.3027 12.5322C54.3027 19.1304 59.6054 24.5534 66.108 24.5534C72.6107 24.5534 77.9169 19.18 77.9169 12.5818C77.9169 5.98356 72.6107 0.560547 66.108 0.560547ZM66.108 20.9818C64.4266 20.9818 62.8691 20.4756 61.5735 19.5871C61.5735 19.5871 60.0478 18.5924 59.1558 17.0172C58.3346 15.7216 57.8815 14.1853 57.8815 12.5322C57.8815 7.90214 61.5771 4.13222 66.1116 4.13222C67.7894 4.13222 69.4886 4.68798 70.6425 5.52691C71.8071 6.37293 72.2638 6.80479 73.0708 8.09328C73.9062 9.51983 74.3452 10.9251 74.3452 12.5818C74.3452 17.2083 70.6709 20.9818 66.1116 20.9818H66.108Z" fill="#2E2C30"/>
+<path d="M18.5167 0.560547H13.6707V4.13577H18.5167C19.3379 4.13577 20.1025 4.30923 20.7963 4.61719C20.7963 4.61719 21.7025 5.01364 22.3468 5.65081C23.2777 6.56762 23.4087 7.03843 23.4087 7.03843C23.8689 7.83489 24.1096 8.74815 24.1096 9.73222C24.1096 12.826 21.6105 15.3464 18.5167 15.3464H10.0742V24.557H13.6423V18.9181H18.5167C23.5786 18.9181 27.6813 14.7906 27.6813 9.72869C27.6813 4.66675 23.5786 0.560547 18.5167 0.560547Z" fill="#2E2C30"/>
+</svg>
+</a>
+
+ <button id="mobileMenuClose" aria-label="Закрыть меню"
+        class="absolute right-4 top-4 text-3xl"><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="1.42188" y="1.48738" width="18.997" height="1.00819" transform="rotate(45 1.42188 1.48738)" fill="#2E2C30" stroke="#2E2C30"/>
+<rect x="14.1406" y="1.48738" width="1.00819" height="18.997" transform="rotate(45 14.1406 1.48738)" fill="#2E2C30" stroke="#2E2C30"/>
+</svg>
+</button>
+</div>
+
+      <nav class="flex flex-col flex-1 mt-10 text-[16px] font-medium">
+        <div class="flex-col flex flex-1 h-full">
+          <ul class="flex gap-[6px] mb-[30px]">
+            <input
+              type="text"
+              placeholder="Поиск..."
+              class="border border-[#C4C4C4] rounded-[7px] px-3 py-2 max-w-[420px] w-full"
+            />
+            <a
+              href="./catalog.html"
+              class="bg-[#EF3824] text-white rounded-[8px] py-[8px] px-[16px] text-[14px] font-semibold transition-all duration-300"
+            >
+              Каталог
+            </a>
+          </ul>
+
+          <ul class="border-t border-[#2E2C30] flex pt-[29px] flex-col gap-4 text-[16px] font-medium">
+            <li><a href="#" class="hover:text-[#EF3824]">ПРОЕКТИРОВЩИКАМ</a></li>
+            <li><a href="#" class="hover:text-[#EF3824]">ДЕВЕЛОПЕРАМ</a></li>
+            <li><a href="#" class="hover:text-[#EF3824]">АРХИТЕКТОРАМ</a></li>
+            <li><a href="#" class="hover:text-[#EF3824]">ДИЗАЙНЕРАМ</a></li>
+            <li><a href="#" class="hover:text-[#EF3824]">МАРКЕТПЛЕЙСЫ</a></li>
+          </ul>
+
+          <ul class="border-t border-[#2E2C30] mt-4 pt-[29px] flex flex-col gap-4 text-[16px] font-medium">
+            <li><a href="#" class="hover:text-[#EF3824]">О НАС</a></li>
+            <li><a href="#" class="hover:text-[#EF3824]">ПОДДЕРЖКА</a></li>
+            <li><a href="#" class="hover:text-[#EF3824]">ПОРТФОЛИО</a></li>
+            <li><a href="#" class="hover:text-[#EF3824]">КОНТАКТЫ</a></li>
+          </ul>
+        </div>
+
+        <!-- Нижний блок -->
+        <div class="flex justify-between mt-auto">
+          <span class="flex gap-[8px] items-center">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.8521 10.7808L11.0567 9.08241C10.9096 9.01875 10.7489 8.99275 10.5892 9.00679C10.4295 9.02083 10.2758 9.07446 10.142 9.16281C10.1313 9.1696 10.1211 9.17708 10.1115 9.18534L8.11811 10.8845C8.07374 10.9115 8.02343 10.9273 7.9715 10.9302C7.91965 10.9331 7.86787 10.9232 7.82073 10.9013C6.51539 10.2712 5.16425 8.93055 4.53409 7.6405C4.5118 7.59366 4.50145 7.54212 4.50398 7.49034C4.50651 7.43857 4.52182 7.38826 4.54856 7.34389L6.25256 5.31757C6.2606 5.30792 6.26784 5.29748 6.27507 5.28702C6.36315 5.15344 6.41662 5.00003 6.43065 4.84064C6.44468 4.68124 6.41884 4.52086 6.35544 4.37394L4.65386 0.584958C4.57171 0.393058 4.42952 0.232987 4.24864 0.128781C4.06777 0.0245747 3.85797 -0.0181425 3.65074 0.00705142C2.63925 0.140409 1.7109 0.63742 1.03907 1.40524C0.367243 2.17306 -0.00210595 3.15919 9.0331e-06 4.17943C9.0331e-06 10.3845 5.0477 15.4322 11.2529 15.4322C12.2731 15.4343 13.2592 15.065 14.027 14.3932C14.7949 13.7213 15.2919 12.793 15.4252 11.7815C15.4502 11.5753 15.408 11.3664 15.3047 11.1861C15.2014 11.0057 15.0427 10.8636 14.8521 10.7808ZM14.7895 11.7011C14.676 12.5577 14.2543 13.3437 13.6034 13.912C12.9526 14.4804 12.1169 14.7922 11.2529 14.7892C5.40298 14.7892 0.643026 10.0293 0.643026 4.17943C0.640032 3.31533 0.951864 2.47972 1.52021 1.82883C2.08856 1.17794 2.8745 0.756333 3.73112 0.642836C3.74397 0.642034 3.75686 0.642034 3.7697 0.642836C3.83313 0.643376 3.89498 0.662667 3.94748 0.698277C3.99996 0.733886 4.04075 0.784234 4.06469 0.842969L5.76146 4.63195C5.78125 4.67826 5.78989 4.72857 5.78668 4.77883C5.78347 4.82909 5.76849 4.8779 5.74297 4.92131L4.03978 6.94682C4.03174 6.95723 4.0237 6.96688 4.01647 6.97815C3.92572 7.11688 3.87228 7.27676 3.8613 7.44212C3.85032 7.60755 3.88217 7.77306 3.95377 7.9226C4.65225 9.35247 6.09261 10.7824 7.53863 11.4809C7.68917 11.552 7.8556 11.583 8.02166 11.5707C8.18771 11.5584 8.34774 11.5034 8.48624 11.411L8.51595 11.3884L10.5117 9.6909C10.5545 9.66482 10.6027 9.64923 10.6526 9.64545C10.7025 9.64167 10.7525 9.64985 10.7987 9.66922L14.5933 11.3699C14.6574 11.3966 14.7111 11.4432 14.7464 11.503C14.7817 11.5626 14.7969 11.6321 14.7895 11.7011Z" fill="#2E2C30"/>
+</svg>
+
+            <p class="hover:text-[#EF3824] cursor-pointer">+7 (499) 551-51-85</p>
+          </span>
+          <div class="flex gap-[5px] text-[18px] font-medium items-center">
+            <button class="hover:text-[#EF3824]">EN</button>
+            <div class="bg-[#2E2C30] w-[1px] h-[22px]"></div>
+            <button class="text-[#EF3824]">RU</button>
+          </div>
+        </div>
+      </nav>
+    `;
+
+    document.body.appendChild(overlay);
+
+    // Закрытие
+    document.getElementById('mobileMenuClose').addEventListener('click', closeOverlay);
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) closeOverlay();
+    });
+    document.addEventListener('keydown', onKey);
+
+    document.body.style.overflow = 'hidden'; // блокируем фон
+  }
+
+  function openOverlay() {
+    if (!overlay) createOverlay();
+  }
+
+  function closeOverlay() {
+    if (!overlay) return;
+    overlay.remove();
+    overlay = null;
+    document.body.style.overflow = '';
+    document.removeEventListener('keydown', onKey);
+  }
+
+  function onKey(e) {
+    if (e.key === 'Escape') closeOverlay();
+  }
+
+  burger.addEventListener('click', () => {
+    if (overlay) closeOverlay();
+    else openOverlay();
+  });
+})();
 </script>
   </body>
 </html>
