@@ -243,7 +243,56 @@
         <p class="px-4 py-3">Технические характеристики</p>
       </div>
       <!-- Строки -->
-      <div id="product-list"></div>
+      <div id="product-list">
+  <!-- Товар 1 -->
+  <a href="./product.html" class="grid grid-cols-3 text-sm bg-white">
+    <div class="p-4 flex items-center">
+      <img src="./img/catalog/catalogInner/image 184.png" alt="Tornado 4000K S 66IP led" class="h-16 w-auto mx-auto" />
+    </div>
+    <div class="p-4 flex flex-col justify-center">
+      <p class="font-medium">Tornado 4000K S 66IP led</p>
+      <p class="text-gray-500 text-sm">Артикул: 3803</p>
+    </div>
+    <div class="p-4 space-y-1">
+      <p><span class="font-medium">Мощность:</span> 800 Вт</p>
+      <p><span class="font-medium">Напряжение:</span> 230 В</p>
+      <p><span class="font-medium">Световой поток:</span> 94 680 Лм</p>
+    </div>
+  </a>
+
+  <!-- Товар 2 -->
+  <a href="./product.html" class="grid grid-cols-3 text-sm bg-[#F8F8F8]">
+    <div class="p-4 flex items-center">
+      <img src="./img/catalog/catalogInner/image 184.png" alt="Tornado 3000K S 66IP led" class="h-16 w-auto mx-auto" />
+    </div>
+    <div class="p-4 flex flex-col justify-center">
+      <p class="font-medium">Tornado 3000K S 66IP led</p>
+      <p class="text-gray-500 text-sm">Артикул: 3806</p>
+    </div>
+    <div class="p-4 space-y-1">
+      <p><span class="font-medium">Мощность:</span> 1400 Вт</p>
+      <p><span class="font-medium">Напряжение:</span> 230 В</p>
+      <p><span class="font-medium">Световой поток:</span> 161 518 Лм</p>
+    </div>
+  </a>
+
+  <!-- Товар 3 -->
+  <a href="./product.html" class="grid grid-cols-3 text-sm bg-white">
+    <div class="p-4 flex items-center">
+      <img src="./img/catalog/catalogInner/image 184.png" alt="Tornado 4000K S 66IP led" class="h-16 w-auto mx-auto" />
+    </div>
+    <div class="p-4 flex flex-col justify-center">
+      <p class="font-medium">Tornado 4000K S 66IP led</p>
+      <p class="text-gray-500 text-sm">Артикул: 3809</p>
+    </div>
+    <div class="p-4 space-y-1">
+      <p><span class="font-medium">Мощность:</span> 1400 Вт</p>
+      <p><span class="font-medium">Напряжение:</span> 230 В</p>
+      <p><span class="font-medium">Световой поток:</span> 165 690 Лм</p>
+    </div>
+  </a>
+</div>
+
     </div>
   </div>
 </section>
@@ -446,32 +495,6 @@
 
   <script>
     // Данные
-    const products = [
-      { id: 3803, name: "Tornado 4000K S 66IP led", img: "./img/catalog/catalogInner/image 184.png", power: 800, voltage: 230, luminousFlux: 94680 },
-      { id: 3806, name: "Tornado 3000K S 66IP led", img: "./img/catalog/catalogInner/image 184.png", power: 1400, voltage: 230, luminousFlux: 161518 },
-      { id: 3809, name: "Tornado 4000K S 66IP led", img: "./img/catalog/catalogInner/image 184.png", power: 1400, voltage: 230, luminousFlux: 165690 },
-    ];
-
-    // Рендер товаров
-    const list = document.getElementById("product-list");
-    products.forEach((p, i) => {
-      list.innerHTML += `
-        <a href="./product.html" class="grid grid-cols-3 text-sm ${i % 2 === 1 ? "bg-[#F8F8F8]" : "bg-white"}">
-          <div class="p-4 flex items-center">
-            <img src="${p.img}" alt="${p.name}" class="h-16 w-auto mx-auto" />
-          </div>
-          <div class="p-4 flex flex-col justify-center">
-            <p class="font-medium">${p.name}</p>
-            <p class="text-gray-500 text-sm">Артикул: ${p.id}</p>
-          </div>
-          <div class="p-4 space-y-1">
-            <p><span class="font-medium">Мощность:</span> ${p.power} Вт</p>
-            <p><span class="font-medium">Напряжение:</span> ${p.voltage} В</p>
-            <p><span class="font-medium">Световой поток:</span> ${p.luminousFlux.toLocaleString("ru-RU")} Лм</p>
-          </div>
-        </a>
-      `;
-    });
 
     // Фильтры (одноразовый шаблон)
     const filterHTML = `
